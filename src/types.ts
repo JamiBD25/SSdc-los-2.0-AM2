@@ -3,12 +3,8 @@ export type NavTab =
   | 'teams'
   | 'speakers'
   | 'adjudicators'
-  | 'fixtures'
-  | 'standings'
-  | 'materials'
   | 'announcements'
-  | 'ai-assistant'
-  | 'admin';
+  | 'tabulation';
 
 export interface Speaker {
   id: string;
@@ -46,24 +42,6 @@ export interface Adjudicator {
   bio: string;
 }
 
-export interface MatchFixture {
-  id: string;
-  round: number;
-  roundName: string;
-  govTeam: string;
-  oppTeam: string;
-  govInstitution: string;
-  oppInstitution: string;
-  winner?: 'Government' | 'Opposition' | 'Draw' | 'Walkover (Gov)' | 'Walkover (Opp)';
-  govPoints?: number;
-  oppPoints?: number;
-  motion?: string;
-  isSilentWeek: boolean;
-  channel: string;
-  dateTime: string;
-  status: 'Completed' | 'Upcoming' | 'Live' | 'Walkover';
-}
-
 export interface TournamentAnnouncement {
   id: string;
   title: string;
@@ -73,12 +51,33 @@ export interface TournamentAnnouncement {
   author: string;
 }
 
-export interface DebateMaterial {
+export interface TabSheetEntry {
   id: string;
-  title: string;
-  category: 'AP-ISC Format' | 'Matter Files' | 'Rules & Regulations' | 'Motion Resources';
-  description: string;
-  linkUrl: string;
-  fileType: 'PDF' | 'DOC' | 'Link' | 'Discord';
-  downloadCount: number;
+  roundNumber: number;
+  govTeamId: string;
+  oppTeamId: string;
+  govSpeaker1Name: string;
+  govSpeaker1Score: number;
+  govSpeaker2Name: string;
+  govSpeaker2Score: number;
+  govSpeaker3Name: string;
+  govSpeaker3Score: number;
+  govReplyScore: number;
+  oppSpeaker1Name: string;
+  oppSpeaker1Score: number;
+  oppSpeaker2Name: string;
+  oppSpeaker2Score: number;
+  oppSpeaker3Name: string;
+  oppSpeaker3Score: number;
+  oppReplyScore: number;
+  winner: 'Government' | 'Opposition';
+  adjudicatorName: string;
+  createdAt?: string;
 }
+
+export interface SupabaseConfig {
+  url: string;
+  anonKey: string;
+  isConnected: boolean;
+}
+

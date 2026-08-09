@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavTab } from '../types';
-import { ShieldAlert, Sparkles, Sliders, Menu, X } from 'lucide-react';
+import { Database, Menu, X, ShieldCheck } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: NavTab;
@@ -12,22 +12,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
   const navItems: { id: NavTab; label: string; icon?: React.ReactNode }[] = [
     { id: 'home', label: 'Home' },
-    { id: 'teams', label: 'Teams' },
-    { id: 'speakers', label: 'Speakers' },
+    { id: 'teams', label: 'Teams & Points' },
+    { id: 'speakers', label: 'Speaker Rankings' },
     { id: 'adjudicators', label: 'Adjudicators' },
-    { id: 'fixtures', label: 'Fixtures' },
-    { id: 'standings', label: 'Standings' },
-    { id: 'materials', label: 'Materials' },
     { id: 'announcements', label: 'Updates' },
     { 
-      id: 'ai-assistant', 
-      label: 'AI Prep', 
-      icon: <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" /> 
-    },
-    { 
-      id: 'admin', 
-      label: 'Admin / Tab', 
-      icon: <Sliders className="w-3.5 h-3.5 text-amber-300" /> 
+      id: 'tabulation', 
+      label: 'Admin Tab & Supabase', 
+      icon: <Database className="w-3.5 h-3.5 text-amber-300" /> 
     },
   ];
 
@@ -35,6 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
     setActiveTab(tab);
     setMenuOpen(false);
   };
+
 
   return (
     <header className="sticky top-0 z-50 bg-[#332C24] border-b border-[#684B35] shadow-xl">

@@ -1,4 +1,4 @@
-import { Team, Speaker, Adjudicator, MatchFixture, TournamentAnnouncement, DebateMaterial } from '../types';
+import { Team, Speaker, Adjudicator, TournamentAnnouncement } from '../types';
 
 export const INITIAL_TEAMS: Team[] = [
   {
@@ -278,7 +278,7 @@ export const INITIAL_SPEAKERS: Speaker[] = [
     roundsSpoken: 2,
     averageScore: 73.5,
     bestScore: 74.0,
-    breakEligible: false // Needs >= 3 rounds
+    breakEligible: false
   },
   {
     id: 's14',
@@ -342,120 +342,6 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
   }
 ];
 
-export const INITIAL_FIXTURES: MatchFixture[] = [
-  {
-    id: 'f1',
-    round: 1,
-    roundName: 'Round 1 - Preliminary',
-    govTeam: 'Collegiate Debaters Guild Alpha',
-    oppTeam: 'St. Placids Elite',
-    govInstitution: 'Chittagong Collegiate School',
-    oppInstitution: "St. Placid's School & College",
-    winner: 'Government',
-    govPoints: 229.5,
-    oppPoints: 225.0,
-    motion: 'This House Would mandate state funding for youth skill development hubs in regional districts.',
-    isSilentWeek: false,
-    channel: 'discord-#room-1',
-    dateTime: 'May 10, 2026 - 4:00 PM',
-    status: 'Completed'
-  },
-  {
-    id: 'f2',
-    round: 1,
-    roundName: 'Round 1 - Preliminary',
-    govTeam: 'CGS Vanguard',
-    oppTeam: 'CESC Titans',
-    govInstitution: 'Chittagong Grammar School',
-    oppInstitution: 'Cantonment English School & College',
-    winner: 'Government',
-    govPoints: 226.0,
-    oppPoints: 222.5,
-    motion: 'This House Regrets the prioritization of STEM over Humanities in secondary education.',
-    isSilentWeek: false,
-    channel: 'discord-#room-2',
-    dateTime: 'May 10, 2026 - 5:30 PM',
-    status: 'Completed'
-  },
-  {
-    id: 'f3',
-    round: 2,
-    roundName: 'Round 2 - Preliminary',
-    govTeam: 'Faujdarhat Warriors',
-    oppTeam: 'Mohsinian Speakers',
-    govInstitution: 'Faujdarhat Cadet College',
-    oppInstitution: 'Govt. Hazi Mohammad Mohsin College',
-    winner: 'Government',
-    govPoints: 224.0,
-    oppPoints: 220.5,
-    motion: 'This House Would ban algorithmic content recommendation targeting minors.',
-    isSilentWeek: false,
-    channel: 'discord-#room-1',
-    dateTime: 'May 17, 2026 - 4:00 PM',
-    status: 'Completed'
-  },
-  {
-    id: 'f4',
-    round: 3,
-    roundName: 'Round 3 - Preliminary',
-    govTeam: 'Chittagong College DC',
-    oppTeam: 'Ispahani Eagles',
-    govInstitution: 'Chittagong College',
-    oppInstitution: 'Ispahani Public School & College',
-    winner: 'Government',
-    govPoints: 221.0,
-    oppPoints: 218.0,
-    motion: 'This House Supports carbon taxation on heavy industrial manufacturing in developing economies.',
-    isSilentWeek: false,
-    channel: 'discord-#room-3',
-    dateTime: 'May 24, 2026 - 4:00 PM',
-    status: 'Completed'
-  },
-  {
-    id: 'f5',
-    round: 4,
-    roundName: 'Round 4 - Silent Week',
-    govTeam: 'Collegiate Debaters Guild Alpha',
-    oppTeam: 'CGS Vanguard',
-    govInstitution: 'Chittagong Collegiate School',
-    oppInstitution: 'Chittagong Grammar School',
-    govPoints: 231.0,
-    oppPoints: 228.5,
-    winner: 'Government',
-    motion: 'This House Would replace high-stakes standardized exams with continuous portfolio assessments.',
-    isSilentWeek: true, // Results hidden during silent week until conclusion
-    channel: 'discord-#silent-room-a',
-    dateTime: 'June 01, 2026 - 5:00 PM',
-    status: 'Completed'
-  },
-  {
-    id: 'f6',
-    round: 5,
-    roundName: 'Round 5 - Upcoming',
-    govTeam: 'St. Placids Elite',
-    oppTeam: 'Faujdarhat Warriors',
-    govInstitution: "St. Placid's School & College",
-    oppInstitution: 'Faujdarhat Cadet College',
-    isSilentWeek: false,
-    channel: 'discord-#room-1',
-    dateTime: 'June 15, 2026 - 4:00 PM',
-    status: 'Upcoming'
-  },
-  {
-    id: 'f7',
-    round: 6,
-    roundName: 'Round 6 - Upcoming',
-    govTeam: 'CESC Titans',
-    oppTeam: 'Mohsinian Speakers',
-    govInstitution: 'Cantonment English School & College',
-    oppInstitution: 'Govt. Hazi Mohammad Mohsin College',
-    isSilentWeek: false,
-    channel: 'discord-#room-2',
-    dateTime: 'June 22, 2026 - 4:00 PM',
-    status: 'Upcoming'
-  }
-];
-
 export const INITIAL_ANNOUNCEMENTS: TournamentAnnouncement[] = [
   {
     id: 'ann1',
@@ -480,44 +366,5 @@ export const INITIAL_ANNOUNCEMENTS: TournamentAnnouncement[] = [
     date: '2026-05-08',
     tag: 'Pairings',
     author: 'Kayes Adnan (Tabulation Core)'
-  }
-];
-
-export const INITIAL_MATERIALS: DebateMaterial[] = [
-  {
-    id: 'mat1',
-    title: 'Official SSDC AP-ISC Debate Rulebook (LoS 2.0)',
-    category: 'AP-ISC Format',
-    description: 'Comprehensive guidelines detailing AP-ISC format, speaker timing (7 mins), POI rules, reply speeches, and tie-breaking criteria.',
-    linkUrl: '#',
-    fileType: 'PDF',
-    downloadCount: 412
-  },
-  {
-    id: 'mat2',
-    title: 'Discord Tournament Arena Guide',
-    category: 'Rules & Regulations',
-    description: 'Step-by-step instructions on audio setup, roll call procedure, motion reveal protocol, and text chat POI etiquette on the SSDC Discord server.',
-    linkUrl: 'https://discord.gg',
-    fileType: 'Discord',
-    downloadCount: 289
-  },
-  {
-    id: 'mat3',
-    title: 'International Relations & Geopolitics Matter Files',
-    category: 'Matter Files',
-    description: 'Curated briefings on contemporary international conflicts, multilateral trade agreements, sanction mechanisms, and climate diplomacy.',
-    linkUrl: '#',
-    fileType: 'PDF',
-    downloadCount: 520
-  },
-  {
-    id: 'mat4',
-    title: 'SSDC Motion Bank (Season 1 Archive & Practice)',
-    category: 'Motion Resources',
-    description: 'Over 150+ motions used during LoS Season 1 and regional sparring competitions, categorized by theme and difficulty.',
-    linkUrl: '#',
-    fileType: 'DOC',
-    downloadCount: 680
   }
 ];

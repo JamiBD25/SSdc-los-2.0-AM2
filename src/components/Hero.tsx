@@ -154,28 +154,29 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
           {/* ACTION BUTTONS */}
           <div className="flex flex-wrap justify-center items-center gap-4">
             <button
-              onClick={() => setActiveTab('fixtures')}
+              onClick={() => setActiveTab('teams')}
               className="prep-btn"
             >
-              <span>View Fixtures & Schedule</span>
+              <span>View Teams & Points Table</span>
               <ChevronRight className="w-5 h-5" />
             </button>
 
             <button
-              onClick={() => setActiveTab('standings')}
+              onClick={() => setActiveTab('speakers')}
               className="px-6 py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-[#f5e4cb] font-bold text-sm border border-[#684B35] transition-all flex items-center gap-2 shadow-lg hover:border-amber-400"
             >
               <Trophy className="w-4 h-4 text-amber-400" />
-              <span>AP-ISC Points Table</span>
+              <span>Speaker Rankings</span>
             </button>
 
             <button
-              onClick={() => setActiveTab('ai-assistant')}
+              onClick={() => setActiveTab('tabulation')}
               className="px-6 py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-amber-300 font-bold text-sm border border-[#8B5E3C] transition-all flex items-center gap-2 shadow-lg hover:border-amber-400"
             >
-              <span>AI Motion & Prep Assistant</span>
+              <span>Admin Tabulation & Supabase Sync</span>
             </button>
           </div>
+
 
         </div>
       </div>

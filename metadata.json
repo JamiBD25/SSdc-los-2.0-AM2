@@ -1,6 +1,6 @@
 {
   "name": "SSDC League of Spars Season 2",
-  "description": "Official website for SSDC League of Spars Season 2 (LoS 2.0) featuring teams, speaker statistics, standings, fixtures, adjudicators, materials, and tournament updates.",
+  "description": "Official website for SSDC League of Spars Season 2 (LoS 2.0) featuring team standings, speaker statistics, adjudicator directory, tournament updates, and Supabase-backed admin tabulation portal.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
