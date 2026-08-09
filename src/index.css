@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #332C24;
+    --bg-darker: #1F1A17;
+    --text-primary: #f5e4cb;
+    --accent-gold: #816644;
+    --border-bronze: #684B35;
+    --btn-start: #8B5E3C;
+    --btn-end: #A97142;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #120f0d;
+    color: #f5e4cb;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+  }
+
+  /* Fixed background overlay with blur from user site */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.postimg.cc/Kjq6qNh9/Background.png") no-repeat center center / cover;
+    filter: blur(6px) brightness(0.45);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+/* User Site Heading & Text Typography Classes */
+.hl {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  color: #f5e4cb !important;
+  margin-bottom: 12px;
+  padding: 0 15px;
+  letter-spacing: -0.02em;
+}
+
+.hl2 {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: left;
+  color: #f5e4cb !important;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.des {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #f5e4cb !important;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+/* Hero Cover Styling */
+.hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cover-img {
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(245, 228, 203, 0.15);
+  display: block;
+}
+
+.cover-bottom-fade {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(18, 15, 13, 0.7) 60%, #120f0d 100%);
+  margin-top: -5px;
+}
+
+/* User Site Action Button */
+.prep-btn {
+  background: linear-gradient(135deg, #8B5E3C, #A97142);
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #A97142, 0 0 20px #8B5E3C, 0 0 30px rgba(169, 113, 66, 0.6);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prep-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 14px #A97142, 0 0 25px rgba(169, 113, 66, 0.8);
+}
+
+.prep-btn:active {
+  transform: scale(0.97);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #120f0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #684B35;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5E3C;
+}
+
+/* Glassmorphic Panel Styling */
+.los-glass-card {
+  background: rgba(31, 26, 23, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(104, 75, 53, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Developer Footer Classes from User Spec */
+.developer-footer {
+  background-color: #1F1A17;
+  color: #F5F1EC;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #3a2f29;
+}
+
+.footer-credit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.dev-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dev-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c9b8a7;
+}
+
+.dev-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-title {
+  font-size: 0.75rem;
+  color: #E8DED4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dev-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #F5F1EC;
+}
+
+.dev-social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.dev-link {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.web-link {
+  background: #444;
+}
+
+.fb-link {
+  background: #1877f2;
+}
+
+.dev-link:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
