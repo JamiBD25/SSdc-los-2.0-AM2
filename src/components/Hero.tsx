@@ -41,18 +41,19 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
 
   return (
     <section className="hero relative overflow-hidden">
-      {/* COVER IMAGE & FADE OVERLAY */}
-      <div className="cover relative w-full">
-        <img
-          src="https://i.postimg.cc/T17MH27K/Cover-2.png"
-          alt="League of Spars Season 2 Cover Banner"
-          className="cover-img max-h-[480px] object-cover object-center w-full shadow-2xl"
-        />
-        <div className="cover-bottom-fade"></div>
+      {/* COVER IMAGE - FULLY VISIBLE & UNCUT */}
+      <div className="cover relative w-full max-w-7xl mx-auto px-2 sm:px-4 pt-2 sm:pt-4">
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#684B35]/70 bg-[#0a0807]">
+          <img
+            src="https://i.postimg.cc/T17MH27K/Cover-2.png"
+            alt="League of Spars Season 2 Cover Banner"
+            className="w-full h-auto object-contain block max-w-full"
+          />
+        </div>
       </div>
 
       {/* OVERLAY CONTENT PANEL */}
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 -mt-20 relative z-10 pb-6 w-full">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 mt-4 sm:mt-6 relative z-10 pb-6 w-full">
         <div className="los-glass-card p-4 sm:p-8 text-center border-t-2 border-[#A97142] max-w-full">
           
           <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-[#8B5E3C]/30 border border-[#8B5E3C] text-[10px] sm:text-xs font-bold text-amber-300 mb-3 tracking-wider uppercase max-w-full flex-wrap justify-center text-center">
