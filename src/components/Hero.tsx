@@ -7,8 +7,8 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
-  // Target tournament date: May 10, 2026
-  const targetDate = new Date('2026-05-10T10:00:00');
+  // Target tournament date: August 14, 2026 Grand Final
+  const targetDate = new Date('2026-08-14T10:00:00');
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
           {/* COUNTDOWN CLOCK */}
           <div className="mb-8 w-full">
             <p className="text-[11px] sm:text-xs font-semibold text-amber-300 uppercase tracking-widest mb-3 flex items-center justify-center gap-1.5 text-center">
-              <Calendar className="w-4 h-4 text-amber-400 shrink-0" /> League Kick-Off Countdown (May 10, 2026)
+              <Calendar className="w-4 h-4 text-amber-400 shrink-0" /> League Grand Final Countdown (August 14, 2026)
             </p>
 
             <div className="grid grid-cols-4 sm:flex justify-center items-center gap-1.5 sm:gap-4 text-[#f5e4cb] max-w-full">

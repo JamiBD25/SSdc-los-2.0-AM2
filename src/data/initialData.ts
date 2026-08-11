@@ -298,7 +298,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 12,
     rating: 4.9,
     bio: 'Core adjudication panelist with extensive experience in Asian Parliamentary & AP-ISC circuits.',
-    imageUrl: 'https://i.postimg.cc/MfmygJDb/Abdullah-Abeer-(2).png'
+    imageUrl: 'https://i.postimg.cc/GtZq8cTN/Abdullah-Abeer-(2).png'
   },
   {
     id: 'adj_2',
@@ -308,7 +308,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 10,
     rating: 4.8,
     bio: 'Specialist in public policy, economics, and international relations motion evaluation.',
-    imageUrl: 'https://i.postimg.cc/crTRmZ6T/Adil-Raihan.png'
+    imageUrl: 'https://i.postimg.cc/GmnXbmR0/Adil-Raihan.png'
   },
   {
     id: 'adj_3',
@@ -318,7 +318,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 10,
     rating: 4.8,
     bio: 'Experienced debater and adjudicator across national & regional inter-school platforms.',
-    imageUrl: 'https://i.postimg.cc/sMvTG1Kz/Anas-Faisal-(1).png'
+    imageUrl: 'https://i.postimg.cc/x1Ph7zzX/Anas-Faisal-(1).png'
   },
   {
     id: 'adj_4',
@@ -328,7 +328,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 9,
     rating: 4.7,
     bio: 'Distinguished AP circuit adjudicator specializing in logic frameworks & POI evaluation.',
-    imageUrl: 'https://i.postimg.cc/7Jk3BZgW/Asadullahil-Galib-(1).png'
+    imageUrl: 'https://i.postimg.cc/GtBXmB9d/Asadullahil-Galib-(1).png'
   },
   {
     id: 'adj_5',
@@ -338,7 +338,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Seasoned debater with 50+ rounds judged in national debating championships.',
-    imageUrl: 'https://i.postimg.cc/gX98J2tQ/Barua-Param.png'
+    imageUrl: 'https://i.postimg.cc/vBTz01rY/Barua-Param.png'
   },
   {
     id: 'adj_6',
@@ -348,7 +348,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.6,
     bio: 'Experienced in evaluating philosophical, social, and geopolitical debate motions.',
-    imageUrl: 'https://i.postimg.cc/jnc7ZQxM/Dhiman-Bhattacharjee-(1).png'
+    imageUrl: 'https://i.postimg.cc/fknfWB6Q/Dhiman-Bhattacharjee-(1).png'
   },
   {
     id: 'adj_7',
@@ -358,7 +358,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Focuses on structured matter analysis, argument breakdown, and speaker feedback.',
-    imageUrl: 'https://i.postimg.cc/F1ygY042/Erfan-Apurbo.png'
+    imageUrl: 'https://i.postimg.cc/J7gTdQd4/Erfan-Apurbo.png'
   },
   {
     id: 'adj_8',
@@ -368,7 +368,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Adjudicated regional tournaments with focus on speaker presentation & rebuttals.',
-    imageUrl: 'https://i.postimg.cc/nXPqyk4H/Esrat-Jahan-Sumpa.png'
+    imageUrl: 'https://i.postimg.cc/fbw50qk0/Esrat-Jahan-Sumpa.png'
   },
   {
     id: 'adj_9',
@@ -378,7 +378,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Active circuit adjudicator with high rating across preliminary & break rounds.',
-    imageUrl: 'https://i.postimg.cc/mtddr73G/FAM-Ayon-(1).png'
+    imageUrl: 'https://i.postimg.cc/0yvhcfbr/FAM-Ayon-(1).png'
   },
   {
     id: 'adj_10',
@@ -388,7 +388,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 9,
     rating: 4.7,
     bio: 'Senior circuit debater and experienced adjudicator for League of Spars.',
-    imageUrl: 'https://i.postimg.cc/Zv4N8DSB/Inzamamul-Haque-Ayon.png'
+    imageUrl: 'https://i.postimg.cc/fy0vh6qK/Inzamamul-Haque-Ayon.png'
   },
   {
     id: 'adj_11',
@@ -398,7 +398,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Expert judge focusing on case construction, reply speech impact, and engagement.',
-    imageUrl: 'https://i.postimg.cc/HJ8bdyz9/Kamrul-Ahsan-Mahir.png'
+    imageUrl: 'https://i.postimg.cc/xdt5GGbh/Kamrul-Ahsan-Mahir.png'
   },
   {
     id: 'adj_12',
@@ -408,7 +408,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Comprehensive matter and manner evaluator in parliamentary debate formats.',
-    imageUrl: 'https://i.postimg.cc/1fRCPvq7/Koushick-Kabbya-(1).png'
+    imageUrl: 'https://i.postimg.cc/MKVh74Kw/Koushick-Kabbya-(1).png'
   },
   {
     id: 'adj_13',
@@ -418,7 +418,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Specialist in scientific ethics and technology policy motions.',
-    imageUrl: 'https://i.postimg.cc/1VsFGYQM/Koushik-Dev-Nath.png'
+    imageUrl: 'https://i.postimg.cc/rst9LvY6/Koushik-Dev-Nath.png'
   },
   {
     id: 'adj_14',
@@ -428,7 +428,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.6,
     bio: 'National level debater with extensive adjudication credits across divisional leagues.',
-    imageUrl: 'https://i.postimg.cc/gX98J2B0/Maruf-Islam-Munna.png'
+    imageUrl: 'https://i.postimg.cc/rmsJfd15/Maruf-Islam-Munna.png'
   },
   {
     id: 'adj_15',
@@ -438,7 +438,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Focused on clash identification and comparative analysis in team arguments.',
-    imageUrl: 'https://i.postimg.cc/TpkkPnVZ/MD-Ridwan-Ahmed-(1).png'
+    imageUrl: 'https://i.postimg.cc/g2p1NDnk/MD-Ridwan-Ahmed-(1).png'
   },
   {
     id: 'adj_16',
@@ -448,7 +448,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Adjudicator with background in economics & constitutional debate motions.',
-    imageUrl: 'https://i.postimg.cc/zVqwK3DY/Minhazul-Monowar.png'
+    imageUrl: 'https://i.postimg.cc/fT9H406y/Minhazul-Monowar.png'
   },
   {
     id: 'adj_17',
@@ -458,7 +458,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Regular adjudicator for national inter-college and inter-university tournaments.',
-    imageUrl: 'https://i.postimg.cc/JyHjMkxj/Misbah-Uz-Zamal.png'
+    imageUrl: 'https://i.postimg.cc/ZqVHPPys/Misbah-Uz-Zamal.png'
   },
   {
     id: 'adj_18',
@@ -468,7 +468,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Detailed note-taker providing constructive feedback to debaters.',
-    imageUrl: 'https://i.postimg.cc/NLcCCsGp/Mobarak-Hossen-Sojib-(1).png'
+    imageUrl: 'https://i.postimg.cc/ZYBkRnGt/Mobarak-Hossen-Sojib-(1).png'
   },
   {
     id: 'adj_19',
@@ -478,7 +478,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 9,
     rating: 4.8,
     bio: 'Senior SSDC adjudicator presiding over high-stakes preliminary rounds.',
-    imageUrl: 'https://i.postimg.cc/yJ30sZj5/Mohammad-Yasir-Afnan-Rafin.png'
+    imageUrl: 'https://i.postimg.cc/nL02KKDH/Mohammad-Yasir-Afnan-Rafin.png'
   },
   {
     id: 'adj_20',
@@ -488,7 +488,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Parliamentary debate enthusiast with multiple judging credits.',
-    imageUrl: 'https://i.postimg.cc/Fdt3RHnt/Mubarrat-E-Ishmum.png'
+    imageUrl: 'https://i.postimg.cc/nzrk3s4L/Mubarrat-E-Ishmum.png'
   },
   {
     id: 'adj_21',
@@ -498,7 +498,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Precision-focused judge with expertise in burden of proof distribution.',
-    imageUrl: 'https://i.postimg.cc/GTdDFSCD/Mubdee-Rafin.png'
+    imageUrl: 'https://i.postimg.cc/d3T9KzN5/Mubdee-Rafin.png'
   },
   {
     id: 'adj_22',
@@ -508,7 +508,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Experienced college adjudicator specializing in structural debate principles.',
-    imageUrl: 'https://i.postimg.cc/z3r22zDQ/Muhammad-Bakhtiar-(1).png'
+    imageUrl: 'https://i.postimg.cc/PfpGxJgd/Muhammad-Bakhtiar-(1).png'
   },
   {
     id: 'adj_23',
@@ -518,7 +518,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Distinguished cadet debate alumnus with keen eye for strategic POIs.',
-    imageUrl: 'https://i.postimg.cc/0r0WLTrF/Nayeem-Uddin-Rafi.png'
+    imageUrl: 'https://i.postimg.cc/Y2J5mk7r/Nayeem-Uddin-Rafi.png'
   },
   {
     id: 'adj_24',
@@ -528,7 +528,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Active debater and judge across regional inter-school debate championships.',
-    imageUrl: 'https://i.postimg.cc/kRqSQhmz/Protik-Talukder.png'
+    imageUrl: 'https://i.postimg.cc/90qBjvNm/Protik-Talukder.png'
   },
   {
     id: 'adj_25',
@@ -538,7 +538,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Renowned school circuit debater turned accredited judge.',
-    imageUrl: 'https://i.postimg.cc/T5JrBv9J/Quazi-Mohammad-Aldin-Fardin.png'
+    imageUrl: 'https://i.postimg.cc/tJL2ZXnw/Quazi-Mohammad-Aldin-Fardin.png'
   },
   {
     id: 'adj_26',
@@ -548,7 +548,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Specialist in tech ethics and international governance motions.',
-    imageUrl: 'https://i.postimg.cc/JGR3Zt7G/Ratul-Paul.png'
+    imageUrl: 'https://i.postimg.cc/qM3mfC9X/Ratul-Paul.png'
   },
   {
     id: 'adj_27',
@@ -558,7 +558,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Former national champion speaker turned panel adjudicator.',
-    imageUrl: 'https://i.postimg.cc/YvZb6kyg/Ratul-Sheikh-(1).png'
+    imageUrl: 'https://i.postimg.cc/W4bCP1G9/Ratul-Sheikh-(1).png'
   },
   {
     id: 'adj_28',
@@ -568,7 +568,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Expert on gender studies, human rights, and socio-economic motions.',
-    imageUrl: 'https://i.postimg.cc/jwrc1cTz/Saima-Ahmed-Chowdhury-(1).png'
+    imageUrl: 'https://i.postimg.cc/W3dyhYff/Saima-Ahmed-Chowdhury-(1).png'
   },
   {
     id: 'adj_29',
@@ -578,7 +578,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Veteran circuit adjudicator with high participant feedback ratings.',
-    imageUrl: 'https://i.postimg.cc/BP4FTw07/Sarjil-Mahmud-Khan.png'
+    imageUrl: 'https://i.postimg.cc/2yBxfPXY/Sarjil-Mahmud-Khan.png'
   },
   {
     id: 'adj_30',
@@ -588,7 +588,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Dedicated debate mentor and experienced panel member.',
-    imageUrl: 'https://i.postimg.cc/ppPQzyVd/Shamima-Sharif.png'
+    imageUrl: 'https://i.postimg.cc/7Y2BvTpS/Shamima-Sharif.png'
   },
   {
     id: 'adj_31',
@@ -598,7 +598,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Focused on logical rigor and strategic extension analysis.',
-    imageUrl: 'https://i.postimg.cc/TLrmWvZ6/Shariful-Kader-Rakib.png'
+    imageUrl: 'https://i.postimg.cc/pTSB42Cp/Shariful-Kader-Rakib.png'
   },
   {
     id: 'adj_32',
@@ -608,7 +608,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Passionate adjudicator supporting school-level debater development.',
-    imageUrl: 'https://i.postimg.cc/N5NN0R8c/Shimanta-Das-(1).png'
+    imageUrl: 'https://i.postimg.cc/3xhznBdd/Shimanta-Das-(1).png'
   },
   {
     id: 'adj_33',
@@ -618,7 +618,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Analytic judge focused on rebuttal effectiveness and team dynamics.',
-    imageUrl: 'https://i.postimg.cc/XG0LPLWp/Simanta-Majumdar-Utsho-(1).png'
+    imageUrl: 'https://i.postimg.cc/765RftQM/Simanta-Majumdar-Utsho-(1).png'
   },
   {
     id: 'adj_34',
@@ -628,7 +628,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 9,
     rating: 4.8,
     bio: 'Key contributor to League of Spars motion review and adjudication quality.',
-    imageUrl: 'https://i.postimg.cc/R3Jw4Hdg/SK-Abdullah-Mahdi.png'
+    imageUrl: 'https://i.postimg.cc/nL02KKDf/SK-Abdullah-Mahdi.png'
   },
   {
     id: 'adj_35',
@@ -638,7 +638,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Experienced school league adjudicator with high rating metrics.',
-    imageUrl: 'https://i.postimg.cc/K32P98ns/Tahmid-Efty.png'
+    imageUrl: 'https://i.postimg.cc/T1yt3yhG/Tahmid-Efty.png'
   },
   {
     id: 'adj_36',
@@ -648,7 +648,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 6,
     rating: 4.5,
     bio: 'Focuses on structured argument weights and evidence evaluation.',
-    imageUrl: 'https://i.postimg.cc/QV3YY8N4/Tonmoy-Tahsin-(1).png'
+    imageUrl: 'https://i.postimg.cc/ZYBkRnGS/Tonmoy-Tahsin-(1).png'
   },
   {
     id: 'adj_37',
@@ -658,7 +658,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 7,
     rating: 4.6,
     bio: 'Active judge across divisional AP and parliamentary tournaments.',
-    imageUrl: 'https://i.postimg.cc/N9wDnDtm/Wahidul-Islam-Akib-(1).png'
+    imageUrl: 'https://i.postimg.cc/NMKn5CPJ/Wahidul-Islam-Akib-(1).png'
   },
   {
     id: 'adj_38',
@@ -668,7 +668,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 8,
     rating: 4.7,
     bio: 'Senior debate enthusiast with extensive adjudication feedback records.',
-    imageUrl: 'https://i.postimg.cc/56NGSBgc/Abdullah-Al-Muhtasim.png'
+    imageUrl: 'https://i.postimg.cc/GhkCrzsp/Abdullah-Al-Muhtasim.png'
   },
   {
     id: 'adj_39',
@@ -678,7 +678,7 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     roundsJudged: 10,
     rating: 4.8,
     bio: 'Presiding adjudicator ensuring fair, balanced, and transparent tab results.',
-    imageUrl: 'https://i.postimg.cc/svD84Yck/Shafayet-Maruf.png'
+    imageUrl: 'https://i.postimg.cc/dt8YvnTV/Shafayet-Maruf.png'
   }
 ];
 

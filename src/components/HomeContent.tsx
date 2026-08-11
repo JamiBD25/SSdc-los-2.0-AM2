@@ -79,7 +79,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
           <br /><br />
           The league <b className="text-amber-300 font-extrabold underline decoration-amber-400">will follow the AP ISC format,</b> where every participating institution competes against every other institution once during the season. The institution that finishes at the top of the standings at the end of the league will be declared Champion.
           <br /><br />
-          All preliminary rounds will be conducted online via Discord, while the Finals will be held physically. The league officially begins on <b>10th May 2026</b> and will continue until <b>August 2026</b>.
+          All preliminary rounds will be conducted online via Discord, while the Grand Finals will be held physically on <b>14th August 2026</b>.
         </div>
       </div>
 
