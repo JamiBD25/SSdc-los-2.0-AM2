@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 import { createServer as createViteServer } from 'vite';
 
 async function startServer() {
@@ -11,6 +12,52 @@ async function startServer() {
   // API Health Endpoint
   app.get('/api/health', (_req, res) => {
     res.json({ status: 'ok', app: 'SSDC League of Spars Season 2' });
+  });
+
+  // Global Supabase Credentials API Endpoints
+  const CONFIG_PATH = path.join(process.cwd(), 'supabase-config.json');
+
+  app.get('/api/config/supabase', (_req, res) => {
+    try {
+      if (fs.existsSync(CONFIG_PATH)) {
+        const raw = fs.readFileSync(CONFIG_PATH, 'utf-8');
+        const json = JSON.parse(raw);
+        if (json.url && json.anonKey) {
+          return res.json(json);
+        }
+      }
+    } catch (e) {
+      console.warn('Error reading server supabase-config.json:', e);
+    }
+
+    res.json({
+      url: process.env.VITE_SUPABASE_URL || '',
+      anonKey: process.env.VITE_SUPABASE_ANON_KEY || ''
+    });
+  });
+
+  app.post('/api/config/supabase', (req, res) => {
+    const { url, anonKey } = req.body;
+    if (!url || !anonKey) {
+      return res.status(400).json({ error: 'Supabase URL and Anon Key are required.' });
+    }
+
+    const config = { url: url.trim(), anonKey: anonKey.trim() };
+
+    try {
+      fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
+
+      process.env.VITE_SUPABASE_URL = config.url;
+      process.env.VITE_SUPABASE_ANON_KEY = config.anonKey;
+
+      const envContent = `VITE_SUPABASE_URL=${config.url}\nVITE_SUPABASE_ANON_KEY=${config.anonKey}\n`;
+      fs.writeFileSync(path.join(process.cwd(), '.env'), envContent);
+
+      res.json({ success: true, message: 'Supabase credentials saved globally for all users & browsers.', config });
+    } catch (err: any) {
+      console.error('Failed to write supabase config file:', err);
+      res.status(500).json({ error: err.message || 'Failed to save config on server.' });
+    }
   });
 
   // Vite Middleware integration for dev / prod

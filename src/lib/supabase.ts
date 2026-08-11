@@ -4,13 +4,34 @@ import { Team, Speaker, TabSheetEntry, SupabaseConfig } from '../types';
 const STORAGE_KEY_URL = 'ssdc_supabase_url';
 const STORAGE_KEY_KEY = 'ssdc_supabase_key';
 
+let inMemoryServerUrl = '';
+let inMemoryServerKey = '';
+
+export async function initGlobalSupabaseConfig(): Promise<SupabaseConfig> {
+  try {
+    const res = await fetch('/api/config/supabase');
+    if (res.ok) {
+      const data = await res.json();
+      if (data.url && data.anonKey) {
+        inMemoryServerUrl = data.url.trim();
+        inMemoryServerKey = data.anonKey.trim();
+        localStorage.setItem(STORAGE_KEY_URL, inMemoryServerUrl);
+        localStorage.setItem(STORAGE_KEY_KEY, inMemoryServerKey);
+      }
+    }
+  } catch (e) {
+    console.warn('Failed to fetch global Supabase config from server:', e);
+  }
+  return getStoredSupabaseConfig();
+}
+
 export function getStoredSupabaseConfig(): SupabaseConfig {
   const metaEnv = (import.meta as any).env || {};
   const envUrl = metaEnv.VITE_SUPABASE_URL || '';
   const envKey = metaEnv.VITE_SUPABASE_ANON_KEY || '';
 
-  const localUrl = localStorage.getItem(STORAGE_KEY_URL) || envUrl;
-  const localKey = localStorage.getItem(STORAGE_KEY_KEY) || envKey;
+  const localUrl = localStorage.getItem(STORAGE_KEY_URL) || inMemoryServerUrl || envUrl;
+  const localKey = localStorage.getItem(STORAGE_KEY_KEY) || inMemoryServerKey || envKey;
 
   const isConnected = Boolean(
     localUrl &&
@@ -26,9 +47,28 @@ export function getStoredSupabaseConfig(): SupabaseConfig {
   };
 }
 
-export function saveSupabaseConfig(url: string, anonKey: string) {
-  localStorage.setItem(STORAGE_KEY_URL, url.trim());
-  localStorage.setItem(STORAGE_KEY_KEY, anonKey.trim());
+export async function saveSupabaseConfig(url: string, anonKey: string): Promise<boolean> {
+  const cleanUrl = url.trim();
+  const cleanKey = anonKey.trim();
+
+  localStorage.setItem(STORAGE_KEY_URL, cleanUrl);
+  localStorage.setItem(STORAGE_KEY_KEY, cleanKey);
+
+  inMemoryServerUrl = cleanUrl;
+  inMemoryServerKey = cleanKey;
+  cachedClient = null; // reset client cache
+
+  try {
+    const res = await fetch('/api/config/supabase', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: cleanUrl, anonKey: cleanKey })
+    });
+    return res.ok;
+  } catch (err) {
+    console.error('Failed to persist Supabase config to server:', err);
+    return false;
+  }
 }
 
 let cachedClient: SupabaseClient | null = null;

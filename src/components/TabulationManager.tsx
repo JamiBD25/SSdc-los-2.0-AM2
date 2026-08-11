@@ -25,7 +25,8 @@ import {
   Table,
   Check,
   AlertCircle,
-  Code
+  Code,
+  Cloud
 } from 'lucide-react';
 
 interface TabulationManagerProps {
@@ -367,13 +368,15 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
   };
 
   // Save Custom Supabase Credentials
-  const handleSaveSupabaseConfig = (e: React.FormEvent) => {
+  const handleSaveSupabaseConfig = async (e: React.FormEvent) => {
     e.preventDefault();
-    saveSupabaseConfig(customUrl, customKey);
+    setSyncLoading(true);
+    const saved = await saveSupabaseConfig(customUrl, customKey);
+    setSyncLoading(false);
     const newConfig = getStoredSupabaseConfig();
     setSupabaseConfigState(newConfig);
     if (newConfig.isConnected) {
-      showToast('Supabase configuration saved & connected!');
+      showToast('⚡ Supabase credentials saved globally for all users & browsers!');
     } else {
       showToast('Supabase details updated.');
     }
@@ -1253,6 +1256,17 @@ CREATE TABLE IF NOT EXISTS tab_entries (
                   <Code className="w-4 h-4" />
                   <span>{showSqlModal ? 'Hide SQL DDL' : 'View SQL Schema DDL'}</span>
                 </button>
+              </div>
+
+              {/* GLOBAL SYNC BENEFIT BANNER */}
+              <div className="bg-cyan-950/40 border border-cyan-500/40 p-4 rounded-xl flex items-start gap-3">
+                <Cloud className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
+                <div className="text-xs text-[#f5e4cb] space-y-1">
+                  <span className="font-bold text-cyan-300">⚡ Automatic Global Server Persistence Enabled:</span>
+                  <p className="text-[#c9b8a7] leading-relaxed">
+                    Credentials saved here are automatically stored on the app server. Any admin or visitor opening this website on any browser, phone, or email login will automatically connect to this database without needing to enter the Supabase URL or Anon Key!
+                  </p>
+                </div>
               </div>
 
               {showSqlModal && (

@@ -10,7 +10,8 @@ import {
   fetchTeamsFromSupabase,
   fetchSpeakersFromSupabase,
   saveTeamsToSupabase,
-  saveSpeakersToSupabase
+  saveSpeakersToSupabase,
+  initGlobalSupabaseConfig
 } from './lib/supabase';
 
 import { Navbar } from './components/Navbar';
@@ -35,6 +36,7 @@ export default function App() {
   useEffect(() => {
     async function loadCloudPoints() {
       try {
+        await initGlobalSupabaseConfig();
         const cloudTeams = await fetchTeamsFromSupabase();
         if (cloudTeams && cloudTeams.length > 0) {
           const formatted = cloudTeams.map((ct) => {
