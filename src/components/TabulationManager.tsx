@@ -354,15 +354,15 @@ CREATE TABLE IF NOT EXISTS tab_entries (
 `;
 
   return (
-    <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 space-y-6">
+    <div className="max-w-7xl mx-auto py-6 sm:py-8 px-3 sm:px-6 space-y-6 w-full max-w-full overflow-x-hidden">
       
       {/* HEADER */}
       <div className="text-center space-y-2">
-        <h2 className="hl flex items-center justify-center gap-2">
-          <Database className="w-8 h-8 text-amber-400" />
+        <h2 className="hl flex items-center justify-center gap-2 flex-wrap">
+          <Database className="w-7 h-7 sm:w-8 sm:h-8 text-amber-400 shrink-0" />
           <span>SSDC Tabulation Core & Supabase Points Hub</span>
         </h2>
-        <p className="text-sm text-[#e2d0ba] max-w-xl mx-auto">
+        <p className="text-xs sm:text-sm text-[#e2d0ba] max-w-xl mx-auto px-2">
           Tabulation scorecard entry and Supabase database manager for SSDC League of Spars Season 2.
         </p>
       </div>

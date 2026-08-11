@@ -10,12 +10,12 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
   const [showMoreAbout, setShowMoreAbout] = useState(false);
 
   return (
-    <div className="container max-w-5xl mx-auto py-8 px-4 sm:px-6 space-y-10">
+    <div className="container max-w-5xl mx-auto py-6 sm:py-8 px-3 sm:px-6 space-y-6 sm:space-y-10 w-full max-w-full overflow-x-hidden">
       
       {/* 🔷 ABOUT SSDC SECTION */}
-      <div className="los-glass-card p-6 sm:p-8 space-y-4 border-l-4 border-[#8B5E3C]">
-        <div className="hl flex items-center justify-center gap-2">
-          <BookOpen className="w-7 h-7 text-amber-400" />
+      <div className="los-glass-card p-4 sm:p-8 space-y-4 border-l-4 border-[#8B5E3C] max-w-full">
+        <div className="hl flex items-center justify-center gap-2 flex-wrap">
+          <BookOpen className="w-6 h-6 sm:w-7 sm:h-7 text-amber-400 shrink-0" />
           <span>About SSDC</span>
         </div>
 

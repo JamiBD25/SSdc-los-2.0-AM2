@@ -30,29 +30,29 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
 
   return (
-    <header className="sticky top-0 z-50 bg-[#332C24] border-b border-[#684B35] shadow-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-[#332C24] border-b border-[#684B35] shadow-xl w-full max-w-full">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-2">
         
         {/* LOGO & TITLE matching user HTML structure */}
         <div 
           onClick={() => handleTabClick('home')} 
-          className="flex items-center gap-3 cursor-pointer group select-none"
+          className="flex items-center gap-2.5 cursor-pointer group select-none min-w-0"
         >
-          <div className="relative">
+          <div className="relative shrink-0">
             <img 
               src="https://i.postimg.cc/qvPTHjhQ/Logo.png" 
               alt="SSDC LoS Logo" 
-              className="w-10 h-10 rounded-full object-cover border-2 border-[#816644] group-hover:border-[#A97142] transition-all shadow-md"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-[#816644] group-hover:border-[#A97142] transition-all shadow-md"
             />
-            <div className="absolute -bottom-1 -right-1 bg-[#8B5E3C] text-[9px] font-extrabold px-1.5 py-0.2 rounded-full text-white border border-[#332C24]">
+            <div className="absolute -bottom-1 -right-1 bg-[#8B5E3C] text-[8px] sm:text-[9px] font-extrabold px-1.5 py-0.2 rounded-full text-white border border-[#332C24]">
               2.0
             </div>
           </div>
-          <div>
-            <h2 className="font-['Orbitron'] font-black text-sm sm:text-base leading-tight text-[#f5e4cb] group-hover:text-amber-200 transition-colors uppercase tracking-wider">
+          <div className="min-w-0">
+            <h2 className="font-['Orbitron'] font-black text-xs sm:text-base leading-tight text-[#f5e4cb] group-hover:text-amber-200 transition-colors uppercase tracking-wider truncate">
               League of Spars
             </h2>
-            <p className="text-[11px] text-[#c9b8a7] font-semibold tracking-widest uppercase">
+            <p className="text-[10px] sm:text-[11px] text-[#c9b8a7] font-semibold tracking-widest uppercase truncate">
               Season 2 &bull; SSDC
             </p>
           </div>

@@ -52,8 +52,8 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-between selection:bg-[#8B5E3C] selection:text-white">
-      <div>
+    <div className="min-h-screen flex flex-col justify-between selection:bg-[#8B5E3C] selection:text-white max-w-full overflow-x-hidden">
+      <div className="w-full max-w-full overflow-x-hidden">
         {/* TOP STICKY NAVBAR */}
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
@@ -61,7 +61,7 @@ export default function App() {
         {activeTab === 'home' && <Hero setActiveTab={setActiveTab} />}
 
         {/* MAIN TAB CONTENT */}
-        <main className="transition-all duration-300">
+        <main className="transition-all duration-300 w-full max-w-full overflow-x-hidden">
           {activeTab === 'home' && <HomeContent setActiveTab={setActiveTab} />}
           {activeTab === 'teams' && <TeamsView teams={teams} />}
           {activeTab === 'speakers' && <SpeakersView speakers={speakers} />}

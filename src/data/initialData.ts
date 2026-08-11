@@ -10,7 +10,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Prithwi Rajonna Purenota',
       'Durjoy Biswas',
@@ -39,7 +39,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Sabbir Hossain',
       'Ahnaf Azim',
@@ -59,7 +59,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Adnan Hasan Fuad',
       'Hossain Mansur Khaleed',
@@ -77,7 +77,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Ashan Bari',
       'Azaan Sarwar',
@@ -97,7 +97,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Araf Mortuza', 'Nirjhor', 'Tajwar Bin Taiyab', 'Shimanto', 'Jabir']
   },
   {
@@ -109,7 +109,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Wasima Rahman', 'Maliha Hossain', 'Arafa Islam Rafiah', 'Ainun Zaria', 'Takia Tafannum']
   },
   {
@@ -121,7 +121,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Samara', 'Bidushi', 'Simrah', 'Rajkumari', 'Rufaida', 'Jikra', 'Abeedah', 'Maleha']
   },
   {
@@ -133,7 +133,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Anupa Ruliya', 'Alisha Jashim', 'Sanjida Fairoj Nithu', 'Nusaiba Islam Chy', 'Homyra Fairuz']
   },
   {
@@ -145,7 +145,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Tamim Iqbal', 'Raiyan Siddique Talha', 'Nour Mohammed Nayem', 'Abdullah Al Zeenan', 'Noor Mohammad']
   },
   {
@@ -157,7 +157,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Mohammad Tahmidul Alam', 'Adiyath Arish', 'Syed Shadman Adib', 'Samanta Barua', 'Prodipto Sarkar', 'Utshob Roy']
   },
   {
@@ -169,7 +169,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Rownak Kulsum',
       'Purnota Jahan',
@@ -192,7 +192,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Sarar', 'Aslam Sadaf', 'Hasin Mejbah Arian', 'Omar Faruk Tamim', 'Saafir Al Islam']
   },
   {
@@ -204,7 +204,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Nowad Islam Chowdhury',
       'Rehan Hossain',
@@ -229,7 +229,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Manha Mukarrama',
       'Nadira Anjum',
@@ -251,7 +251,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: [
       'Zahin Sharif Khan',
       'Mohammad Al-Jayed Uddin Trisan',
@@ -269,7 +269,7 @@ export const INITIAL_TEAMS: Team[] = [
     loss: 0,
     totalSpeakerPoints: 0,
     netMargin: 0,
-    breakStatus: 'Contending',
+    breakStatus: 'N/A',
     roster: ['Hafsa Binte Ayub', 'Umaima Mobin', 'Rabita Tabassum', 'Miskatun Noor Payel', 'Shohrah Rakshan']
   }
 ];

@@ -28,7 +28,7 @@ export interface Team {
   loss: number;
   totalSpeakerPoints: number;
   netMargin: number;
-  breakStatus: 'Qualified' | 'Contending' | 'Eliminated';
+  breakStatus: 'Qualified' | 'Contending' | 'Eliminated' | 'N/A';
   roster: string[]; // speaker names
 }
 

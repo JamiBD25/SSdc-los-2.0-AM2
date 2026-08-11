@@ -81,7 +81,7 @@ export async function fetchTeamsFromSupabase(): Promise<Team[] | null> {
         loss: Number(t.loss) || 0,
         totalSpeakerPoints: Number(t.total_speaker_points || t.totalSpeakerPoints) || 0,
         netMargin: Number(t.net_margin || t.netMargin) || 0,
-        breakStatus: t.break_status || t.breakStatus || 'Contending',
+        breakStatus: t.break_status || t.breakStatus || 'N/A',
         roster: Array.isArray(t.roster) ? t.roster : JSON.parse(t.roster || '[]')
       }));
     }

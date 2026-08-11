@@ -52,128 +52,126 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
       </div>
 
       {/* OVERLAY CONTENT PANEL */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-10 pb-6">
-        <div className="los-glass-card p-6 sm:p-8 text-center border-t-2 border-[#A97142]">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 -mt-20 relative z-10 pb-6 w-full">
+        <div className="los-glass-card p-4 sm:p-8 text-center border-t-2 border-[#A97142] max-w-full">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#8B5E3C]/30 border border-[#8B5E3C] text-xs font-bold text-amber-300 mb-3 tracking-wider uppercase">
-            <Award className="w-4 h-4 text-amber-400" /> Official Competition Platform &bull; AP ISC Format
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-[#8B5E3C]/30 border border-[#8B5E3C] text-[10px] sm:text-xs font-bold text-amber-300 mb-3 tracking-wider uppercase max-w-full flex-wrap justify-center text-center">
+            <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+            <span>Official Competition Platform &bull; AP ISC Format</span>
           </div>
 
-          <h1 className="font-['Orbitron'] text-2xl sm:text-4xl md:text-5xl font-black text-[#f5e4cb] tracking-wide mb-2 uppercase drop-shadow-md">
+          <h1 className="font-['Orbitron'] text-xl sm:text-4xl md:text-5xl font-black text-[#f5e4cb] tracking-wide mb-2 uppercase drop-shadow-md break-words">
             League of Spars <span className="text-[#A97142]">Season 2</span>
           </h1>
 
-          <p className="text-sm sm:text-base text-[#e2d0ba] max-w-2xl mx-auto mb-6 leading-relaxed">
+          <p className="text-xs sm:text-base text-[#e2d0ba] max-w-2xl mx-auto mb-6 leading-relaxed">
             The premier institutional debate league of Chattogram organized by SSDC. 
             16+ top school & college debate clubs battling for supreme dominance.
           </p>
 
           {/* COUNTDOWN CLOCK */}
-          <div className="mb-8">
-            <p className="text-xs font-semibold text-amber-300 uppercase tracking-widest mb-3 flex items-center justify-center gap-1.5">
-              <Calendar className="w-4 h-4 text-amber-400" /> League Kick-Off Countdown (May 10, 2026)
+          <div className="mb-8 w-full">
+            <p className="text-[11px] sm:text-xs font-semibold text-amber-300 uppercase tracking-widest mb-3 flex items-center justify-center gap-1.5 text-center">
+              <Calendar className="w-4 h-4 text-amber-400 shrink-0" /> League Kick-Off Countdown (May 10, 2026)
             </p>
 
-            <div className="flex justify-center items-center gap-3 sm:gap-6 text-[#f5e4cb]">
-              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-3 sm:px-5 py-2.5 min-w-[70px] shadow-inner">
-                <span className="font-['Orbitron'] font-bold text-xl sm:text-3xl text-amber-400">
+            <div className="grid grid-cols-4 sm:flex justify-center items-center gap-1.5 sm:gap-4 text-[#f5e4cb] max-w-full">
+              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-1.5 sm:px-5 py-2 sm:py-2.5 min-w-0 sm:min-w-[70px] shadow-inner text-center">
+                <span className="font-['Orbitron'] font-bold text-lg sm:text-3xl text-amber-400">
                   {timeLeft.days}
                 </span>
-                <span className="block text-[10px] text-[#c9b8a7] uppercase tracking-wider">Days</span>
+                <span className="block text-[9px] sm:text-[10px] text-[#c9b8a7] uppercase tracking-wider">Days</span>
               </div>
-              <span className="text-xl sm:text-2xl font-bold text-[#8B5E3C]">:</span>
 
-              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-3 sm:px-5 py-2.5 min-w-[70px] shadow-inner">
-                <span className="font-['Orbitron'] font-bold text-xl sm:text-3xl text-amber-400">
+              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-1.5 sm:px-5 py-2 sm:py-2.5 min-w-0 sm:min-w-[70px] shadow-inner text-center">
+                <span className="font-['Orbitron'] font-bold text-lg sm:text-3xl text-amber-400">
                   {timeLeft.hours}
                 </span>
-                <span className="block text-[10px] text-[#c9b8a7] uppercase tracking-wider">Hours</span>
+                <span className="block text-[9px] sm:text-[10px] text-[#c9b8a7] uppercase tracking-wider">Hours</span>
               </div>
-              <span className="text-xl sm:text-2xl font-bold text-[#8B5E3C]">:</span>
 
-              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-3 sm:px-5 py-2.5 min-w-[70px] shadow-inner">
-                <span className="font-['Orbitron'] font-bold text-xl sm:text-3xl text-amber-400">
+              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-1.5 sm:px-5 py-2 sm:py-2.5 min-w-0 sm:min-w-[70px] shadow-inner text-center">
+                <span className="font-['Orbitron'] font-bold text-lg sm:text-3xl text-amber-400">
                   {timeLeft.minutes}
                 </span>
-                <span className="block text-[10px] text-[#c9b8a7] uppercase tracking-wider">Mins</span>
+                <span className="block text-[9px] sm:text-[10px] text-[#c9b8a7] uppercase tracking-wider">Mins</span>
               </div>
-              <span className="text-xl sm:text-2xl font-bold text-[#8B5E3C]">:</span>
 
-              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-3 sm:px-5 py-2.5 min-w-[70px] shadow-inner">
-                <span className="font-['Orbitron'] font-bold text-xl sm:text-3xl text-amber-400">
+              <div className="bg-[#120f0d]/90 border border-[#684B35] rounded-xl px-1.5 sm:px-5 py-2 sm:py-2.5 min-w-0 sm:min-w-[70px] shadow-inner text-center">
+                <span className="font-['Orbitron'] font-bold text-lg sm:text-3xl text-amber-400">
                   {timeLeft.seconds}
                 </span>
-                <span className="block text-[10px] text-[#c9b8a7] uppercase tracking-wider">Secs</span>
+                <span className="block text-[9px] sm:text-[10px] text-[#c9b8a7] uppercase tracking-wider">Secs</span>
               </div>
             </div>
           </div>
 
           {/* QUICK STATS TICKER */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto mb-8">
-            <div className="bg-[#120f0d]/70 p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-3 text-left">
-              <div className="p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400">
-                <Users className="w-5 h-5" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 max-w-4xl mx-auto mb-8">
+            <div className="bg-[#120f0d]/70 p-2.5 sm:p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-2 sm:gap-3 text-left">
+              <div className="p-2 sm:p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400 shrink-0">
+                <Users className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <div>
-                <span className="font-['Orbitron'] font-bold text-base sm:text-lg text-[#f5e4cb]">100+</span>
-                <p className="text-[11px] text-[#c9b8a7] font-medium">Debaters Enrolled</p>
-              </div>
-            </div>
-
-            <div className="bg-[#120f0d]/70 p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-3 text-left">
-              <div className="p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400">
-                <Mic className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="font-['Orbitron'] font-bold text-base sm:text-lg text-[#f5e4cb]">150+</span>
-                <p className="text-[11px] text-[#c9b8a7] font-medium">Scheduled Debates</p>
+              <div className="min-w-0">
+                <span className="font-['Orbitron'] font-bold text-sm sm:text-lg text-[#f5e4cb] block truncate">100+</span>
+                <p className="text-[10px] sm:text-[11px] text-[#c9b8a7] font-medium truncate">Debaters Enrolled</p>
               </div>
             </div>
 
-            <div className="bg-[#120f0d]/70 p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-3 text-left">
-              <div className="p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400">
-                <Trophy className="w-5 h-5" />
+            <div className="bg-[#120f0d]/70 p-2.5 sm:p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-2 sm:gap-3 text-left">
+              <div className="p-2 sm:p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400 shrink-0">
+                <Mic className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <div>
-                <span className="font-['Orbitron'] font-bold text-base sm:text-lg text-[#f5e4cb]">AP-ISC</span>
-                <p className="text-[11px] text-[#c9b8a7] font-medium">League Format</p>
+              <div className="min-w-0">
+                <span className="font-['Orbitron'] font-bold text-sm sm:text-lg text-[#f5e4cb] block truncate">150+</span>
+                <p className="text-[10px] sm:text-[11px] text-[#c9b8a7] font-medium truncate">Scheduled Debates</p>
               </div>
             </div>
 
-            <div className="bg-[#120f0d]/70 p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-3 text-left">
-              <div className="p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400">
-                <Calendar className="w-5 h-5" />
+            <div className="bg-[#120f0d]/70 p-2.5 sm:p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-2 sm:gap-3 text-left">
+              <div className="p-2 sm:p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400 shrink-0">
+                <Trophy className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <div>
-                <span className="font-['Orbitron'] font-bold text-base sm:text-lg text-[#f5e4cb]">May-Aug</span>
-                <p className="text-[11px] text-[#c9b8a7] font-medium">2026 Season Duration</p>
+              <div className="min-w-0">
+                <span className="font-['Orbitron'] font-bold text-sm sm:text-lg text-[#f5e4cb] block truncate">AP-ISC</span>
+                <p className="text-[10px] sm:text-[11px] text-[#c9b8a7] font-medium truncate">League Format</p>
+              </div>
+            </div>
+
+            <div className="bg-[#120f0d]/70 p-2.5 sm:p-3 rounded-xl border border-[#684B35]/60 flex items-center gap-2 sm:gap-3 text-left">
+              <div className="p-2 sm:p-2.5 bg-[#8B5E3C]/20 rounded-lg text-amber-400 shrink-0">
+                <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
+              </div>
+              <div className="min-w-0">
+                <span className="font-['Orbitron'] font-bold text-sm sm:text-lg text-[#f5e4cb] block truncate">May-Aug</span>
+                <p className="text-[10px] sm:text-[11px] text-[#c9b8a7] font-medium truncate">2026 Season</p>
               </div>
             </div>
           </div>
 
           {/* ACTION BUTTONS */}
-          <div className="flex flex-wrap justify-center items-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-4 w-full">
             <button
               onClick={() => setActiveTab('teams')}
-              className="prep-btn"
+              className="prep-btn w-full sm:w-auto"
             >
               <span>View Teams & Points Table</span>
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             </button>
 
             <button
               onClick={() => setActiveTab('speakers')}
-              className="px-6 py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-[#f5e4cb] font-bold text-sm border border-[#684B35] transition-all flex items-center gap-2 shadow-lg hover:border-amber-400"
+              className="w-full sm:w-auto px-5 py-3 sm:py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-[#f5e4cb] font-bold text-xs sm:text-sm border border-[#684B35] transition-all flex items-center justify-center gap-2 shadow-lg hover:border-amber-400"
             >
-              <Trophy className="w-4 h-4 text-amber-400" />
+              <Trophy className="w-4 h-4 text-amber-400 shrink-0" />
               <span>Speaker Rankings</span>
             </button>
 
             <button
               onClick={() => setActiveTab('tabulation')}
-              className="px-6 py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-amber-300 font-bold text-sm border border-[#8B5E3C] transition-all flex items-center gap-2 shadow-lg hover:border-amber-400"
+              className="w-full sm:w-auto px-5 py-3 sm:py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-amber-300 font-bold text-xs sm:text-sm border border-[#8B5E3C] transition-all flex items-center justify-center gap-2 shadow-lg hover:border-amber-400"
             >
-              <span>Admin Tabulation & Supabase Sync</span>
+              <span>Admin Tabulation & Supabase</span>
             </button>
           </div>
 
