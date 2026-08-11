@@ -15,10 +15,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
     { id: 'teams', label: 'Teams & Points' },
     { id: 'speakers', label: 'Speaker Rankings' },
     { id: 'adjudicators', label: 'Adjudicators' },
-    { id: 'announcements', label: 'Updates' },
     { 
       id: 'tabulation', 
-      label: 'Admin Tab & Supabase', 
+      label: 'Admin Tab', 
       icon: <Database className="w-3.5 h-3.5 text-amber-300" /> 
     },
   ];

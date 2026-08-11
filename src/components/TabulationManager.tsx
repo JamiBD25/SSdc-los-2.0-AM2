@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Team, Speaker, TabSheetEntry, SupabaseConfig } from '../types';
+import { INITIAL_TEAMS, INITIAL_SPEAKERS } from '../data/initialData';
 import {
   saveTeamsToSupabase,
   saveSpeakersToSupabase,
+  clearSpeakersFromSupabase,
   saveTabEntryToSupabase,
   getStoredSupabaseConfig,
   saveSupabaseConfig,
@@ -287,6 +289,39 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
       showToast('All Team & Speaker Points successfully uploaded to Supabase!');
     } else {
       showToast('Supabase is not connected or credentials need verification. (Points stored locally)');
+    }
+  };
+
+  // Clear All Debaters / Speakers
+  const handleClearAllSpeakers = async () => {
+    if (window.confirm('Are you sure you want to remove all debaters/speakers and clear team rosters?')) {
+      setSpeakers([]);
+      const clearedTeams = teams.map((t) => ({ ...t, roster: [] }));
+      setTeams(clearedTeams);
+      
+      setSyncLoading(true);
+      await clearSpeakersFromSupabase();
+      await saveTeamsToSupabase(clearedTeams);
+      setSyncLoading(false);
+
+      showToast('All debaters and speaker rosters have been cleared across local state and cloud database.');
+    }
+  };
+
+  // Upload / Restore All Default Debaters to Supabase
+  const handleUploadDefaultSpeakersToSupabase = async () => {
+    if (window.confirm('Upload all 142 debaters and initial team rosters to Supabase now?')) {
+      setSpeakers(INITIAL_SPEAKERS);
+      setTeams(INITIAL_TEAMS);
+      setSyncLoading(true);
+      const tOk = await saveTeamsToSupabase(INITIAL_TEAMS);
+      const sOk = await saveSpeakersToSupabase(INITIAL_SPEAKERS);
+      setSyncLoading(false);
+      if (tOk && sOk) {
+        showToast('Successfully uploaded all 142 debaters and team rosters to Supabase!');
+      } else {
+        showToast('Debaters updated locally. Check Supabase connection status.');
+      }
     }
   };
 
@@ -1009,13 +1044,29 @@ CREATE TABLE IF NOT EXISTS tab_entries (
                   <SlidersHorizontal className="w-5 h-5 text-amber-400" />
                   <span>Direct Speaker Scores Editor Table</span>
                 </h3>
-                <button
-                  onClick={handleSyncAllToSupabase}
-                  className="px-4 py-2 bg-[#8B5E3C] hover:bg-[#A97142] text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow"
-                >
-                  <Save className="w-4 h-4" />
-                  <span>Save Speakers to Supabase</span>
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={handleUploadDefaultSpeakersToSupabase}
+                    className="px-3.5 py-2 bg-emerald-900/80 hover:bg-emerald-800 text-emerald-200 border border-emerald-700/60 text-xs font-bold rounded-xl flex items-center gap-1.5 transition-all shadow"
+                  >
+                    <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>Upload All 142 Debaters to Supabase</span>
+                  </button>
+                  <button
+                    onClick={handleClearAllSpeakers}
+                    className="px-3.5 py-2 bg-red-950/80 hover:bg-red-900 text-red-200 border border-red-700/60 text-xs font-bold rounded-xl flex items-center gap-1.5 transition-all shadow"
+                  >
+                    <Trash2 className="w-3.5 h-3.5 text-red-400" />
+                    <span>Clear All Debaters</span>
+                  </button>
+                  <button
+                    onClick={handleSyncAllToSupabase}
+                    className="px-4 py-2 bg-[#8B5E3C] hover:bg-[#A97142] text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow"
+                  >
+                    <Save className="w-4 h-4" />
+                    <span>Save Speakers to Supabase</span>
+                  </button>
+                </div>
               </div>
 
               <div className="overflow-x-auto">

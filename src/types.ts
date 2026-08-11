@@ -3,7 +3,6 @@ export type NavTab =
   | 'teams'
   | 'speakers'
   | 'adjudicators'
-  | 'announcements'
   | 'tabulation';
 
 export interface Speaker {
@@ -41,15 +40,6 @@ export interface Adjudicator {
   rating: number;
   bio: string;
   imageUrl?: string;
-}
-
-export interface TournamentAnnouncement {
-  id: string;
-  title: string;
-  content: string;
-  date: string;
-  tag: 'Urgent' | 'Pairings' | 'Notice' | 'Rule Update';
-  author: string;
 }
 
 export interface TabSheetEntry {

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { NavTab, Team, Speaker, TournamentAnnouncement } from './types';
+import { NavTab, Team, Speaker } from './types';
 import {
   INITIAL_TEAMS,
   INITIAL_SPEAKERS,
-  INITIAL_ADJUDICATORS,
-  INITIAL_ANNOUNCEMENTS
+  INITIAL_ADJUDICATORS
 } from './data/initialData';
 import {
   fetchTeamsFromSupabase,
-  fetchSpeakersFromSupabase
+  fetchSpeakersFromSupabase,
+  saveTeamsToSupabase,
+  saveSpeakersToSupabase
 } from './lib/supabase';
 
 import { Navbar } from './components/Navbar';
@@ -17,7 +18,6 @@ import { HomeContent } from './components/HomeContent';
 import { TeamsView } from './components/TeamsView';
 import { SpeakersView } from './components/SpeakersView';
 import { AdjudicatorsView } from './components/AdjudicatorsView';
-import { AnnouncementsView } from './components/AnnouncementsView';
 import { TabulationManager } from './components/TabulationManager';
 import { Footer } from './components/Footer';
 
@@ -29,7 +29,6 @@ export default function App() {
   const [teams, setTeams] = useState<Team[]>(INITIAL_TEAMS);
   const [speakers, setSpeakers] = useState<Speaker[]>(INITIAL_SPEAKERS);
   const [adjudicators] = useState(INITIAL_ADJUDICATORS);
-  const [announcements] = useState<TournamentAnnouncement[]>(INITIAL_ANNOUNCEMENTS);
 
   // Fetch initial points data from Supabase if connected
   useEffect(() => {
@@ -37,12 +36,27 @@ export default function App() {
       try {
         const cloudTeams = await fetchTeamsFromSupabase();
         if (cloudTeams && cloudTeams.length > 0) {
-          setTeams(cloudTeams);
+          setTeams(
+            cloudTeams.map((ct) => {
+              const localMatch = INITIAL_TEAMS.find((it) => it.id === ct.id || it.name === ct.name);
+              return {
+                ...ct,
+                roster: ct.roster && ct.roster.length > 0 ? ct.roster : localMatch ? localMatch.roster : []
+              };
+            })
+          );
+        } else {
+          setTeams(INITIAL_TEAMS);
+          await saveTeamsToSupabase(INITIAL_TEAMS);
         }
 
         const cloudSpeakers = await fetchSpeakersFromSupabase();
-        if (cloudSpeakers && cloudSpeakers.length > 0) {
+        if (cloudSpeakers && cloudSpeakers.length >= INITIAL_SPEAKERS.length) {
           setSpeakers(cloudSpeakers);
+        } else {
+          // If cloud has no speakers or fewer speakers, upload full debater roster to Supabase
+          setSpeakers(INITIAL_SPEAKERS);
+          await saveSpeakersToSupabase(INITIAL_SPEAKERS);
         }
       } catch (err) {
         console.warn('Supabase initial fetch skipped:', err);
@@ -66,7 +80,6 @@ export default function App() {
           {activeTab === 'teams' && <TeamsView teams={teams} />}
           {activeTab === 'speakers' && <SpeakersView speakers={speakers} />}
           {activeTab === 'adjudicators' && <AdjudicatorsView adjudicators={adjudicators} />}
-          {activeTab === 'announcements' && <AnnouncementsView announcements={announcements} />}
           {activeTab === 'tabulation' && (
             <TabulationManager
               teams={teams}

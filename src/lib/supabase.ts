@@ -186,6 +186,23 @@ export async function saveSpeakersToSupabase(speakers: Speaker[]): Promise<boole
   }
 }
 
+export async function clearSpeakersFromSupabase(): Promise<boolean> {
+  const client = getSupabaseClient();
+  if (!client) return false;
+
+  try {
+    const { error } = await client.from('speakers').delete().neq('id', 'clear_all_override');
+    if (error) {
+      console.warn('Supabase clear speakers failed:', error.message);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.warn('Error clearing speakers from Supabase:', err);
+    return false;
+  }
+}
+
 export async function fetchTabEntriesFromSupabase(): Promise<TabSheetEntry[] | null> {
   const client = getSupabaseClient();
   if (!client) return null;

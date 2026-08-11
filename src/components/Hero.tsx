@@ -172,7 +172,7 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
               onClick={() => setActiveTab('tabulation')}
               className="w-full sm:w-auto px-5 py-3 sm:py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-amber-300 font-bold text-xs sm:text-sm border border-[#8B5E3C] transition-all flex items-center justify-center gap-2 shadow-lg hover:border-amber-400"
             >
-              <span>Admin Tabulation & Supabase</span>
+              <span>Admin Tab</span>
             </button>
           </div>
 

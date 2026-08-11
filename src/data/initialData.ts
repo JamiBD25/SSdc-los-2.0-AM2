@@ -1,4 +1,4 @@
-import { Team, Speaker, Adjudicator, TournamentAnnouncement } from '../types';
+import { Team, Speaker, Adjudicator } from '../types';
 
 export const INITIAL_TEAMS: Team[] = [
   {
@@ -62,11 +62,14 @@ export const INITIAL_TEAMS: Team[] = [
     netMargin: 0,
     breakStatus: 'N/A',
     roster: [
-      'Adnan Hasan Fuad',
-      'Hossain Mansur Khaleed',
       'Tahsin Jahan Bhuiyan',
-      'Shah Poran',
-      'Pritu Dhar'
+      'Md Shah Poran',
+      'Humaira fairoj Chowdhury',
+      'Pritu Dhar',
+      'Jannatul Ferdous',
+      'Ahbab Chowdhury',
+      'Md saimon alam adil',
+      'Nazifa Malaika Namrin'
     ]
   },
   {
@@ -208,11 +211,11 @@ export const INITIAL_TEAMS: Team[] = [
     breakStatus: 'N/A',
     roster: [
       'Mohammad Tahmidul Alam',
-      'Adiyath Arish',
-      'Syed Shadman Adib',
       'Samanta Barua',
       'Prodipto Sarkar',
-      'Utshob Roy'
+      'Utshob Roy',
+      'Shahajada Mohammad Anas',
+      'Abdullah Al Ahnaf'
     ]
   },
   {
@@ -251,11 +254,19 @@ export const INITIAL_TEAMS: Team[] = [
     netMargin: 0,
     breakStatus: 'N/A',
     roster: [
-      'Sarar',
+      'Abid',
+      'Rabid',
+      'Mahin',
+      'Washiqur',
+      'Saadmaan Sarar',
       'Aslam Sadaf',
       'Hasin Mejbah Arian',
       'Omar Faruk Tamim',
-      'Saafir Al Islam'
+      'Saafir Al Islam',
+      'Mohammad Alam Pran',
+      'Jishan',
+      'Al Amin',
+      'Mohtasim Zarif'
     ]
   },
   {
@@ -748,32 +759,5 @@ export const INITIAL_ADJUDICATORS: Adjudicator[] = [
     rating: 4.8,
     bio: 'Presiding adjudicator ensuring fair, balanced, and transparent tab results.',
     imageUrl: 'https://i.postimg.cc/dt8YvnTV/Shafayet-Maruf.png'
-  }
-];
-
-export const INITIAL_ANNOUNCEMENTS: TournamentAnnouncement[] = [
-  {
-    id: 'ann1',
-    title: '🔥 League of Spars Season 2 Officially Announced!',
-    content: 'SSDC is thrilled to launch LoS 2.0 following a record-breaking Season 1! Pre-league orientation and captain briefings are set for May 05, 2026 on Discord.',
-    date: '2026-04-28',
-    tag: 'Notice',
-    author: 'SSDC Organizing Committee'
-  },
-  {
-    id: 'ann2',
-    title: '📌 AP-ISC Format Rules & Silent Week Clarifications',
-    content: 'Every participating institution will play every other once. Note that 1 week out of 4 is designated as a Silent Week—scores will be tallied internally and revealed at the grand finale.',
-    date: '2026-05-02',
-    tag: 'Rule Update',
-    author: 'Adiba Anjum (Executive Convener)'
-  },
-  {
-    id: 'ann3',
-    title: '📢 Round 1 & Round 2 Fixtures Released',
-    content: 'Fixtures for Round 1 and Round 2 are now live on the portal. Institutional executive representatives must reach out on the coordination group to finalize schedule slots.',
-    date: '2026-05-08',
-    tag: 'Pairings',
-    author: 'Kayes Adnan (Tabulation Core)'
   }
 ];

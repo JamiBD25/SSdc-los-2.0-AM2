@@ -325,15 +325,19 @@ export const TeamsView: React.FC<TeamsViewProps> = ({ teams }) => {
                               Debaters Roster ({team.name}):
                             </span>
                             <div className="flex flex-wrap gap-1.5">
-                              {team.roster.map((debater, dIdx) => (
-                                <span
-                                  key={dIdx}
-                                  className="px-2 py-0.5 sm:px-3 sm:py-1 bg-[#120f0d] text-[11px] sm:text-xs text-[#f5e4cb] font-medium border border-[#684B35] rounded-lg flex items-center gap-1"
-                                >
-                                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                                  {debater}
-                                </span>
-                              ))}
+                              {team.roster.length > 0 ? (
+                                team.roster.map((debater, dIdx) => (
+                                  <span
+                                    key={dIdx}
+                                    className="px-2 py-0.5 sm:px-3 sm:py-1 bg-[#120f0d] text-[11px] sm:text-xs text-[#f5e4cb] font-medium border border-[#684B35] rounded-lg flex items-center gap-1"
+                                  >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                                    {debater}
+                                  </span>
+                                ))
+                              ) : (
+                                <span className="text-xs text-[#8A7A6D] italic">No debaters currently assigned to roster.</span>
+                              )}
                             </div>
                           </div>
                         </td>

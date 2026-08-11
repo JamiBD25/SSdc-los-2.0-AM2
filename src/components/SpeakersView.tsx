@@ -181,28 +181,22 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
                   >
                     {/* RANK */}
                     <td className="py-2.5 px-1 sm:px-3 text-center font-['Orbitron'] font-extrabold text-[11px] sm:text-sm">
-                      {hasSpoken ? (
-                        <>
-                          {displayRank === 1 && (
-                            <span className="inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400">
-                              🥇
-                            </span>
-                          )}
-                          {displayRank === 2 && (
-                            <span className="inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-slate-300/20 text-slate-200 border border-slate-300">
-                              🥈
-                            </span>
-                          )}
-                          {displayRank === 3 && (
-                            <span className="inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-amber-700/20 text-amber-500 border border-amber-600">
-                              🥉
-                            </span>
-                          )}
-                          {displayRank > 3 && <span className="text-[#c9b8a7]">#{displayRank}</span>}
-                        </>
-                      ) : (
-                        <span className="text-[#8A7A6D] text-[10px] font-semibold">N/A</span>
+                      {displayRank === 1 && hasSpoken && (
+                        <span className="inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400">
+                          🥇
+                        </span>
                       )}
+                      {displayRank === 2 && hasSpoken && (
+                        <span className="inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-slate-300/20 text-slate-200 border border-slate-300">
+                          🥈
+                        </span>
+                      )}
+                      {displayRank === 3 && hasSpoken && (
+                        <span className="inline-flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-amber-700/20 text-amber-500 border border-amber-600">
+                          🥉
+                        </span>
+                      )}
+                      {(displayRank > 3 || !hasSpoken) && <span className="text-[#c9b8a7]">#{displayRank}</span>}
                     </td>
 
                     {/* NAME & TEAM/INST (NESTED ON MOBILE) */}
@@ -228,27 +222,27 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
 
                     {/* ROUNDS */}
                     <td className="py-2.5 px-1 sm:px-3 text-center font-['Orbitron'] font-bold text-[#f5e4cb] text-[11px] sm:text-sm">
-                      {hasSpoken ? speaker.roundsSpoken : 'N/A'}
+                      {speaker.roundsSpoken}
                     </td>
 
                     {/* TOTAL POINTS (DESKTOP) */}
                     <td className="py-2.5 px-3 text-right font-['Orbitron'] font-bold text-amber-300 hidden sm:table-cell text-xs sm:text-sm">
-                      {hasSpoken ? speaker.totalPoints.toFixed(1) : 'N/A'}
+                      {speaker.totalPoints.toFixed(1)}
                     </td>
 
                     {/* AVG SCORE */}
                     <td className="py-2.5 px-1.5 sm:px-3 text-right font-['Orbitron'] font-black text-emerald-400 whitespace-nowrap">
                       <div className="text-[11px] sm:text-sm">
-                        {hasSpoken ? speaker.averageScore.toFixed(2) : 'N/A'}
+                        {speaker.averageScore > 0 ? speaker.averageScore.toFixed(2) : '0.00'}
                       </div>
                       <div className="sm:hidden text-[9px] font-mono text-[#c9b8a7] font-normal">
-                        Tot: {hasSpoken ? speaker.totalPoints.toFixed(0) : '0'}
+                        Tot: {speaker.totalPoints.toFixed(0)}
                       </div>
                     </td>
 
                     {/* BEST SCORE (DESKTOP) */}
                     <td className="py-2.5 px-3 text-right font-['Orbitron'] font-bold text-[#f5e4cb] hidden md:table-cell text-xs sm:text-sm">
-                      {hasSpoken ? speaker.bestScore.toFixed(1) : 'N/A'}
+                      {speaker.bestScore > 0 ? speaker.bestScore.toFixed(1) : '0.0'}
                     </td>
 
                     {/* BREAK ELIGIBILITY */}

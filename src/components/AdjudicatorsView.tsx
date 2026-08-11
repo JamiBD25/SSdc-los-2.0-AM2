@@ -8,12 +8,10 @@ interface AdjudicatorsViewProps {
 
 export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedImage, setSelectedImage] = useState<{ url: string; name: string; role: string } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{ url: string; name: string } | null>(null);
 
   const filteredAdjudicators = adjudicators.filter(
-    (adj) =>
-      adj.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      adj.institution.toLowerCase().includes(searchTerm.toLowerCase())
+    (adj) => adj.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -35,7 +33,7 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
         <Search className="w-4 h-4 text-[#c9b8a7]" />
         <input
           type="text"
-          placeholder="Search adjudicator by name or institution..."
+          placeholder="Search adjudicator by name..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full bg-[#120f0d] text-sm text-[#f5e4cb] px-4 py-2 rounded-xl border border-[#684B35] focus:outline-none focus:border-amber-400 placeholder-[#8A7A6D]"
@@ -47,14 +45,14 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
         {filteredAdjudicators.map((adj) => (
           <div
             key={adj.id}
-            className="los-glass-card p-4 space-y-4 hover:border-amber-400 transition-all duration-300 flex flex-col justify-between group"
+            className="los-glass-card p-4 space-y-3 hover:border-amber-400 transition-all duration-300 flex flex-col justify-between group"
           >
             <div className="space-y-3">
               
-              {/* ADJUDICATOR IMAGE - FULL SIZE / UNCUT DISPLAY */}
+              {/* ADJUDICATOR IMAGE */}
               <div 
                 className="relative w-full rounded-xl overflow-hidden bg-[#0a0807] border border-[#684B35]/50 flex items-center justify-center min-h-[220px] cursor-pointer group/img"
-                onClick={() => adj.imageUrl && setSelectedImage({ url: adj.imageUrl, name: adj.name, role: adj.role || 'Adjudicator' })}
+                onClick={() => adj.imageUrl && setSelectedImage({ url: adj.imageUrl, name: adj.name })}
               >
                 {adj.imageUrl ? (
                   <>
@@ -78,22 +76,9 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
                 )}
               </div>
 
-              {/* NAME & INSTITUTION */}
-              <div className="space-y-2 pt-1">
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <h3 className="font-bold text-base sm:text-lg text-[#f5e4cb] leading-snug">{adj.name}</h3>
-                    <p className="text-xs text-[#c9b8a7] font-medium">{adj.institution}</p>
-                  </div>
-                  
-                  <span className="shrink-0 px-2.5 py-1 rounded-full text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider border bg-amber-500/20 text-amber-300 border-amber-400/50">
-                    Adjudicator
-                  </span>
-                </div>
-
-                <p className="text-xs text-[#e2d0ba] leading-relaxed bg-[#120f0d]/60 p-2.5 rounded-lg border border-[#684B35]/30">
-                  "{adj.bio}"
-                </p>
+              {/* NAME ONLY */}
+              <div className="pt-1 text-center">
+                <h3 className="font-bold text-base sm:text-lg text-[#f5e4cb] leading-snug">{adj.name}</h3>
               </div>
             </div>
           </div>
@@ -119,10 +104,7 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
           >
             {/* MODAL HEADER */}
             <div className="w-full flex items-center justify-between border-b border-[#684B35]/40 pb-3 px-2">
-              <div>
-                <h3 className="font-bold text-base sm:text-xl text-[#f5e4cb]">{selectedImage.name}</h3>
-                <p className="text-xs text-amber-400 font-semibold">{selectedImage.role}</p>
-              </div>
+              <h3 className="font-bold text-base sm:text-xl text-[#f5e4cb]">{selectedImage.name}</h3>
               <button
                 onClick={() => setSelectedImage(null)}
                 className="p-2 rounded-full bg-[#1F1A17] hover:bg-[#332C24] text-[#c9b8a7] hover:text-white transition-colors border border-[#684B35]"
@@ -132,7 +114,7 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
               </button>
             </div>
 
-            {/* FULL SIZE IMAGE - UNCUT */}
+            {/* FULL SIZE IMAGE */}
             <div className="w-full flex-1 overflow-auto flex items-center justify-center bg-[#070504] rounded-xl p-2 border border-[#684B35]/30">
               <img
                 src={selectedImage.url}
@@ -140,10 +122,6 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
                 referrerPolicy="no-referrer"
                 className="max-w-full max-h-[75vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
               />
-            </div>
-
-            <div className="text-[11px] text-[#8A7A6D] text-center">
-              Full Size Uncut Official Adjudicator Profile Photo &bull; Press ESC or click outside to close
             </div>
           </div>
         </div>
