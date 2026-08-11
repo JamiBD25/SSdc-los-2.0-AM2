@@ -13,12 +13,11 @@ export const INITIAL_TEAMS: Team[] = [
     breakStatus: 'N/A',
     roster: [
       'Prithwi Rajonna Purenota',
-      'Durjoy Biswas',
+      'Durjoy biswas',
       'Anindita Chowdhury',
       'Anannya Sen',
       'Antara Al Azmee Fabiha',
       'Ibrar Mahmud',
-      'Syeda Rahatul Jannat',
       'Mahir Uddin',
       'Abo Bakar',
       'Ahnaf Imteaz Tawsif',
@@ -27,13 +26,14 @@ export const INITIAL_TEAMS: Team[] = [
       'Tanvir Hossain',
       'Arman Chowdhury',
       'Mitu Rani Debi',
-      'Md. Tahmid Sami'
+      'Md. Tahmid Sami',
+      'Rahatul Zannat'
     ]
   },
   {
     id: 't2',
     rank: 0,
-    name: 'CCDS-প্রত্যুপন্নমতি',
+    name: 'CCDS প্রত্যুৎপন্নমতি',
     institution: 'Chittagong Collegiate Debating Society',
     win: 0,
     loss: 0,
@@ -47,7 +47,8 @@ export const INITIAL_TEAMS: Team[] = [
       'Fairoj Zahin Ahona',
       'Iftekhar Ahmad Sifat',
       'Jit Chowdhury',
-      'Ayshawrja Chakraborty Purna'
+      'Ayshawrja Chakraborty Purna',
+      'labib Hasan'
     ]
   },
   {
@@ -71,7 +72,7 @@ export const INITIAL_TEAMS: Team[] = [
   {
     id: 't4',
     rank: 0,
-    name: 'SPSC—1',
+    name: 'SPSC 1',
     institution: "St. Placid's School & College",
     win: 0,
     loss: 0,
@@ -79,6 +80,7 @@ export const INITIAL_TEAMS: Team[] = [
     netMargin: 0,
     breakStatus: 'N/A',
     roster: [
+      'Ziaul Hasib',
       'Ashan Bari',
       'Azaan Sarwar',
       'Arjya Dhar',
@@ -98,7 +100,15 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Araf Mortuza', 'Nirjhor', 'Tajwar Bin Taiyab', 'Shimanto', 'Jabir']
+    roster: [
+      'Md Ayaz Muhtasim',
+      'Araf Mortuza',
+      'Nirjhor',
+      'Tajwar Bin Taiyab',
+      'Shimanto',
+      'Jabir',
+      'Nabil Rahman'
+    ]
   },
   {
     id: 't6',
@@ -110,7 +120,21 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Wasima Rahman', 'Maliha Hossain', 'Arafa Islam Rafiah', 'Ainun Zaria', 'Takia Tafannum']
+    roster: [
+      'Wasima Rahman',
+      'Maliha Hossain',
+      'Arafa Islam Rafiah',
+      'Ainun Zaria',
+      'Takia Tafannum',
+      'Tamjida Sultana',
+      'Hujaifa jannat Alifa',
+      'Fariha Tasnim',
+      'Arshi Humayra',
+      'Aliya Farzeen Arisha',
+      'Jeba tahsin',
+      'Maimuna binte Azad',
+      'Tohfatul Kobra'
+    ]
   },
   {
     id: 't7',
@@ -122,7 +146,18 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Samara', 'Bidushi', 'Simrah', 'Rajkumari', 'Rufaida', 'Jikra', 'Abeedah', 'Maleha']
+    roster: [
+      'Samara',
+      'Bidushi',
+      'Simrah',
+      'Rajkumari',
+      'Rufaida',
+      'Jikra',
+      'Abeedah',
+      'Maleha',
+      'Amrita Sen',
+      'Anusmrita Chowdhury'
+    ]
   },
   {
     id: 't8',
@@ -134,7 +169,14 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Anupa Ruliya', 'Alisha Jashim', 'Sanjida Fairoj Nithu', 'Nusaiba Islam Chy', 'Homyra Fairuz']
+    roster: [
+      'Anupa ruliya',
+      'Alisha jashim',
+      'Sanjida Fairoj Nithu',
+      'Nusaiba islam Chy',
+      'Homyra Fairuz',
+      'Oindrela das Gupta'
+    ]
   },
   {
     id: 't9',
@@ -146,7 +188,13 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Tamim Iqbal', 'Raiyan Siddique Talha', 'Nour Mohammed Nayem', 'Abdullah Al Zeenan', 'Noor Mohammad']
+    roster: [
+      'Tamim Iqbal',
+      'Raiyan Siddique Talha',
+      'Nour Mohammed Nayem',
+      'Abdullah Al Zeenan',
+      'Noor Mohammad'
+    ]
   },
   {
     id: 't10',
@@ -158,12 +206,19 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Mohammad Tahmidul Alam', 'Adiyath Arish', 'Syed Shadman Adib', 'Samanta Barua', 'Prodipto Sarkar', 'Utshob Roy']
+    roster: [
+      'Mohammad Tahmidul Alam',
+      'Adiyath Arish',
+      'Syed Shadman Adib',
+      'Samanta Barua',
+      'Prodipto Sarkar',
+      'Utshob Roy'
+    ]
   },
   {
     id: 't11',
     rank: 0,
-    name: 'MCDC',
+    name: 'MCDC Casuals',
     institution: 'Cantonment English School & College',
     win: 0,
     loss: 0,
@@ -171,6 +226,7 @@ export const INITIAL_TEAMS: Team[] = [
     netMargin: 0,
     breakStatus: 'N/A',
     roster: [
+      'Anindo Chowdhury',
       'Rownak Kulsum',
       'Purnota Jahan',
       'Tasnia Kamal Radiba',
@@ -180,7 +236,8 @@ export const INITIAL_TEAMS: Team[] = [
       'Rujhan Al Shabeeb',
       'Arham Hanif',
       'Ahmed Shaihan',
-      'Asadullah Saad'
+      'Asadullah Saad',
+      'Abida Sultana Arnima'
     ]
   },
   {
@@ -193,7 +250,13 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Sarar', 'Aslam Sadaf', 'Hasin Mejbah Arian', 'Omar Faruk Tamim', 'Saafir Al Islam']
+    roster: [
+      'Sarar',
+      'Aslam Sadaf',
+      'Hasin Mejbah Arian',
+      'Omar Faruk Tamim',
+      'Saafir Al Islam'
+    ]
   },
   {
     id: 't13',
@@ -206,7 +269,6 @@ export const INITIAL_TEAMS: Team[] = [
     netMargin: 0,
     breakStatus: 'N/A',
     roster: [
-      'Nowad Islam Chowdhury',
       'Rehan Hossain',
       'Shalbina Dil Afruz',
       'Meheraz Azfar Chowdhury',
@@ -223,7 +285,7 @@ export const INITIAL_TEAMS: Team[] = [
   {
     id: 't14',
     rank: 0,
-    name: 'ccpc Veritas',
+    name: 'Veritas',
     institution: 'Chittagong Cantonment Public College',
     win: 0,
     loss: 0,
@@ -236,8 +298,8 @@ export const INITIAL_TEAMS: Team[] = [
       'Jannathut Taieba',
       'Tahsin Nanziba',
       'Fawzia Binte Abdullah',
-      'Safiul Karim',
-      'Syed Sajid Rahman',
+      'safiul karim',
+      'Syed Sajid rahman',
       'Anusha Shehreen Islam',
       'Arisha Subah Siddique'
     ]
@@ -245,7 +307,7 @@ export const INITIAL_TEAMS: Team[] = [
   {
     id: 't15',
     rank: 0,
-    name: 'CESDS',
+    name: 'CESCDC',
     institution: 'Chittagong Engineering University School',
     win: 0,
     loss: 0,
@@ -257,7 +319,8 @@ export const INITIAL_TEAMS: Team[] = [
       'Mohammad Al-Jayed Uddin Trisan',
       'Mahiur Rahman',
       'Md Tasnimul Chy Tawsif',
-      'Samantha Makareem'
+      'Samantha Makareem',
+      'Radeya Jahra'
     ]
   },
   {
@@ -270,7 +333,13 @@ export const INITIAL_TEAMS: Team[] = [
     totalSpeakerPoints: 0,
     netMargin: 0,
     breakStatus: 'N/A',
-    roster: ['Hafsa Binte Ayub', 'Umaima Mobin', 'Rabita Tabassum', 'Miskatun Noor Payel', 'Shohrah Rakshan']
+    roster: [
+      'Hafsa Binte Ayub',
+      'Umaima Mobin',
+      'Rabita Tabassum',
+      'Miskatun Noor Payel',
+      'Shohrah Rakshan'
+    ]
   }
 ];
 
