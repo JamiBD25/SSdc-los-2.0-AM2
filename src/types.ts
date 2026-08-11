@@ -36,10 +36,11 @@ export interface Adjudicator {
   id: string;
   name: string;
   institution: string;
-  role: 'Chief Adjudicator' | 'Deputy CA' | 'Independent Adjudicator' | 'Accredited Judge';
+  role: 'Chief Adjudicator' | 'Deputy CA' | 'Independent Adjudicator' | 'Accredited Judge' | string;
   roundsJudged: number;
   rating: number;
   bio: string;
+  imageUrl?: string;
 }
 
 export interface TournamentAnnouncement {

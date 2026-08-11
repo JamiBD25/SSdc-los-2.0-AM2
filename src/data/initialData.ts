@@ -291,49 +291,394 @@ export const INITIAL_SPEAKERS: Speaker[] = INITIAL_TEAMS.flatMap((team) =>
 
 export const INITIAL_ADJUDICATORS: Adjudicator[] = [
   {
-    id: 'adj1',
-    name: 'Tanvir Hossain',
-    institution: 'BUET Debating Club Alumnus',
-    role: 'Chief Adjudicator',
+    id: 'adj_1',
+    name: 'Abdullah Abeer',
+    institution: 'SSDC Core Adjudicator',
+    role: 'Adjudicator',
     roundsJudged: 12,
     rating: 4.9,
-    bio: 'Champion debater with 6+ years of adjudication experience in National & AP ISC circuits.'
+    bio: 'Core adjudication panelist with extensive experience in Asian Parliamentary & AP-ISC circuits.',
+    imageUrl: 'https://i.postimg.cc/MfmygJDb/Abdullah-Abeer-(2).png'
   },
   {
-    id: 'adj2',
-    name: 'Dr. Shahriar Kabir',
-    institution: 'Chittagong Medical College',
-    role: 'Deputy CA',
+    id: 'adj_2',
+    name: 'Adil Raihan',
+    institution: 'CUET Debating Society',
+    role: 'Adjudicator',
     roundsJudged: 10,
     rating: 4.8,
-    bio: 'Former SSDC President and experienced adjudicator across school & college platforms.'
+    bio: 'Specialist in public policy, economics, and international relations motion evaluation.',
+    imageUrl: 'https://i.postimg.cc/crTRmZ6T/Adil-Raihan.png'
   },
   {
-    id: 'adj3',
-    name: 'Nusrat Jahan Chowdhury',
-    institution: 'CUET Debating Society',
-    role: 'Deputy CA',
-    roundsJudged: 9,
+    id: 'adj_3',
+    name: 'Anas Faisal',
+    institution: 'Chittagong Medical College',
+    role: 'Adjudicator',
+    roundsJudged: 10,
     rating: 4.8,
-    bio: 'Specialist in economics, geopolitics, and international relations motion evaluation.'
+    bio: 'Experienced debater and adjudicator across national & regional inter-school platforms.',
+    imageUrl: 'https://i.postimg.cc/sMvTG1Kz/Anas-Faisal-(1).png'
   },
   {
-    id: 'adj4',
-    name: 'Abrar Zahin',
-    institution: 'Dhaka Medical College',
-    role: 'Independent Adjudicator',
+    id: 'adj_4',
+    name: 'Asadullahil Galib',
+    institution: 'BUET Debating Club',
+    role: 'Adjudicator',
+    roundsJudged: 9,
+    rating: 4.7,
+    bio: 'Distinguished AP circuit adjudicator specializing in logic frameworks & POI evaluation.',
+    imageUrl: 'https://i.postimg.cc/7Jk3BZgW/Asadullahil-Galib-(1).png'
+  },
+  {
+    id: 'adj_5',
+    name: 'Barua Param',
+    institution: 'Chittagong University Debate Forum',
+    role: 'Adjudicator',
     roundsJudged: 8,
     rating: 4.7,
-    bio: 'Adjudicated over 100+ rounds across national AP and Parliamentary leagues.'
+    bio: 'Seasoned debater with 50+ rounds judged in national debating championships.',
+    imageUrl: 'https://i.postimg.cc/gX98J2tQ/Barua-Param.png'
   },
   {
-    id: 'adj5',
-    name: 'Mehreen Farooq',
-    institution: 'Chittagong University Debate Forum',
-    role: 'Accredited Judge',
+    id: 'adj_6',
+    name: 'Dhiman Bhattacharjee',
+    institution: 'Dhaka University Debating Society',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.6,
+    bio: 'Experienced in evaluating philosophical, social, and geopolitical debate motions.',
+    imageUrl: 'https://i.postimg.cc/jnc7ZQxM/Dhiman-Bhattacharjee-(1).png'
+  },
+  {
+    id: 'adj_7',
+    name: 'Erfan Apurbo',
+    institution: 'IUT Debating Society',
+    role: 'Adjudicator',
     roundsJudged: 7,
     rating: 4.6,
-    bio: 'Focuses on structured matter analysis, POI engagement, and speaker feedback delivery.'
+    bio: 'Focuses on structured matter analysis, argument breakdown, and speaker feedback.',
+    imageUrl: 'https://i.postimg.cc/F1ygY042/Erfan-Apurbo.png'
+  },
+  {
+    id: 'adj_8',
+    name: 'Esrat Jahan Sumpa',
+    institution: 'North South University Debate Club',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Adjudicated regional tournaments with focus on speaker presentation & rebuttals.',
+    imageUrl: 'https://i.postimg.cc/nXPqyk4H/Esrat-Jahan-Sumpa.png'
+  },
+  {
+    id: 'adj_9',
+    name: 'F. A. M. Ayon',
+    institution: 'BUP Economics Club & Debate',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.7,
+    bio: 'Active circuit adjudicator with high rating across preliminary & break rounds.',
+    imageUrl: 'https://i.postimg.cc/mtddr73G/FAM-Ayon-(1).png'
+  },
+  {
+    id: 'adj_10',
+    name: 'Inzamamul Haque Ayon',
+    institution: 'Chittagong College Debate Club',
+    role: 'Adjudicator',
+    roundsJudged: 9,
+    rating: 4.7,
+    bio: 'Senior circuit debater and experienced adjudicator for League of Spars.',
+    imageUrl: 'https://i.postimg.cc/Zv4N8DSB/Inzamamul-Haque-Ayon.png'
+  },
+  {
+    id: 'adj_11',
+    name: 'Kamrul Ahsan Mahir',
+    institution: 'Dhaka College Debating Club',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Expert judge focusing on case construction, reply speech impact, and engagement.',
+    imageUrl: 'https://i.postimg.cc/HJ8bdyz9/Kamrul-Ahsan-Mahir.png'
+  },
+  {
+    id: 'adj_12',
+    name: 'Koushick Kabbya',
+    institution: 'Shahjalal University Debating Society',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Comprehensive matter and manner evaluator in parliamentary debate formats.',
+    imageUrl: 'https://i.postimg.cc/1fRCPvq7/Koushick-Kabbya-(1).png'
+  },
+  {
+    id: 'adj_13',
+    name: 'Koushik Dev Nath',
+    institution: 'CUET Debating Society',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Specialist in scientific ethics and technology policy motions.',
+    imageUrl: 'https://i.postimg.cc/1VsFGYQM/Koushik-Dev-Nath.png'
+  },
+  {
+    id: 'adj_14',
+    name: 'Maruf Islam Munna',
+    institution: 'Rajshahi University Debating Organization',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.6,
+    bio: 'National level debater with extensive adjudication credits across divisional leagues.',
+    imageUrl: 'https://i.postimg.cc/gX98J2B0/Maruf-Islam-Munna.png'
+  },
+  {
+    id: 'adj_15',
+    name: 'MD. Ridwan Ahmed',
+    institution: 'Jahangirnagar University Debate Organization',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Focused on clash identification and comparative analysis in team arguments.',
+    imageUrl: 'https://i.postimg.cc/TpkkPnVZ/MD-Ridwan-Ahmed-(1).png'
+  },
+  {
+    id: 'adj_16',
+    name: 'Minhazul Monowar',
+    institution: 'Khulna University Debating Club',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Adjudicator with background in economics & constitutional debate motions.',
+    imageUrl: 'https://i.postimg.cc/zVqwK3DY/Minhazul-Monowar.png'
+  },
+  {
+    id: 'adj_17',
+    name: 'Misbah Uz Zamal',
+    institution: 'Brac University Debate Club',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Regular adjudicator for national inter-college and inter-university tournaments.',
+    imageUrl: 'https://i.postimg.cc/JyHjMkxj/Misbah-Uz-Zamal.png'
+  },
+  {
+    id: 'adj_18',
+    name: 'Mobarak Hossen Sojib',
+    institution: 'Comilla University Debating Society',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Detailed note-taker providing constructive feedback to debaters.',
+    imageUrl: 'https://i.postimg.cc/NLcCCsGp/Mobarak-Hossen-Sojib-(1).png'
+  },
+  {
+    id: 'adj_19',
+    name: 'Mohammad Yasir Afnan Rafin',
+    institution: 'SSDC Senior Panelist',
+    role: 'Adjudicator',
+    roundsJudged: 9,
+    rating: 4.8,
+    bio: 'Senior SSDC adjudicator presiding over high-stakes preliminary rounds.',
+    imageUrl: 'https://i.postimg.cc/yJ30sZj5/Mohammad-Yasir-Afnan-Rafin.png'
+  },
+  {
+    id: 'adj_20',
+    name: 'Mubarrat-E-Ishmum',
+    institution: 'Independent University Bangladesh (IUB)',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Parliamentary debate enthusiast with multiple judging credits.',
+    imageUrl: 'https://i.postimg.cc/Fdt3RHnt/Mubarrat-E-Ishmum.png'
+  },
+  {
+    id: 'adj_21',
+    name: 'Mubdee Rafin',
+    institution: 'East West University Debating Club',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Precision-focused judge with expertise in burden of proof distribution.',
+    imageUrl: 'https://i.postimg.cc/GTdDFSCD/Mubdee-Rafin.png'
+  },
+  {
+    id: 'adj_22',
+    name: 'Muhammad Bakhtiar',
+    institution: 'Chittagong Cantonment Public College',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.7,
+    bio: 'Experienced college adjudicator specializing in structural debate principles.',
+    imageUrl: 'https://i.postimg.cc/z3r22zDQ/Muhammad-Bakhtiar-(1).png'
+  },
+  {
+    id: 'adj_23',
+    name: 'Nayeem Uddin Rafi',
+    institution: 'Foujdarhat Cadet College Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Distinguished cadet debate alumnus with keen eye for strategic POIs.',
+    imageUrl: 'https://i.postimg.cc/0r0WLTrF/Nayeem-Uddin-Rafi.png'
+  },
+  {
+    id: 'adj_24',
+    name: 'Protik Talukder',
+    institution: 'Chittagong University',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Active debater and judge across regional inter-school debate championships.',
+    imageUrl: 'https://i.postimg.cc/kRqSQhmz/Protik-Talukder.png'
+  },
+  {
+    id: 'adj_25',
+    name: 'Quazi Mohammad Aldin Fardin',
+    institution: 'St. Joseph Higher Secondary School Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.7,
+    bio: 'Renowned school circuit debater turned accredited judge.',
+    imageUrl: 'https://i.postimg.cc/T5JrBv9J/Quazi-Mohammad-Aldin-Fardin.png'
+  },
+  {
+    id: 'adj_26',
+    name: 'Ratul Paul',
+    institution: 'Sylhet Engineering College',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Specialist in tech ethics and international governance motions.',
+    imageUrl: 'https://i.postimg.cc/JGR3Zt7G/Ratul-Paul.png'
+  },
+  {
+    id: 'adj_27',
+    name: 'Ratul Sheikh',
+    institution: 'Notre Dame Debating Club Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.7,
+    bio: 'Former national champion speaker turned panel adjudicator.',
+    imageUrl: 'https://i.postimg.cc/YvZb6kyg/Ratul-Sheikh-(1).png'
+  },
+  {
+    id: 'adj_28',
+    name: 'Saima Ahmed Chowdhury',
+    institution: 'Asian University for Women (AUW)',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Expert on gender studies, human rights, and socio-economic motions.',
+    imageUrl: 'https://i.postimg.cc/jwrc1cTz/Saima-Ahmed-Chowdhury-(1).png'
+  },
+  {
+    id: 'adj_29',
+    name: 'Sarjil Mahmud Khan',
+    institution: 'Dhaka Residential Model College Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.7,
+    bio: 'Veteran circuit adjudicator with high participant feedback ratings.',
+    imageUrl: 'https://i.postimg.cc/BP4FTw07/Sarjil-Mahmud-Khan.png'
+  },
+  {
+    id: 'adj_30',
+    name: 'Shamima Sharif',
+    institution: "Chittagong Govt. Women's College",
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Dedicated debate mentor and experienced panel member.',
+    imageUrl: 'https://i.postimg.cc/ppPQzyVd/Shamima-Sharif.png'
+  },
+  {
+    id: 'adj_31',
+    name: 'Shariful Kader Rakib',
+    institution: 'International Islamic University Chittagong',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Focused on logical rigor and strategic extension analysis.',
+    imageUrl: 'https://i.postimg.cc/TLrmWvZ6/Shariful-Kader-Rakib.png'
+  },
+  {
+    id: 'adj_32',
+    name: 'Shimanta Das',
+    institution: 'Chittagong Govt. High School Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Passionate adjudicator supporting school-level debater development.',
+    imageUrl: 'https://i.postimg.cc/N5NN0R8c/Shimanta-Das-(1).png'
+  },
+  {
+    id: 'adj_33',
+    name: 'Simanta Majumdar Utsho',
+    institution: 'Premier University Debate Club',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Analytic judge focused on rebuttal effectiveness and team dynamics.',
+    imageUrl: 'https://i.postimg.cc/XG0LPLWp/Simanta-Majumdar-Utsho-(1).png'
+  },
+  {
+    id: 'adj_34',
+    name: 'SK Abdullah Mahdi',
+    institution: 'SSDC Organizing Core',
+    role: 'Adjudicator',
+    roundsJudged: 9,
+    rating: 4.8,
+    bio: 'Key contributor to League of Spars motion review and adjudication quality.',
+    imageUrl: 'https://i.postimg.cc/R3Jw4Hdg/SK-Abdullah-Mahdi.png'
+  },
+  {
+    id: 'adj_35',
+    name: 'Tahmid Efty',
+    institution: 'Chittagong Collegiate School Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Experienced school league adjudicator with high rating metrics.',
+    imageUrl: 'https://i.postimg.cc/K32P98ns/Tahmid-Efty.png'
+  },
+  {
+    id: 'adj_36',
+    name: 'Tonmoy Tahsin',
+    institution: 'MIST Debating Club',
+    role: 'Adjudicator',
+    roundsJudged: 6,
+    rating: 4.5,
+    bio: 'Focuses on structured argument weights and evidence evaluation.',
+    imageUrl: 'https://i.postimg.cc/QV3YY8N4/Tonmoy-Tahsin-(1).png'
+  },
+  {
+    id: 'adj_37',
+    name: 'Wahidul Islam Akib',
+    institution: 'Bakalia Govt. College Alumnus',
+    role: 'Adjudicator',
+    roundsJudged: 7,
+    rating: 4.6,
+    bio: 'Active judge across divisional AP and parliamentary tournaments.',
+    imageUrl: 'https://i.postimg.cc/N9wDnDtm/Wahidul-Islam-Akib-(1).png'
+  },
+  {
+    id: 'adj_38',
+    name: 'Abdullah Al Muhtasim',
+    institution: 'Government Hazi Mohammad Mohsin College',
+    role: 'Adjudicator',
+    roundsJudged: 8,
+    rating: 4.7,
+    bio: 'Senior debate enthusiast with extensive adjudication feedback records.',
+    imageUrl: 'https://i.postimg.cc/56NGSBgc/Abdullah-Al-Muhtasim.png'
+  },
+  {
+    id: 'adj_39',
+    name: 'Shafayet Maruf',
+    institution: 'SSDC Core Adjudicator',
+    role: 'Adjudicator',
+    roundsJudged: 10,
+    rating: 4.8,
+    bio: 'Presiding adjudicator ensuring fair, balanced, and transparent tab results.',
+    imageUrl: 'https://i.postimg.cc/svD84Yck/Shafayet-Maruf.png'
   }
 ];
 
