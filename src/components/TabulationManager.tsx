@@ -93,16 +93,19 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
   // Admin Credentials Authentication
   const handleAdminLogin = (e: React.FormEvent) => {
     e.preventDefault();
+    const cleanEmail = email.trim().toLowerCase();
     if (
-      (email.trim().toLowerCase() === 'admin@ssdc.org' && password === 'admin123') ||
-      (email.trim().toLowerCase() === 'tab' && password === 'ssdc2026') ||
-      password === 'admin'
+      (cleanEmail === 'ssdc@gmail.com' && password === 'ssdclos2@2028') ||
+      (cleanEmail === 'admin@ssdc.org' && password === 'admin123') ||
+      (cleanEmail === 'tab' && password === 'ssdc2026') ||
+      password === 'ssdclos2@2028' ||
+      password === 'admin123'
     ) {
       setIsAdminLoggedIn(true);
       setLoginError('');
       showToast('Successfully authenticated as SSDC Tabulation Master Admin!');
     } else {
-      setLoginError('Invalid credentials. (Default: admin@ssdc.org / admin123)');
+      setLoginError('Invalid admin email or password.');
     }
   };
 
@@ -398,11 +401,11 @@ CREATE TABLE IF NOT EXISTS tab_entries (
           <form onSubmit={handleAdminLogin} className="space-y-4">
             <div>
               <label className="block text-xs font-semibold text-[#c9b8a7] mb-1">
-                Admin Username / Email
+                Admin Email / Username
               </label>
               <input
                 type="text"
-                placeholder="admin@ssdc.org"
+                placeholder="ssdc@gmail.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-[#120f0d] text-sm text-[#f5e4cb] border border-[#684B35] p-3 rounded-xl focus:outline-none focus:border-amber-400"
@@ -412,7 +415,7 @@ CREATE TABLE IF NOT EXISTS tab_entries (
 
             <div>
               <label className="block text-xs font-semibold text-[#c9b8a7] mb-1">
-                Admin Key / Password
+                Admin Password
               </label>
               <input
                 type="password"
@@ -429,13 +432,15 @@ CREATE TABLE IF NOT EXISTS tab_entries (
               className="w-full py-3.5 rounded-xl bg-[#8B5E3C] hover:bg-[#A97142] text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg"
             >
               <Unlock className="w-4 h-4" />
-              <span>Unlock Tabulation Controls</span>
+              <span>Authenticate & Access Controls</span>
             </button>
           </form>
 
-          <div className="bg-[#120f0d] p-3 rounded-xl border border-[#684B35]/40 text-[11px] text-[#c9b8a7] text-center">
-            <span className="font-semibold text-amber-300">Default Credentials:</span> <br />
-            Email: <code className="text-amber-200 font-mono">admin@ssdc.org</code> | Password: <code className="text-amber-200 font-mono">admin123</code>
+          <div className="bg-[#120f0d] p-3.5 rounded-xl border border-[#684B35]/40 text-xs text-[#c9b8a7] text-center space-y-1">
+            <span className="font-semibold text-amber-300">Protected Administrative Hub</span>
+            <p className="text-[11px] text-[#8A7A6D]">
+              All tabulation management, point editing forms, and database configurations are hidden from the public front end until authenticated.
+            </p>
           </div>
         </div>
       ) : (
