@@ -5,6 +5,7 @@ import {
   INITIAL_SPEAKERS,
   INITIAL_ADJUDICATORS
 } from './data/initialData';
+import { autoRankTeams, autoRankSpeakers } from './lib/rankingAlgorithm';
 import {
   fetchTeamsFromSupabase,
   fetchSpeakersFromSupabase,
@@ -25,9 +26,9 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState<boolean>(false);
 
-  // Shared Master Tournament State
-  const [teams, setTeams] = useState<Team[]>(INITIAL_TEAMS);
-  const [speakers, setSpeakers] = useState<Speaker[]>(INITIAL_SPEAKERS);
+  // Shared Master Tournament State with Auto-Ranking Algorithm Applied
+  const [teams, setTeams] = useState<Team[]>(() => autoRankTeams(INITIAL_TEAMS));
+  const [speakers, setSpeakers] = useState<Speaker[]>(() => autoRankSpeakers(INITIAL_SPEAKERS));
   const [adjudicators] = useState(INITIAL_ADJUDICATORS);
 
   // Fetch initial points data from Supabase if connected
@@ -36,27 +37,28 @@ export default function App() {
       try {
         const cloudTeams = await fetchTeamsFromSupabase();
         if (cloudTeams && cloudTeams.length > 0) {
-          setTeams(
-            cloudTeams.map((ct) => {
-              const localMatch = INITIAL_TEAMS.find((it) => it.id === ct.id || it.name === ct.name);
-              return {
-                ...ct,
-                roster: ct.roster && ct.roster.length > 0 ? ct.roster : localMatch ? localMatch.roster : []
-              };
-            })
-          );
+          const formatted = cloudTeams.map((ct) => {
+            const localMatch = INITIAL_TEAMS.find((it) => it.id === ct.id || it.name === ct.name);
+            return {
+              ...ct,
+              roster: ct.roster && ct.roster.length > 0 ? ct.roster : localMatch ? localMatch.roster : []
+            };
+          });
+          setTeams(autoRankTeams(formatted));
         } else {
-          setTeams(INITIAL_TEAMS);
-          await saveTeamsToSupabase(INITIAL_TEAMS);
+          const ranked = autoRankTeams(INITIAL_TEAMS);
+          setTeams(ranked);
+          await saveTeamsToSupabase(ranked);
         }
 
         const cloudSpeakers = await fetchSpeakersFromSupabase();
         if (cloudSpeakers && cloudSpeakers.length >= INITIAL_SPEAKERS.length) {
-          setSpeakers(cloudSpeakers);
+          setSpeakers(autoRankSpeakers(cloudSpeakers));
         } else {
           // If cloud has no speakers or fewer speakers, upload full debater roster to Supabase
-          setSpeakers(INITIAL_SPEAKERS);
-          await saveSpeakersToSupabase(INITIAL_SPEAKERS);
+          const ranked = autoRankSpeakers(INITIAL_SPEAKERS);
+          setSpeakers(ranked);
+          await saveSpeakersToSupabase(ranked);
         }
       } catch (err) {
         console.warn('Supabase initial fetch skipped:', err);

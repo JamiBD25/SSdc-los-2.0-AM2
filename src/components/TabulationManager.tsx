@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Team, Speaker, TabSheetEntry, SupabaseConfig } from '../types';
 import { INITIAL_TEAMS, INITIAL_SPEAKERS } from '../data/initialData';
+import { autoRankTeams, autoRankSpeakers } from '../lib/rankingAlgorithm';
 import {
   saveTeamsToSupabase,
   saveSpeakersToSupabase,
@@ -196,14 +197,8 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
       return t;
     });
 
-    // Re-rank teams
-    updatedTeams.sort((a, b) => {
-      if (b.win !== a.win) return b.win - a.win;
-      if (b.totalSpeakerPoints !== a.totalSpeakerPoints) return b.totalSpeakerPoints - a.totalSpeakerPoints;
-      return b.netMargin - a.netMargin;
-    });
-
-    const reRankedTeams = updatedTeams.map((t, i) => ({ ...t, rank: i + 1 }));
+    // Auto-rank teams using official tie-breaking algorithm
+    const reRankedTeams = autoRankTeams(updatedTeams);
     setTeams(reRankedTeams);
 
     // Update Speakers Points
@@ -259,9 +254,8 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
       }
     });
 
-    // Re-rank speakers by total points
-    updatedSpeakers.sort((a, b) => b.totalPoints - a.totalPoints);
-    const reRankedSpeakers = updatedSpeakers.map((s, i) => ({ ...s, rank: i + 1 }));
+    // Auto-rank speakers using official tie-breaking algorithm
+    const reRankedSpeakers = autoRankSpeakers(updatedSpeakers);
     setSpeakers(reRankedSpeakers);
 
     // Save to Supabase
@@ -311,17 +305,64 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
   // Upload / Restore All Default Debaters to Supabase
   const handleUploadDefaultSpeakersToSupabase = async () => {
     if (window.confirm('Upload all 142 debaters and initial team rosters to Supabase now?')) {
-      setSpeakers(INITIAL_SPEAKERS);
-      setTeams(INITIAL_TEAMS);
+      const reRankedS = autoRankSpeakers(INITIAL_SPEAKERS);
+      const reRankedT = autoRankTeams(INITIAL_TEAMS);
+      setSpeakers(reRankedS);
+      setTeams(reRankedT);
       setSyncLoading(true);
-      const tOk = await saveTeamsToSupabase(INITIAL_TEAMS);
-      const sOk = await saveSpeakersToSupabase(INITIAL_SPEAKERS);
+      const tOk = await saveTeamsToSupabase(reRankedT);
+      const sOk = await saveSpeakersToSupabase(reRankedS);
       setSyncLoading(false);
       if (tOk && sOk) {
         showToast('Successfully uploaded all 142 debaters and team rosters to Supabase!');
       } else {
         showToast('Debaters updated locally. Check Supabase connection status.');
       }
+    }
+  };
+
+  // Auto-Rank Teams Handler
+  const handleAutoRankTeams = async () => {
+    const reRanked = autoRankTeams(teams);
+    setTeams(reRanked);
+    setSyncLoading(true);
+    const ok = await saveTeamsToSupabase(reRanked);
+    setSyncLoading(false);
+    if (ok) {
+      showToast('⚡ Auto-Ranking Algorithm applied to all Teams & saved to Supabase!');
+    } else {
+      showToast('⚡ Auto-Ranking Algorithm applied to Teams locally!');
+    }
+  };
+
+  // Auto-Rank Speakers Handler
+  const handleAutoRankSpeakers = async () => {
+    const reRanked = autoRankSpeakers(speakers);
+    setSpeakers(reRanked);
+    setSyncLoading(true);
+    const ok = await saveSpeakersToSupabase(reRanked);
+    setSyncLoading(false);
+    if (ok) {
+      showToast('⚡ Auto-Ranking Algorithm applied to all Speakers & saved to Supabase!');
+    } else {
+      showToast('⚡ Auto-Ranking Algorithm applied to Speakers locally!');
+    }
+  };
+
+  // Master Auto-Rank All Handler
+  const handleAutoRankAll = async () => {
+    const reRankedTeams = autoRankTeams(teams);
+    const reRankedSpeakers = autoRankSpeakers(speakers);
+    setTeams(reRankedTeams);
+    setSpeakers(reRankedSpeakers);
+    setSyncLoading(true);
+    const tOk = await saveTeamsToSupabase(reRankedTeams);
+    const sOk = await saveSpeakersToSupabase(reRankedSpeakers);
+    setSyncLoading(false);
+    if (tOk && sOk) {
+      showToast('⚡ Full Tournament Auto-Ranking Algorithm applied & synced to Supabase!');
+    } else {
+      showToast('⚡ Full Tournament Auto-Ranking Algorithm applied locally!');
     }
   };
 
@@ -496,7 +537,17 @@ CREATE TABLE IF NOT EXISTS tab_entries (
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <button
+                onClick={handleAutoRankAll}
+                disabled={syncLoading}
+                className="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow border border-amber-300"
+                title="Run official tournament tie-breaker auto-ranking algorithm for teams & speakers"
+              >
+                <Calculator className="w-3.5 h-3.5 text-stone-950" />
+                <span>⚡ Auto-Rank Algorithm (All)</span>
+              </button>
+
               <button
                 onClick={handleSyncAllToSupabase}
                 disabled={syncLoading}
@@ -914,18 +965,28 @@ CREATE TABLE IF NOT EXISTS tab_entries (
           {/* SUB TAB 2: EDIT TEAM POINTS */}
           {activeSubTab === 'teams-edit' && (
             <div className="los-glass-card p-6 space-y-5 border-t-2 border-emerald-500">
-              <div className="flex justify-between items-center border-b border-[#684B35]/40 pb-3">
+              <div className="flex justify-between items-center border-b border-[#684B35]/40 pb-3 flex-wrap gap-2">
                 <h3 className="font-bold text-lg text-[#f5e4cb] flex items-center gap-2">
                   <Table className="w-5 h-5 text-emerald-400" />
                   <span>Direct Team Points Editor Table</span>
                 </h3>
-                <button
-                  onClick={handleSyncAllToSupabase}
-                  className="px-4 py-2 bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow"
-                >
-                  <Save className="w-4 h-4" />
-                  <span>Save Table to Supabase</span>
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={handleAutoRankTeams}
+                    className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs rounded-xl flex items-center gap-1.5 transition-all shadow border border-amber-300"
+                    title="Auto-rank teams by Wins > Total Speaker Points > Net Margin"
+                  >
+                    <Calculator className="w-3.5 h-3.5 text-stone-950" />
+                    <span>⚡ Auto-Rank Teams</span>
+                  </button>
+                  <button
+                    onClick={handleSyncAllToSupabase}
+                    className="px-4 py-2 bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow"
+                  >
+                    <Save className="w-4 h-4" />
+                    <span>Save Table to Supabase</span>
+                  </button>
+                </div>
               </div>
 
               <div className="overflow-x-auto">
@@ -1044,7 +1105,15 @@ CREATE TABLE IF NOT EXISTS tab_entries (
                   <SlidersHorizontal className="w-5 h-5 text-amber-400" />
                   <span>Direct Speaker Scores Editor Table</span>
                 </h3>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <button
+                    onClick={handleAutoRankSpeakers}
+                    className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs rounded-xl flex items-center gap-1.5 transition-all shadow border border-amber-300"
+                    title="Auto-rank speakers by Total Points > Average Score > Best Score > Rounds Spoken"
+                  >
+                    <Calculator className="w-3.5 h-3.5 text-stone-950" />
+                    <span>⚡ Auto-Rank Speakers</span>
+                  </button>
                   <button
                     onClick={handleUploadDefaultSpeakersToSupabase}
                     className="px-3.5 py-2 bg-emerald-900/80 hover:bg-emerald-800 text-emerald-200 border border-emerald-700/60 text-xs font-bold rounded-xl flex items-center gap-1.5 transition-all shadow"
