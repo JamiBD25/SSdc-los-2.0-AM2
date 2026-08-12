@@ -107,6 +107,7 @@ export async function fetchTeamsFromSupabase(): Promise<Team[] | null> {
     const { data, error } = await client
       .from('teams')
       .select('*')
+      .range(0, 9999)
       .order('rank', { ascending: true });
 
     if (error) {
@@ -134,11 +135,15 @@ export async function fetchTeamsFromSupabase(): Promise<Team[] | null> {
   return null;
 }
 
-export async function saveTeamsToSupabase(teams: Team[]): Promise<boolean> {
+export async function saveTeamsToSupabase(teams: Team[], clearFirst = false): Promise<boolean> {
   const client = getSupabaseClient();
   if (!client) return false;
 
   try {
+    if (clearFirst) {
+      await client.from('teams').delete().neq('id', 'clear_override');
+    }
+
     const records = teams.map((t) => ({
       id: t.id,
       rank: t.rank,
@@ -172,6 +177,7 @@ export async function fetchSpeakersFromSupabase(): Promise<Speaker[] | null> {
     const { data, error } = await client
       .from('speakers')
       .select('*')
+      .range(0, 9999)
       .order('rank', { ascending: true });
 
     if (error) {
@@ -199,11 +205,15 @@ export async function fetchSpeakersFromSupabase(): Promise<Speaker[] | null> {
   return null;
 }
 
-export async function saveSpeakersToSupabase(speakers: Speaker[]): Promise<boolean> {
+export async function saveSpeakersToSupabase(speakers: Speaker[], clearFirst = false): Promise<boolean> {
   const client = getSupabaseClient();
   if (!client) return false;
 
   try {
+    if (clearFirst) {
+      await client.from('speakers').delete().neq('id', 'clear_override');
+    }
+
     const records = speakers.map((s) => ({
       id: s.id,
       rank: s.rank,

@@ -58,13 +58,21 @@ export default function App() {
 
         const cloudSpeakers = await fetchSpeakersFromSupabase();
         if (cloudSpeakers && cloudSpeakers.length >= INITIAL_SPEAKERS.length) {
-          setSpeakers(autoRankSpeakers(cloudSpeakers));
+          // Deduplicate by name + teamName to prevent duplicate rows
+          const uniqueMap = new Map<string, Speaker>();
+          cloudSpeakers.forEach((s) => {
+            const key = `${s.name.trim().toLowerCase()}_${s.teamName.trim().toLowerCase()}`;
+            if (!uniqueMap.has(key)) {
+              uniqueMap.set(key, s);
+            }
+          });
+          setSpeakers(autoRankSpeakers(Array.from(uniqueMap.values())));
         } else {
-          // Upload complete attachment debater roster (147 speakers) to Supabase
+          // Upload complete attachment debater roster (147 speakers) to Supabase (clearing stale duplicate rows)
           const ranked = autoRankSpeakers(INITIAL_SPEAKERS);
           setSpeakers(ranked);
           if (config.isConnected) {
-            await saveSpeakersToSupabase(ranked);
+            await saveSpeakersToSupabase(ranked, true);
           }
         }
       } catch (err) {

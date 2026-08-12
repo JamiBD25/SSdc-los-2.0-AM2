@@ -311,8 +311,8 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
       setSpeakers(reRankedS);
       setTeams(reRankedT);
       setSyncLoading(true);
-      const tOk = await saveTeamsToSupabase(reRankedT);
-      const sOk = await saveSpeakersToSupabase(reRankedS);
+      const tOk = await saveTeamsToSupabase(reRankedT, true);
+      const sOk = await saveSpeakersToSupabase(reRankedS, true);
       setSyncLoading(false);
       if (tOk && sOk) {
         showToast('Successfully uploaded all 147 debaters and attachment team data to Supabase!');
