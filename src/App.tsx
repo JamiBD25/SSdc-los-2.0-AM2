@@ -39,7 +39,7 @@ export default function App() {
         const config = await initGlobalSupabaseConfig();
 
         const cloudTeams = await fetchTeamsFromSupabase();
-        if (cloudTeams && cloudTeams.length > 0) {
+        if (cloudTeams && cloudTeams.length >= INITIAL_TEAMS.length) {
           const formatted = cloudTeams.map((ct) => {
             const localMatch = INITIAL_TEAMS.find((it) => it.id === ct.id || it.name === ct.name);
             return {
@@ -48,20 +48,24 @@ export default function App() {
             };
           });
           setTeams(autoRankTeams(formatted));
-        } else if (config.isConnected) {
+        } else {
           const ranked = autoRankTeams(INITIAL_TEAMS);
           setTeams(ranked);
-          await saveTeamsToSupabase(ranked);
+          if (config.isConnected) {
+            await saveTeamsToSupabase(ranked);
+          }
         }
 
         const cloudSpeakers = await fetchSpeakersFromSupabase();
-        if (cloudSpeakers && cloudSpeakers.length > 0) {
+        if (cloudSpeakers && cloudSpeakers.length >= INITIAL_SPEAKERS.length) {
           setSpeakers(autoRankSpeakers(cloudSpeakers));
-        } else if (config.isConnected) {
-          // If cloud has no speakers, upload initial debater roster to Supabase
+        } else {
+          // Upload complete attachment debater roster (147 speakers) to Supabase
           const ranked = autoRankSpeakers(INITIAL_SPEAKERS);
           setSpeakers(ranked);
-          await saveSpeakersToSupabase(ranked);
+          if (config.isConnected) {
+            await saveSpeakersToSupabase(ranked);
+          }
         }
       } catch (err) {
         console.warn('Supabase initial fetch skipped:', err);

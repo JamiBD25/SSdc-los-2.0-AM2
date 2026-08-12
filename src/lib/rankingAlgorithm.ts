@@ -21,12 +21,13 @@ export const autoRankTeams = (teamsList: Team[]): Team[] => {
   return sorted.map((team, idx) => {
     const totalGames = team.win + team.loss;
     let breakStatus: Team['breakStatus'] = 'N/A';
+    const rank = idx + 1;
 
     if (totalGames === 0) {
       breakStatus = 'N/A';
-    } else if (team.win >= 3) {
+    } else if (rank <= 8) {
       breakStatus = 'Qualified';
-    } else if (team.win >= 2) {
+    } else if (rank <= 12) {
       breakStatus = 'Contending';
     } else {
       breakStatus = 'Eliminated';
@@ -34,9 +35,9 @@ export const autoRankTeams = (teamsList: Team[]): Team[] => {
 
     return {
       ...team,
-      rank: idx + 1,
+      rank,
       totalSpeakerPoints: parseFloat((team.totalSpeakerPoints || 0).toFixed(1)),
-      netMargin: parseFloat((team.netMargin || 0).toFixed(1)),
+      netMargin: parseFloat((team.netMargin || 0).toFixed(2)),
       breakStatus
     };
   });
@@ -45,8 +46,8 @@ export const autoRankTeams = (teamsList: Team[]): Team[] => {
 /**
  * Official Tournament Auto-Ranking Algorithm for Individual Speakers / Debaters
  * Tie-Breaker Logic:
- * 1. Primary: Total Speaker Points (desc)
- * 2. Secondary: Average Speaker Score (desc)
+ * 1. Primary: Average Speaker Score (desc)
+ * 2. Secondary: Total Speaker Points (desc)
  * 3. Tertiary: Best Single Round Score (desc)
  * 4. Quaternary: Rounds Spoken (desc)
  * 5. Quinquenary: Speaker Name (asc)
@@ -55,7 +56,7 @@ export const autoRankSpeakers = (speakersList: Speaker[]): Speaker[] => {
   const calculated = speakersList.map((s) => {
     const rounds = Math.max(0, s.roundsSpoken || 0);
     const totalPts = parseFloat((s.totalPoints || 0).toFixed(1));
-    const avgScore = rounds > 0 ? parseFloat((totalPts / rounds).toFixed(2)) : 0;
+    const avgScore = s.averageScore > 0 ? s.averageScore : (rounds > 0 ? parseFloat((totalPts / rounds).toFixed(2)) : 0);
     const bestScore = parseFloat((s.bestScore || 0).toFixed(1));
     const breakEligible = rounds >= 3;
 
@@ -70,8 +71,8 @@ export const autoRankSpeakers = (speakersList: Speaker[]): Speaker[] => {
   });
 
   calculated.sort((a, b) => {
-    if (b.totalPoints !== a.totalPoints) return b.totalPoints - a.totalPoints;
     if (b.averageScore !== a.averageScore) return b.averageScore - a.averageScore;
+    if (b.totalPoints !== a.totalPoints) return b.totalPoints - a.totalPoints;
     if (b.bestScore !== a.bestScore) return b.bestScore - a.bestScore;
     if (b.roundsSpoken !== a.roundsSpoken) return b.roundsSpoken - a.roundsSpoken;
     return a.name.localeCompare(b.name);

@@ -305,7 +305,7 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
 
   // Upload / Restore All Default Debaters to Supabase
   const handleUploadDefaultSpeakersToSupabase = async () => {
-    if (window.confirm('Upload all 142 debaters and initial team rosters to Supabase now?')) {
+    if (window.confirm('Upload all 147 attachment debaters and team standings to Supabase now?')) {
       const reRankedS = autoRankSpeakers(INITIAL_SPEAKERS);
       const reRankedT = autoRankTeams(INITIAL_TEAMS);
       setSpeakers(reRankedS);
@@ -315,7 +315,7 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
       const sOk = await saveSpeakersToSupabase(reRankedS);
       setSyncLoading(false);
       if (tOk && sOk) {
-        showToast('Successfully uploaded all 142 debaters and team rosters to Supabase!');
+        showToast('Successfully uploaded all 147 debaters and attachment team data to Supabase!');
       } else {
         showToast('Debaters updated locally. Check Supabase connection status.');
       }
@@ -1132,7 +1132,7 @@ GRANT ALL ON TABLE tab_entries TO anon, authenticated, service_role;
                     className="px-3.5 py-2 bg-emerald-900/80 hover:bg-emerald-800 text-emerald-200 border border-emerald-700/60 text-xs font-bold rounded-xl flex items-center gap-1.5 transition-all shadow"
                   >
                     <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>Upload All 142 Debaters to Supabase</span>
+                    <span>Upload All 147 Attachment Debaters to Supabase</span>
                   </button>
                   <button
                     onClick={handleClearAllSpeakers}
