@@ -16,6 +16,7 @@ async function startServer() {
 
   // Global Supabase Credentials API Endpoints
   const CONFIG_PATH = path.join(process.cwd(), 'supabase-config.json');
+  const ENV_PATH = path.join(process.cwd(), '.env');
 
   app.get('/api/config/supabase', (_req, res) => {
     try {
@@ -26,8 +27,19 @@ async function startServer() {
           return res.json(json);
         }
       }
+      if (fs.existsSync(ENV_PATH)) {
+        const envContent = fs.readFileSync(ENV_PATH, 'utf-8');
+        const urlMatch = envContent.match(/VITE_SUPABASE_URL=(.*)/);
+        const keyMatch = envContent.match(/VITE_SUPABASE_ANON_KEY=(.*)/);
+        if (urlMatch && keyMatch && urlMatch[1] && keyMatch[1]) {
+          return res.json({
+            url: urlMatch[1].trim(),
+            anonKey: keyMatch[1].trim()
+          });
+        }
+      }
     } catch (e) {
-      console.warn('Error reading server supabase-config.json:', e);
+      console.warn('Error reading server supabase config:', e);
     }
 
     res.json({
@@ -51,7 +63,7 @@ async function startServer() {
       process.env.VITE_SUPABASE_ANON_KEY = config.anonKey;
 
       const envContent = `VITE_SUPABASE_URL=${config.url}\nVITE_SUPABASE_ANON_KEY=${config.anonKey}\n`;
-      fs.writeFileSync(path.join(process.cwd(), '.env'), envContent);
+      fs.writeFileSync(ENV_PATH, envContent);
 
       res.json({ success: true, message: 'Supabase credentials saved globally for all users & browsers.', config });
     } catch (err: any) {

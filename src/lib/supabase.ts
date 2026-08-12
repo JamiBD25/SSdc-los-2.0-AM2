@@ -17,6 +17,7 @@ export async function initGlobalSupabaseConfig(): Promise<SupabaseConfig> {
         inMemoryServerKey = data.anonKey.trim();
         localStorage.setItem(STORAGE_KEY_URL, inMemoryServerUrl);
         localStorage.setItem(STORAGE_KEY_KEY, inMemoryServerKey);
+        cachedClient = null; // Clear cached client so getSupabaseClient picks up new config immediately
       }
     }
   } catch (e) {
@@ -73,18 +74,20 @@ export async function saveSupabaseConfig(url: string, anonKey: string): Promise<
 
 let cachedClient: SupabaseClient | null = null;
 let lastClientUrl = '';
+let lastClientKey = '';
 
 export function getSupabaseClient(): SupabaseClient | null {
   const config = getStoredSupabaseConfig();
   if (!config.isConnected) return null;
 
-  if (cachedClient && lastClientUrl === config.url) {
+  if (cachedClient && lastClientUrl === config.url && lastClientKey === config.anonKey) {
     return cachedClient;
   }
 
   try {
     cachedClient = createClient(config.url, config.anonKey);
     lastClientUrl = config.url;
+    lastClientKey = config.anonKey;
     return cachedClient;
   } catch (err) {
     console.error('Failed to initialize Supabase client:', err);

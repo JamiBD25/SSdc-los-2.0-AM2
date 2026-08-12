@@ -382,7 +382,7 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
     }
   };
 
-  const sqlSchemaCode = `-- Run this inside your Supabase SQL Editor to create tables for points:
+  const sqlSchemaCode = `-- Run this inside your Supabase SQL Editor to create tables for points & allow public access:
 
 CREATE TABLE IF NOT EXISTS teams (
   id TEXT PRIMARY KEY,
@@ -433,6 +433,16 @@ CREATE TABLE IF NOT EXISTS tab_entries (
   adjudicator_name TEXT,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
+
+-- DISABLE RLS TO ALLOW PUBLIC READ & WRITE FOR ALL VISITORS:
+ALTER TABLE teams DISABLE ROW LEVEL SECURITY;
+ALTER TABLE speakers DISABLE ROW LEVEL SECURITY;
+ALTER TABLE tab_entries DISABLE ROW LEVEL SECURITY;
+
+-- GRANT PERMISSIONS:
+GRANT ALL ON TABLE teams TO anon, authenticated, service_role;
+GRANT ALL ON TABLE speakers TO anon, authenticated, service_role;
+GRANT ALL ON TABLE tab_entries TO anon, authenticated, service_role;
 `;
 
   return (

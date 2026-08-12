@@ -36,7 +36,8 @@ export default function App() {
   useEffect(() => {
     async function loadCloudPoints() {
       try {
-        await initGlobalSupabaseConfig();
+        const config = await initGlobalSupabaseConfig();
+
         const cloudTeams = await fetchTeamsFromSupabase();
         if (cloudTeams && cloudTeams.length > 0) {
           const formatted = cloudTeams.map((ct) => {
@@ -47,17 +48,17 @@ export default function App() {
             };
           });
           setTeams(autoRankTeams(formatted));
-        } else {
+        } else if (config.isConnected) {
           const ranked = autoRankTeams(INITIAL_TEAMS);
           setTeams(ranked);
           await saveTeamsToSupabase(ranked);
         }
 
         const cloudSpeakers = await fetchSpeakersFromSupabase();
-        if (cloudSpeakers && cloudSpeakers.length >= INITIAL_SPEAKERS.length) {
+        if (cloudSpeakers && cloudSpeakers.length > 0) {
           setSpeakers(autoRankSpeakers(cloudSpeakers));
-        } else {
-          // If cloud has no speakers or fewer speakers, upload full debater roster to Supabase
+        } else if (config.isConnected) {
+          // If cloud has no speakers, upload initial debater roster to Supabase
           const ranked = autoRankSpeakers(INITIAL_SPEAKERS);
           setSpeakers(ranked);
           await saveSpeakersToSupabase(ranked);
