@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Speaker } from '../types';
 import { Search, Mic, Award, CheckCircle, AlertTriangle, Download } from 'lucide-react';
+import { autoRankSpeakers } from '../lib/rankingAlgorithm';
 
 interface SpeakersViewProps {
   speakers: Speaker[];
@@ -8,11 +9,19 @@ interface SpeakersViewProps {
 
 export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [eligibilityMode, setEligibilityMode] = useState<'dot' | 'speakerBreak'>('dot');
   const [breakFilter, setBreakFilter] = useState<'all' | 'eligible' | 'ineligible'>('all');
   const [sortBy, setSortBy] = useState<'avg' | 'points' | 'rounds' | 'best'>('avg');
 
+  const minRoundsThreshold = eligibilityMode === 'dot' ? 5 : 3;
+
+  // Re-rank speakers dynamically based on the active eligibility threshold
+  const rankedSpeakers = useMemo(() => {
+    return autoRankSpeakers(speakers, minRoundsThreshold);
+  }, [speakers, minRoundsThreshold]);
+
   const filteredSpeakers = useMemo(() => {
-    return speakers
+    return rankedSpeakers
       .filter((speaker) => {
         const matchesSearch =
           speaker.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -32,7 +41,7 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
         if (sortBy === 'best') return b.bestScore - a.bestScore;
         return a.rank - b.rank;
       });
-  }, [speakers, searchTerm, breakFilter, sortBy]);
+  }, [rankedSpeakers, searchTerm, breakFilter, sortBy]);
 
   const handleExportCSV = () => {
     const headers = ['Rank', 'Speaker Name', 'Team Name', 'Institution', 'Rounds Spoken', 'Total Points', 'Average Score', 'Best Score', 'Break Eligible'];
@@ -52,14 +61,14 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', 'SSDC_LoS_S2_Speaker_Leaderboard.csv');
+    link.setAttribute('download', `SSDC_LoS_S2_Speaker_Leaderboard_${eligibilityMode}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  const bestSpeakerObj = speakers.length > 0
-    ? [...speakers].sort((a, b) => b.averageScore - a.averageScore)[0]
+  const bestSpeakerObj = rankedSpeakers.length > 0
+    ? [...rankedSpeakers].sort((a, b) => b.averageScore - a.averageScore)[0]
     : null;
 
   return (
@@ -89,9 +98,11 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
           </span>
         </div>
         <div className="los-glass-card p-3 sm:p-3.5 text-center">
-          <span className="text-[10px] uppercase font-bold text-[#8A7A6D]">Break Eligible</span>
+          <span className="text-[10px] uppercase font-bold text-[#8A7A6D]">
+            Break Eligible ({eligibilityMode === 'dot' ? 'DoT 5+ Rds' : 'Break 3+ Rds'})
+          </span>
           <span className="block font-['Orbitron'] font-black text-lg sm:text-xl text-amber-400">
-            {speakers.filter((s) => s.breakEligible).length}
+            {rankedSpeakers.filter((s) => s.breakEligible).length}
           </span>
         </div>
         <div className="los-glass-card p-3 sm:p-3.5 text-center">
@@ -108,7 +119,7 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
       <div className="los-glass-card p-3.5 sm:p-5 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-between gap-3 sm:gap-4 max-w-full">
         
         {/* Search */}
-        <div className="relative flex-1 min-w-0 sm:min-w-[220px]">
+        <div className="relative flex-1 min-w-0 sm:min-w-[200px]">
           <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#c9b8a7]" />
           <input
             type="text"
@@ -121,16 +132,30 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
 
         {/* Filters */}
         <div className="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
+          
+          {/* Eligibility Criteria Dropdown */}
+          <select
+            value={eligibilityMode}
+            onChange={(e) => setEligibilityMode(e.target.value as 'dot' | 'speakerBreak')}
+            className="flex-1 sm:flex-none bg-[#1a1410] text-xs font-bold text-amber-300 border border-amber-600/80 px-3 py-2 rounded-xl focus:outline-none focus:border-amber-400 cursor-pointer shadow-inner"
+            title="Select Minimum Rounds for Eligibility"
+          >
+            <option value="dot">DoT Eligible (Min 5 Rounds) ★ Default</option>
+            <option value="speakerBreak">Speaker Break Eligible (Min 3 Rounds)</option>
+          </select>
+
+          {/* Status Filter */}
           <select
             value={breakFilter}
             onChange={(e) => setBreakFilter(e.target.value as 'all' | 'eligible' | 'ineligible')}
             className="flex-1 sm:flex-none bg-[#120f0d] text-xs font-semibold text-[#f5e4cb] border border-[#684B35] px-2.5 py-2 rounded-xl focus:outline-none focus:border-amber-400"
           >
             <option value="all">All Debaters</option>
-            <option value="eligible">Break Eligible (5+ Rounds)</option>
-            <option value="ineligible">Needs More Rounds (&lt;5)</option>
+            <option value="eligible">Eligible Only ({minRoundsThreshold}+ Rds)</option>
+            <option value="ineligible">Needs More Rounds (&lt;{minRoundsThreshold})</option>
           </select>
 
+          {/* Sort By */}
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as 'avg' | 'points' | 'rounds' | 'best')}
@@ -144,7 +169,7 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
 
           <button
             onClick={handleExportCSV}
-            className="px-2.5 py-2 bg-[#120f0d] hover:bg-[#8B5E3C] text-[#f5e4cb] hover:text-white border border-[#684B35] rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all"
+            className="px-2.5 py-2 bg-[#120f0d] hover:bg-[#8B5E3C] text-[#f5e4cb] hover:text-white border border-[#684B35] rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all shrink-0"
             title="Download CSV Table"
           >
             <Download className="w-3.5 h-3.5 text-amber-400" />
@@ -255,10 +280,10 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
                             <span className="sm:hidden">Elig</span>
                           </span>
                         ) : (
-                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-amber-950/80 text-amber-300 border border-amber-700 whitespace-nowrap" title="Needs at least 5 rounds to break">
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-amber-950/80 text-amber-300 border border-amber-700 whitespace-nowrap" title={`Needs at least ${minRoundsThreshold} rounds to break`}>
                             <AlertTriangle className="w-3 h-3 shrink-0" />
-                            <span className="hidden sm:inline">{5 - speaker.roundsSpoken} More Rd</span>
-                            <span className="sm:hidden">+{5 - speaker.roundsSpoken} Rd</span>
+                            <span className="hidden sm:inline">{Math.max(0, minRoundsThreshold - speaker.roundsSpoken)} More Rd</span>
+                            <span className="sm:hidden">+{Math.max(0, minRoundsThreshold - speaker.roundsSpoken)} Rd</span>
                           </span>
                         )
                       ) : (

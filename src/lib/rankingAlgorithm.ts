@@ -54,13 +54,13 @@ export const autoRankTeams = (teamsList: Team[]): Team[] => {
  * 5. Tied Position Assignment (1, 1, 3 rule): If eligibility, averageScore, and roundsSpoken are ALL equal,
  *    speakers receive the EXACT SAME rank number, and the next position skips accordingly.
  */
-export const autoRankSpeakers = (speakersList: Speaker[]): Speaker[] => {
+export const autoRankSpeakers = (speakersList: Speaker[], minRoundsThreshold: number = 5): Speaker[] => {
   const calculated = speakersList.map((s) => {
     const rounds = Math.max(0, s.roundsSpoken || 0);
     const totalPts = parseFloat((s.totalPoints || 0).toFixed(1));
     const avgScore = s.averageScore > 0 ? s.averageScore : (rounds > 0 ? parseFloat((totalPts / rounds).toFixed(2)) : 0);
     const bestScore = parseFloat((s.bestScore || 0).toFixed(1));
-    const breakEligible = rounds >= 5;
+    const breakEligible = rounds >= minRoundsThreshold;
 
     return {
       ...s,
