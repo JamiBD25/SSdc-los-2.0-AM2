@@ -1,5 +1,6 @@
 export type NavTab = 
   | 'home'
+  | 'matchup'
   | 'teams'
   | 'speakers'
   | 'adjudicators'

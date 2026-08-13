@@ -20,6 +20,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { HomeContent } from './components/HomeContent';
 import { TeamsView } from './components/TeamsView';
+import { MatchupView } from './components/MatchupView';
 import { SpeakersView } from './components/SpeakersView';
 import { AdjudicatorsView } from './components/AdjudicatorsView';
 import { TabulationManager } from './components/TabulationManager';
@@ -106,6 +107,7 @@ export default function App() {
         {/* MAIN TAB CONTENT */}
         <main className="transition-all duration-300 w-full max-w-full overflow-x-hidden">
           {activeTab === 'home' && <HomeContent setActiveTab={setActiveTab} />}
+          {activeTab === 'matchup' && <MatchupView />}
           {activeTab === 'teams' && <TeamsView teams={teams} />}
           {activeTab === 'speakers' && <SpeakersView speakers={speakers} />}
           {activeTab === 'adjudicators' && <AdjudicatorsView adjudicators={adjudicators} />}
