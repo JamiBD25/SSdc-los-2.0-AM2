@@ -45,12 +45,14 @@ export const autoRankTeams = (teamsList: Team[]): Team[] => {
 
 /**
  * Official Tournament Auto-Ranking Algorithm for Individual Speakers / Debaters
- * Tie-Breaker Logic:
- * 1. Primary: Average Speaker Score (desc)
- * 2. Secondary: Total Speaker Points (desc)
- * 3. Tertiary: Best Single Round Score (desc)
- * 4. Quaternary: Rounds Spoken (desc)
- * 5. Quinquenary: Speaker Name (asc)
+ *
+ * Rules:
+ * 1. Minimum 5 Rounds Requirement: Debaters with >= 5 rounds (breakEligible) rank above those with < 5 rounds.
+ * 2. Primary Rank Metric: Average Speaker Score (descending)
+ * 3. Secondary Tie-Breaker: Rounds Spoken (descending)
+ * 4. Tertiary Tie-Breaker (for sorting order): Total Points (descending), Best Single Round Score (descending), Speaker Name (ascending)
+ * 5. Tied Position Assignment (1, 1, 3 rule): If eligibility, averageScore, and roundsSpoken are ALL equal,
+ *    speakers receive the EXACT SAME rank number, and the next position skips accordingly.
  */
 export const autoRankSpeakers = (speakersList: Speaker[]): Speaker[] => {
   const calculated = speakersList.map((s) => {
@@ -58,7 +60,7 @@ export const autoRankSpeakers = (speakersList: Speaker[]): Speaker[] => {
     const totalPts = parseFloat((s.totalPoints || 0).toFixed(1));
     const avgScore = s.averageScore > 0 ? s.averageScore : (rounds > 0 ? parseFloat((totalPts / rounds).toFixed(2)) : 0);
     const bestScore = parseFloat((s.bestScore || 0).toFixed(1));
-    const breakEligible = rounds >= 3;
+    const breakEligible = rounds >= 5;
 
     return {
       ...s,
@@ -71,15 +73,49 @@ export const autoRankSpeakers = (speakersList: Speaker[]): Speaker[] => {
   });
 
   calculated.sort((a, b) => {
-    if (b.averageScore !== a.averageScore) return b.averageScore - a.averageScore;
-    if (b.totalPoints !== a.totalPoints) return b.totalPoints - a.totalPoints;
-    if (b.bestScore !== a.bestScore) return b.bestScore - a.bestScore;
-    if (b.roundsSpoken !== a.roundsSpoken) return b.roundsSpoken - a.roundsSpoken;
+    // 1. Minimum 5 rounds requirement first
+    if (a.breakEligible !== b.breakEligible) {
+      return a.breakEligible ? -1 : 1;
+    }
+    // 2. Primary: Average Speaker Score (desc)
+    if (b.averageScore !== a.averageScore) {
+      return b.averageScore - a.averageScore;
+    }
+    // 3. Secondary: Rounds Spoken (desc)
+    if (b.roundsSpoken !== a.roundsSpoken) {
+      return b.roundsSpoken - a.roundsSpoken;
+    }
+    // 4. Tertiary: Total Speaker Points (desc)
+    if (b.totalPoints !== a.totalPoints) {
+      return b.totalPoints - a.totalPoints;
+    }
+    // 5. Quaternary: Best Single Round Score (desc)
+    if (b.bestScore !== a.bestScore) {
+      return b.bestScore - a.bestScore;
+    }
+    // 6. Name (asc)
     return a.name.localeCompare(b.name);
   });
 
-  return calculated.map((s, idx) => ({
-    ...s,
-    rank: idx + 1
-  }));
+  let currentRank = 1;
+  return calculated.map((s, idx) => {
+    if (idx > 0) {
+      const prev = calculated[idx - 1];
+      const isTied =
+        prev.breakEligible === s.breakEligible &&
+        prev.averageScore === s.averageScore &&
+        prev.roundsSpoken === s.roundsSpoken;
+
+      if (!isTied) {
+        currentRank = idx + 1;
+      }
+    } else {
+      currentRank = 1;
+    }
+
+    return {
+      ...s,
+      rank: currentRank
+    };
+  });
 };

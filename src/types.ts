@@ -15,7 +15,7 @@ export interface Speaker {
   roundsSpoken: number;
   averageScore: number;
   bestScore: number;
-  breakEligible: boolean; // >= 3 rounds
+  breakEligible: boolean; // >= 5 rounds
 }
 
 export interface Team {

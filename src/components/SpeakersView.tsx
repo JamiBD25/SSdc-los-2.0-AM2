@@ -30,14 +30,14 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
         if (sortBy === 'points') return b.totalPoints - a.totalPoints;
         if (sortBy === 'rounds') return b.roundsSpoken - a.roundsSpoken;
         if (sortBy === 'best') return b.bestScore - a.bestScore;
-        return b.averageScore - a.averageScore;
+        return a.rank - b.rank;
       });
   }, [speakers, searchTerm, breakFilter, sortBy]);
 
   const handleExportCSV = () => {
     const headers = ['Rank', 'Speaker Name', 'Team Name', 'Institution', 'Rounds Spoken', 'Total Points', 'Average Score', 'Best Score', 'Break Eligible'];
-    const rows = filteredSpeakers.map((s, idx) => [
-      idx + 1,
+    const rows = filteredSpeakers.map((s) => [
+      s.rank,
       `"${s.name.replace(/"/g, '""')}"`,
       `"${s.teamName.replace(/"/g, '""')}"`,
       `"${s.institution.replace(/"/g, '""')}"`,
@@ -127,8 +127,8 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
             className="flex-1 sm:flex-none bg-[#120f0d] text-xs font-semibold text-[#f5e4cb] border border-[#684B35] px-2.5 py-2 rounded-xl focus:outline-none focus:border-amber-400"
           >
             <option value="all">All Debaters</option>
-            <option value="eligible">Break Eligible (3+ Rounds)</option>
-            <option value="ineligible">Needs More Rounds (&lt;3)</option>
+            <option value="eligible">Break Eligible (5+ Rounds)</option>
+            <option value="ineligible">Needs More Rounds (&lt;5)</option>
           </select>
 
           <select
@@ -171,7 +171,7 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
             </thead>
             <tbody className="divide-y divide-[#684B35]/40 text-xs sm:text-sm">
               {filteredSpeakers.map((speaker, index) => {
-                const displayRank = index + 1;
+                const displayRank = speaker.rank || (index + 1);
                 const hasSpoken = speaker.roundsSpoken > 0 || speaker.totalPoints > 0;
 
                 return (
@@ -255,10 +255,10 @@ export const SpeakersView: React.FC<SpeakersViewProps> = ({ speakers }) => {
                             <span className="sm:hidden">Elig</span>
                           </span>
                         ) : (
-                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-amber-950/80 text-amber-300 border border-amber-700 whitespace-nowrap" title="Needs at least 3 rounds to break">
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-amber-950/80 text-amber-300 border border-amber-700 whitespace-nowrap" title="Needs at least 5 rounds to break">
                             <AlertTriangle className="w-3 h-3 shrink-0" />
-                            <span className="hidden sm:inline">{3 - speaker.roundsSpoken} More Rd</span>
-                            <span className="sm:hidden">+{3 - speaker.roundsSpoken} Rd</span>
+                            <span className="hidden sm:inline">{5 - speaker.roundsSpoken} More Rd</span>
+                            <span className="sm:hidden">+{5 - speaker.roundsSpoken} Rd</span>
                           </span>
                         )
                       ) : (
