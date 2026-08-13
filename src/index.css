@@ -109,7 +109,7 @@
   border-radius: 12px;
   cursor: pointer;
   letter-spacing: 0.5px;
-  box-shadow: 0 0 10px #A97142, 0 0 20px #8B5E3C, 0 0 30px rgba(169, 113, 66, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -121,7 +121,7 @@
 
 .prep-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 14px #A97142, 0 0 25px rgba(169, 113, 66, 0.8);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 .prep-btn:active {

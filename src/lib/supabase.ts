@@ -1,5 +1,5 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
-import { Team, Speaker, TabSheetEntry, SupabaseConfig } from '../types';
+import { Team, Speaker, Adjudicator, TabSheetEntry, SupabaseConfig } from '../types';
 
 const STORAGE_KEY_URL = 'ssdc_supabase_url';
 const STORAGE_KEY_KEY = 'ssdc_supabase_key';
@@ -252,6 +252,92 @@ export async function clearSpeakersFromSupabase(): Promise<boolean> {
     return true;
   } catch (err) {
     console.warn('Error clearing speakers from Supabase:', err);
+    return false;
+  }
+}
+
+// ==========================================
+// SUPABASE ADJUDICATOR FUNCTIONS
+// ==========================================
+
+export async function fetchAdjudicatorsFromSupabase(): Promise<Adjudicator[] | null> {
+  const client = getSupabaseClient();
+  if (!client) return null;
+
+  try {
+    const { data, error } = await client
+      .from('adjudicators')
+      .select('*')
+      .order('name', { ascending: true });
+
+    if (error) {
+      console.warn('Supabase fetch adjudicators error:', error.message);
+      return null;
+    }
+
+    if (data && data.length > 0) {
+      return data.map((a: any) => ({
+        id: a.id,
+        name: a.name,
+        institution: a.institution || '',
+        role: a.role || 'Accredited Judge',
+        roundsJudged: Number(a.rounds_judged || a.roundsJudged) || 0,
+        rating: Number(a.rating) || 8.0,
+        bio: a.bio || '',
+        imageUrl: a.image_url || a.imageUrl || ''
+      }));
+    }
+  } catch (err) {
+    console.warn('Error connecting to Supabase adjudicators:', err);
+  }
+  return null;
+}
+
+export async function saveAdjudicatorsToSupabase(adjudicators: Adjudicator[], clearFirst = false): Promise<boolean> {
+  const client = getSupabaseClient();
+  if (!client) return false;
+
+  try {
+    if (clearFirst) {
+      await client.from('adjudicators').delete().neq('id', 'clear_override');
+    }
+
+    const records = adjudicators.map((a) => ({
+      id: a.id,
+      name: a.name,
+      institution: a.institution,
+      role: a.role,
+      rounds_judged: a.roundsJudged,
+      rating: a.rating,
+      bio: a.bio,
+      image_url: a.imageUrl || ''
+    }));
+
+    const { error } = await client.from('adjudicators').upsert(records, { onConflict: 'id' });
+    if (error) {
+      console.warn('Supabase upsert adjudicators failed:', error.message);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.warn('Error saving adjudicators to Supabase:', err);
+    return false;
+  }
+}
+
+export async function deleteAdjudicatorFromSupabase(id: string): Promise<boolean> {
+  const client = getSupabaseClient();
+  if (!client) return false;
+
+  try {
+    const { error } = await client.from('adjudicators').delete().eq('id', id);
+    if (error) {
+      console.warn('Error deleting adjudicator from Supabase:', error.message);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.warn('Exception deleting adjudicator:', err);
     return false;
   }
 }

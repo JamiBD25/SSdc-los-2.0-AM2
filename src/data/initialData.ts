@@ -2127,31 +2127,393 @@ export const INITIAL_SPEAKERS: Speaker[] = [
 
 export const INITIAL_ADJUDICATORS: Adjudicator[] = [
   {
-    "id": "adj1",
-    "name": "Nafis Jami",
-    "institution": "SSDC Core Tabulation",
-    "role": "Chief Adjudicator",
-    "roundsJudged": 15,
-    "rating": 9.8,
-    "bio": "Chief Adjudicator & Lead Tabulator for SSDC League of Spars 2.0.",
-    "imageUrl": "https://i.postimg.cc/nzkdMvhH/Jami-dev-artist.png"
+    "id": "adj_1",
+    "name": "Abdullah Abeer",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/GtZq8cTN/Abdullah-Abeer-(2).png"
   },
   {
-    "id": "adj2",
-    "name": "Tahmidul Alam",
-    "institution": "CSDS",
-    "role": "Deputy CA",
-    "roundsJudged": 12,
-    "rating": 9.4,
-    "bio": "Experienced circuit adjudicator specializing in WSDC & Spar formats."
+    "id": "adj_2",
+    "name": "Adil Raihan",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/GmnXbmR0/Adil-Raihan.png"
   },
   {
-    "id": "adj3",
-    "name": "Sabbir Hossain",
-    "institution": "CCDS",
-    "role": "Independent Adjudicator",
-    "roundsJudged": 10,
-    "rating": 9.1,
-    "bio": "Senior debater and accredited judge across major national spars."
+    "id": "adj_3",
+    "name": "Anas Faisal",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/x1Ph7zzX/Anas-Faisal-(1).png"
+  },
+  {
+    "id": "adj_4",
+    "name": "Asadullahil Galib",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/GtBXmB9d/Asadullahil-Galib-(1).png"
+  },
+  {
+    "id": "adj_5",
+    "name": "Barua Param",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/vBTz01rY/Barua-Param.png"
+  },
+  {
+    "id": "adj_6",
+    "name": "Dhiman Bhattacharjee",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/fknfWB6Q/Dhiman-Bhattacharjee-(1).png"
+  },
+  {
+    "id": "adj_7",
+    "name": "Erfan Apurbo",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/J7gTdQd4/Erfan-Apurbo.png"
+  },
+  {
+    "id": "adj_8",
+    "name": "Esrat Jahan Sumpa",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/fbw50qk0/Esrat-Jahan-Sumpa.png"
+  },
+  {
+    "id": "adj_9",
+    "name": "FAM Ayon",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/0yvhcfbr/FAM-Ayon-(1).png"
+  },
+  {
+    "id": "adj_10",
+    "name": "Inzamamul Haque Ayon",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/fy0vh6qK/Inzamamul-Haque-Ayon.png"
+  },
+  {
+    "id": "adj_11",
+    "name": "Kamrul Ahsan Mahir",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/xdt5GGbh/Kamrul-Ahsan-Mahir.png"
+  },
+  {
+    "id": "adj_12",
+    "name": "Koushick Kabbya",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/MKVh74Kw/Koushick-Kabbya-(1).png"
+  },
+  {
+    "id": "adj_13",
+    "name": "Koushik Dev Nath",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/rst9LvY6/Koushik-Dev-Nath.png"
+  },
+  {
+    "id": "adj_14",
+    "name": "Maruf Islam Munna",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/rmsJfd15/Maruf-Islam-Munna.png"
+  },
+  {
+    "id": "adj_15",
+    "name": "MD Ridwan Ahmed",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/g2p1NDnk/MD-Ridwan-Ahmed-(1).png"
+  },
+  {
+    "id": "adj_16",
+    "name": "Minhazul Monowar",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/fT9H406y/Minhazul-Monowar.png"
+  },
+  {
+    "id": "adj_17",
+    "name": "Misbah Uz Zamal",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/ZqVHPPys/Misbah-Uz-Zamal.png"
+  },
+  {
+    "id": "adj_18",
+    "name": "Mobarak Hossen Sojib",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/ZYBkRnGt/Mobarak-Hossen-Sojib-(1).png"
+  },
+  {
+    "id": "adj_19",
+    "name": "Mohammad Yasir Afnan Rafin",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/nL02KKDH/Mohammad-Yasir-Afnan-Rafin.png"
+  },
+  {
+    "id": "adj_20",
+    "name": "Mubarrat E Ishmum",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/nzrk3s4L/Mubarrat-E-Ishmum.png"
+  },
+  {
+    "id": "adj_21",
+    "name": "Mubdee Rafin",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/d3T9KzN5/Mubdee-Rafin.png"
+  },
+  {
+    "id": "adj_22",
+    "name": "Muhammad Bakhtiar",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/PfpGxJgd/Muhammad-Bakhtiar-(1).png"
+  },
+  {
+    "id": "adj_23",
+    "name": "Nayeem Uddin Rafi",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/Y2J5mk7r/Nayeem-Uddin-Rafi.png"
+  },
+  {
+    "id": "adj_24",
+    "name": "Protik Talukder",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/90qBjvNm/Protik-Talukder.png"
+  },
+  {
+    "id": "adj_25",
+    "name": "Quazi Mohammad Aldin Fardin",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/tJL2ZXnw/Quazi-Mohammad-Aldin-Fardin.png"
+  },
+  {
+    "id": "adj_26",
+    "name": "Ratul Paul",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/qM3mfC9X/Ratul-Paul.png"
+  },
+  {
+    "id": "adj_27",
+    "name": "Ratul Sheikh",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/W4bCP1G9/Ratul-Sheikh-(1).png"
+  },
+  {
+    "id": "adj_28",
+    "name": "Saima Ahmed Chowdhury",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/W3dyhYff/Saima-Ahmed-Chowdhury-(1).png"
+  },
+  {
+    "id": "adj_29",
+    "name": "Sarjil Mahmud Khan",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/2yBxfPXY/Sarjil-Mahmud-Khan.png"
+  },
+  {
+    "id": "adj_30",
+    "name": "Shamima Sharif",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/7Y2BvTpS/Shamima-Sharif.png"
+  },
+  {
+    "id": "adj_31",
+    "name": "Shariful Kader Rakib",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/pTSB42Cp/Shariful-Kader-Rakib.png"
+  },
+  {
+    "id": "adj_32",
+    "name": "Shimanta Das",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/3xhznBdd/Shimanta-Das-(1).png"
+  },
+  {
+    "id": "adj_33",
+    "name": "Simanta Majumdar Utsho",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/765RftQM/Simanta-Majumdar-Utsho-(1).png"
+  },
+  {
+    "id": "adj_34",
+    "name": "SK Abdullah Mahdi",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/nL02KKDf/SK-Abdullah-Mahdi.png"
+  },
+  {
+    "id": "adj_35",
+    "name": "Tahmid Efty",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/T1yt3yhG/Tahmid-Efty.png"
+  },
+  {
+    "id": "adj_36",
+    "name": "Tonmoy Tahsin",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/ZYBkRnGS/Tonmoy-Tahsin-(1).png"
+  },
+  {
+    "id": "adj_37",
+    "name": "Wahidul Islam Akib",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/NMKn5CPJ/Wahidul-Islam-Akib-(1).png"
+  },
+  {
+    "id": "adj_38",
+    "name": "Abdullah Al Muhtasim",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/GhkCrzsp/Abdullah-Al-Muhtasim.png"
+  },
+  {
+    "id": "adj_39",
+    "name": "Shafayet Maruf",
+    "institution": "League Adjudicator",
+    "role": "Accredited Judge",
+    "roundsJudged": 8,
+    "rating": 9,
+    "bio": "Accredited Adjudicator for SSDC League of Spars Season 2.",
+    "imageUrl": "https://i.postimg.cc/dt8YvnTV/Shafayet-Maruf.png"
   }
 ];

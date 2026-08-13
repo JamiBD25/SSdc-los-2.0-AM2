@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Team, Speaker, TabSheetEntry, SupabaseConfig } from '../types';
-import { INITIAL_TEAMS, INITIAL_SPEAKERS } from '../data/initialData';
+import { Team, Speaker, Adjudicator, TabSheetEntry, SupabaseConfig } from '../types';
+import { INITIAL_TEAMS, INITIAL_SPEAKERS, INITIAL_ADJUDICATORS } from '../data/initialData';
 import { autoRankTeams, autoRankSpeakers } from '../lib/rankingAlgorithm';
 import {
   saveTeamsToSupabase,
   saveSpeakersToSupabase,
   clearSpeakersFromSupabase,
+  saveAdjudicatorsToSupabase,
+  deleteAdjudicatorFromSupabase,
   saveTabEntryToSupabase,
   getStoredSupabaseConfig,
   saveSupabaseConfig,
@@ -26,7 +28,9 @@ import {
   Check,
   AlertCircle,
   Code,
-  Cloud
+  Cloud,
+  Gavel,
+  UserPlus
 } from 'lucide-react';
 
 interface TabulationManagerProps {
@@ -34,6 +38,8 @@ interface TabulationManagerProps {
   setTeams: React.Dispatch<React.SetStateAction<Team[]>>;
   speakers: Speaker[];
   setSpeakers: React.Dispatch<React.SetStateAction<Speaker[]>>;
+  adjudicators?: Adjudicator[];
+  setAdjudicators?: React.Dispatch<React.SetStateAction<Adjudicator[]>>;
   isAdminLoggedIn: boolean;
   setIsAdminLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -43,6 +49,8 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
   setTeams,
   speakers,
   setSpeakers,
+  adjudicators = INITIAL_ADJUDICATORS,
+  setAdjudicators,
   isAdminLoggedIn,
   setIsAdminLoggedIn
 }) => {
@@ -52,8 +60,17 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
   const [loginError, setLoginError] = useState('');
 
   // Sub-tabs in Tabulation Manager
-  const [activeSubTab, setActiveSubTab] = useState<'tab-input' | 'teams-edit' | 'speakers-edit' | 'supabase-settings'>('tab-input');
+  const [activeSubTab, setActiveSubTab] = useState<'tab-input' | 'teams-edit' | 'speakers-edit' | 'adjudicators-edit' | 'supabase-settings'>('tab-input');
   const [successToast, setSuccessToast] = useState('');
+
+  // New Adjudicator Form State
+  const [newAdjName, setNewAdjName] = useState('');
+  const [newAdjInstitution, setNewAdjInstitution] = useState('');
+  const [newAdjRole, setNewAdjRole] = useState('Accredited Judge');
+  const [newAdjRounds, setNewAdjRounds] = useState<number>(5);
+  const [newAdjRating, setNewAdjRating] = useState<number>(8.5);
+  const [newAdjBio, setNewAdjBio] = useState('');
+  const [newAdjImageUrl, setNewAdjImageUrl] = useState('');
 
   // Supabase Config State
   const [supabaseConfig, setSupabaseConfigState] = useState<SupabaseConfig>(getStoredSupabaseConfig());
@@ -278,12 +295,82 @@ export const TabulationManager: React.FC<TabulationManagerProps> = ({
     setSyncLoading(true);
     const tOk = await saveTeamsToSupabase(teams);
     const sOk = await saveSpeakersToSupabase(speakers);
+    const aOk = await saveAdjudicatorsToSupabase(adjudicators);
     setSyncLoading(false);
 
     if (tOk && sOk) {
-      showToast('All Team & Speaker Points successfully uploaded to Supabase!');
+      showToast('All Team, Speaker, & Adjudicator data successfully uploaded to Supabase!');
     } else {
       showToast('Supabase is not connected or credentials need verification. (Points stored locally)');
+    }
+  };
+
+  // Add Adjudicator
+  const handleAddAdjudicator = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newAdjName.trim()) return;
+
+    const newAdj: Adjudicator = {
+      id: `adj_${Date.now()}`,
+      name: newAdjName.trim(),
+      institution: newAdjInstitution.trim(),
+      role: newAdjRole,
+      roundsJudged: newAdjRounds,
+      rating: newAdjRating,
+      bio: newAdjBio.trim(),
+      imageUrl: newAdjImageUrl.trim()
+    };
+
+    const updated = [...adjudicators, newAdj];
+    if (setAdjudicators) {
+      setAdjudicators(updated);
+    }
+    
+    setSyncLoading(true);
+    await saveAdjudicatorsToSupabase(updated);
+    setSyncLoading(false);
+
+    // Reset Form
+    setNewAdjName('');
+    setNewAdjInstitution('');
+    setNewAdjRole('Accredited Judge');
+    setNewAdjRounds(5);
+    setNewAdjRating(8.5);
+    setNewAdjBio('');
+    setNewAdjImageUrl('');
+
+    showToast(`Adjudicator "${newAdj.name}" added successfully!`);
+  };
+
+  // Delete Adjudicator
+  const handleDeleteAdjudicator = async (id: string, name: string) => {
+    if (window.confirm(`Are you sure you want to remove adjudicator "${name}"?`)) {
+      const updated = adjudicators.filter((a) => a.id !== id);
+      if (setAdjudicators) {
+        setAdjudicators(updated);
+      }
+      setSyncLoading(true);
+      await deleteAdjudicatorFromSupabase(id);
+      await saveAdjudicatorsToSupabase(updated);
+      setSyncLoading(false);
+      showToast(`Adjudicator "${name}" removed.`);
+    }
+  };
+
+  // Upload Default Adjudicators
+  const handleUploadDefaultAdjudicators = async () => {
+    if (window.confirm('Restore & upload default 15 official adjudicators to Supabase?')) {
+      if (setAdjudicators) {
+        setAdjudicators(INITIAL_ADJUDICATORS);
+      }
+      setSyncLoading(true);
+      const ok = await saveAdjudicatorsToSupabase(INITIAL_ADJUDICATORS, true);
+      setSyncLoading(false);
+      if (ok) {
+        showToast('Default 15 adjudicators successfully uploaded to Supabase!');
+      } else {
+        showToast('Adjudicators restored locally.');
+      }
     }
   };
 
@@ -410,6 +497,17 @@ CREATE TABLE IF NOT EXISTS speakers (
   break_eligible BOOLEAN DEFAULT FALSE
 );
 
+CREATE TABLE IF NOT EXISTS adjudicators (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  institution TEXT,
+  role TEXT,
+  rounds_judged INT DEFAULT 0,
+  rating NUMERIC(3,1) DEFAULT 8.0,
+  bio TEXT,
+  image_url TEXT
+);
+
 CREATE TABLE IF NOT EXISTS tab_entries (
   id TEXT PRIMARY KEY,
   round_number INT,
@@ -437,11 +535,13 @@ CREATE TABLE IF NOT EXISTS tab_entries (
 -- DISABLE RLS TO ALLOW PUBLIC READ & WRITE FOR ALL VISITORS:
 ALTER TABLE teams DISABLE ROW LEVEL SECURITY;
 ALTER TABLE speakers DISABLE ROW LEVEL SECURITY;
+ALTER TABLE adjudicators DISABLE ROW LEVEL SECURITY;
 ALTER TABLE tab_entries DISABLE ROW LEVEL SECURITY;
 
 -- GRANT PERMISSIONS:
 GRANT ALL ON TABLE teams TO anon, authenticated, service_role;
 GRANT ALL ON TABLE speakers TO anon, authenticated, service_role;
+GRANT ALL ON TABLE adjudicators TO anon, authenticated, service_role;
 GRANT ALL ON TABLE tab_entries TO anon, authenticated, service_role;
 `;
 
@@ -615,6 +715,18 @@ GRANT ALL ON TABLE tab_entries TO anon, authenticated, service_role;
             >
               <SlidersHorizontal className="w-4 h-4" />
               <span>Edit Speaker Scores ({speakers.length})</span>
+            </button>
+
+            <button
+              onClick={() => setActiveSubTab('adjudicators-edit')}
+              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 ${
+                activeSubTab === 'adjudicators-edit'
+                  ? 'bg-[#8B5E3C] text-white border border-[#A97142]'
+                  : 'bg-[#120f0d] text-[#c9b8a7] hover:text-white'
+              }`}
+            >
+              <Gavel className="w-4 h-4 text-amber-300" />
+              <span>Adjudicators Panel ({adjudicators.length})</span>
             </button>
 
             <button
@@ -1245,7 +1357,244 @@ GRANT ALL ON TABLE tab_entries TO anon, authenticated, service_role;
             </div>
           )}
 
-          {/* SUB TAB 4: SUPABASE SETTINGS */}
+          {/* SUB TAB: EDIT & MANAGE ADJUDICATORS */}
+          {activeSubTab === 'adjudicators-edit' && (
+            <div className="los-glass-card p-6 space-y-6 border-t-2 border-amber-400">
+              <div className="flex flex-wrap justify-between items-center border-b border-[#684B35]/40 pb-3 gap-3">
+                <div>
+                  <h3 className="font-bold text-lg text-[#f5e4cb] flex items-center gap-2">
+                    <Gavel className="w-5 h-5 text-amber-400" />
+                    <span>Tournament Adjudicator Panel Management</span>
+                  </h3>
+                  <p className="text-xs text-[#c9b8a7]">
+                    Add, edit, or remove adjudicators presiding over League of Spars Season 2.
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2 flex-wrap">
+                  <button
+                    onClick={handleUploadDefaultAdjudicators}
+                    className="px-3.5 py-2 bg-emerald-900/80 hover:bg-emerald-800 text-emerald-200 border border-emerald-700/60 text-xs font-bold rounded-xl flex items-center gap-1.5 transition-all shadow"
+                  >
+                    <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>Upload Default 15 Adjudicators to Supabase</span>
+                  </button>
+                  <button
+                    onClick={handleSyncAllToSupabase}
+                    className="px-4 py-2 bg-[#8B5E3C] hover:bg-[#A97142] text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow"
+                  >
+                    <Save className="w-4 h-4" />
+                    <span>Save Adjudicators to Supabase</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* ADD NEW ADJUDICATOR FORM */}
+              <form onSubmit={handleAddAdjudicator} className="bg-[#120f0d] p-4 rounded-xl border border-[#684B35]/60 space-y-4">
+                <h4 className="font-bold text-sm text-amber-300 flex items-center gap-2">
+                  <UserPlus className="w-4 h-4" />
+                  <span>Add New Adjudicator</span>
+                </h4>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+                  <div>
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Adjudicator Full Name *</label>
+                    <input
+                      type="text"
+                      placeholder="e.g. Nafis Jami"
+                      value={newAdjName}
+                      onChange={(e) => setNewAdjName(e.target.value)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Institution / Society</label>
+                    <input
+                      type="text"
+                      placeholder="e.g. SSDC Core Tabulation"
+                      value={newAdjInstitution}
+                      onChange={(e) => setNewAdjInstitution(e.target.value)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Tournament Role</label>
+                    <select
+                      value={newAdjRole}
+                      onChange={(e) => setNewAdjRole(e.target.value)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                    >
+                      <option value="Chief Adjudicator">Chief Adjudicator (CA)</option>
+                      <option value="Deputy CA">Deputy CA (DCA)</option>
+                      <option value="Independent Adjudicator">Independent Adjudicator</option>
+                      <option value="Accredited Judge">Accredited Judge</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Rounds Judged</label>
+                    <input
+                      type="number"
+                      min="0"
+                      value={newAdjRounds}
+                      onChange={(e) => setNewAdjRounds(parseInt(e.target.value) || 0)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Rating Score (1 - 10)</label>
+                    <input
+                      type="number"
+                      step="0.1"
+                      min="1"
+                      max="10"
+                      value={newAdjRating}
+                      onChange={(e) => setNewAdjRating(parseFloat(e.target.value) || 8.0)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Photo Image URL (Optional)</label>
+                    <input
+                      type="text"
+                      placeholder="https://..."
+                      value={newAdjImageUrl}
+                      onChange={(e) => setNewAdjImageUrl(e.target.value)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                    />
+                  </div>
+
+                  <div className="sm:col-span-2 lg:col-span-3">
+                    <label className="block text-[#c9b8a7] mb-1 font-semibold">Bio / Accolades</label>
+                    <input
+                      type="text"
+                      placeholder="Brief adjudicator experience description..."
+                      value={newAdjBio}
+                      onChange={(e) => setNewAdjBio(e.target.value)}
+                      className="w-full bg-[#1A1512] text-[#f5e4cb] p-2.5 rounded-lg border border-[#684B35] focus:outline-none focus:border-amber-400"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  className="px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs rounded-xl flex items-center gap-1.5 transition-all shadow"
+                >
+                  <Plus className="w-4 h-4" />
+                  <span>Add Adjudicator to Panel</span>
+                </button>
+              </form>
+
+              {/* ADJUDICATORS TABLE */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-xs border-collapse">
+                  <thead>
+                    <tr className="bg-[#120f0d] text-[#c9b8a7] uppercase tracking-wider text-[11px] border-b border-[#684B35]">
+                      <th className="p-3">#</th>
+                      <th className="p-3">Name</th>
+                      <th className="p-3">Institution</th>
+                      <th className="p-3">Role</th>
+                      <th className="p-3 text-center">Rounds</th>
+                      <th className="p-3 text-right">Rating</th>
+                      <th className="p-3 text-center">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[#684B35]/30">
+                    {adjudicators.map((adj, idx) => (
+                      <tr key={adj.id} className="hover:bg-[#120f0d]/50">
+                        <td className="p-3 font-bold text-amber-300">{idx + 1}</td>
+                        <td className="p-3">
+                          <input
+                            type="text"
+                            value={adj.name}
+                            onChange={(e) => {
+                              const val = e.target.value;
+                              if (setAdjudicators) {
+                                setAdjudicators((prev) => prev.map((x) => (x.id === adj.id ? { ...x, name: val } : x)));
+                              }
+                            }}
+                            className="bg-[#120f0d] text-[#f5e4cb] font-bold p-1.5 rounded border border-[#684B35] w-full focus:outline-none"
+                          />
+                        </td>
+                        <td className="p-3">
+                          <input
+                            type="text"
+                            value={adj.institution}
+                            onChange={(e) => {
+                              const val = e.target.value;
+                              if (setAdjudicators) {
+                                setAdjudicators((prev) => prev.map((x) => (x.id === adj.id ? { ...x, institution: val } : x)));
+                              }
+                            }}
+                            className="bg-[#120f0d] text-[#c9b8a7] p-1.5 rounded border border-[#684B35] w-full focus:outline-none"
+                          />
+                        </td>
+                        <td className="p-3">
+                          <select
+                            value={adj.role}
+                            onChange={(e) => {
+                              const val = e.target.value;
+                              if (setAdjudicators) {
+                                setAdjudicators((prev) => prev.map((x) => (x.id === adj.id ? { ...x, role: val } : x)));
+                              }
+                            }}
+                            className="bg-[#120f0d] text-amber-300 font-bold p-1.5 rounded border border-[#684B35] w-full focus:outline-none"
+                          >
+                            <option value="Chief Adjudicator">Chief Adjudicator</option>
+                            <option value="Deputy CA">Deputy CA</option>
+                            <option value="Independent Adjudicator">Independent Adjudicator</option>
+                            <option value="Accredited Judge">Accredited Judge</option>
+                          </select>
+                        </td>
+                        <td className="p-3 text-center">
+                          <input
+                            type="number"
+                            value={adj.roundsJudged || 0}
+                            onChange={(e) => {
+                              const val = parseInt(e.target.value) || 0;
+                              if (setAdjudicators) {
+                                setAdjudicators((prev) => prev.map((x) => (x.id === adj.id ? { ...x, roundsJudged: val } : x)));
+                              }
+                            }}
+                            className="bg-[#120f0d] text-[#f5e4cb] p-1.5 rounded border border-[#684B35] w-16 text-center focus:outline-none"
+                          />
+                        </td>
+                        <td className="p-3 text-right">
+                          <input
+                            type="number"
+                            step="0.1"
+                            value={adj.rating || 8.0}
+                            onChange={(e) => {
+                              const val = parseFloat(e.target.value) || 8.0;
+                              if (setAdjudicators) {
+                                setAdjudicators((prev) => prev.map((x) => (x.id === adj.id ? { ...x, rating: val } : x)));
+                              }
+                            }}
+                            className="bg-[#120f0d] text-emerald-400 font-bold p-1.5 rounded border border-[#684B35] w-20 text-right focus:outline-none"
+                          />
+                        </td>
+                        <td className="p-3 text-center">
+                          <button
+                            type="button"
+                            onClick={() => handleDeleteAdjudicator(adj.id, adj.name)}
+                            className="p-1.5 rounded-lg bg-red-950/80 hover:bg-red-900 text-red-300 border border-red-800/60 transition-colors"
+                            title="Remove Adjudicator"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
           {activeSubTab === 'supabase-settings' && (
             <div className="los-glass-card p-6 space-y-6 border-t-2 border-cyan-500">
               <div className="flex justify-between items-center border-b border-[#684B35]/40 pb-3">

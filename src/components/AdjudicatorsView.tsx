@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Adjudicator } from '../types';
-import { Gavel, Search, Award, Maximize2, X, User } from 'lucide-react';
+import { Gavel, Search, Award, Maximize2, X, User, Star, Building2, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface AdjudicatorsViewProps {
   adjudicators: Adjudicator[];
@@ -8,11 +8,40 @@ interface AdjudicatorsViewProps {
 
 export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [roleFilter, setRoleFilter] = useState<string>('all');
   const [selectedImage, setSelectedImage] = useState<{ url: string; name: string } | null>(null);
 
-  const filteredAdjudicators = adjudicators.filter(
-    (adj) => adj.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredAdjudicators = adjudicators.filter((adj) => {
+    const matchesSearch =
+      adj.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      adj.institution.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      adj.role.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    if (roleFilter === 'all') return matchesSearch;
+    if (roleFilter === 'ca') return matchesSearch && adj.role.toLowerCase().includes('chief');
+    if (roleFilter === 'dca') return matchesSearch && adj.role.toLowerCase().includes('deputy');
+    if (roleFilter === 'ia') return matchesSearch && adj.role.toLowerCase().includes('independent');
+    if (roleFilter === 'accredited') return matchesSearch && adj.role.toLowerCase().includes('accredited');
+    return matchesSearch;
+  });
+
+  const caCount = adjudicators.filter((a) => a.role.toLowerCase().includes('chief') || a.role.toLowerCase().includes('deputy')).length;
+  const iaCount = adjudicators.filter((a) => a.role.toLowerCase().includes('independent')).length;
+  const accreditedCount = adjudicators.filter((a) => a.role.toLowerCase().includes('accredited')).length;
+
+  const getRoleBadgeStyle = (role: string) => {
+    const r = role.toLowerCase();
+    if (r.includes('chief')) {
+      return 'bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border-amber-400 text-amber-300 font-extrabold shadow-sm';
+    }
+    if (r.includes('deputy')) {
+      return 'bg-amber-950/80 border-amber-600/80 text-amber-200 font-bold';
+    }
+    if (r.includes('independent')) {
+      return 'bg-cyan-950/80 border-cyan-600/80 text-cyan-200 font-semibold';
+    }
+    return 'bg-emerald-950/80 border-emerald-600/80 text-emerald-200 font-medium';
+  };
 
   return (
     <div className="max-w-7xl mx-auto py-6 sm:py-8 px-3 sm:px-6 space-y-6 w-full max-w-full overflow-x-hidden">
@@ -24,62 +53,101 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
           <span>Tournament Adjudication Panel</span>
         </h2>
         <p className="text-xs sm:text-sm text-[#e2d0ba] max-w-2xl mx-auto px-2">
-          Official Adjudication Panel presiding over League of Spars Season 2. ({adjudicators.length} Adjudicators)
+          Official Adjudication Panel presiding over League of Spars Season 2 ({adjudicators.length} Adjudicators)
         </p>
       </div>
 
-      {/* SEARCH */}
-      <div className="los-glass-card p-4 flex items-center gap-3">
-        <Search className="w-4 h-4 text-[#c9b8a7]" />
-        <input
-          type="text"
-          placeholder="Search adjudicator by name..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full bg-[#120f0d] text-sm text-[#f5e4cb] px-4 py-2 rounded-xl border border-[#684B35] focus:outline-none focus:border-amber-400 placeholder-[#8A7A6D]"
-        />
+      {/* SUMMARY STAT CARDS */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-full">
+        <div className="los-glass-card p-3 sm:p-3.5 text-center">
+          <span className="text-[10px] uppercase font-bold text-[#8A7A6D]">Total Judges</span>
+          <span className="block font-['Orbitron'] font-black text-lg sm:text-xl text-[#f5e4cb]">
+            {adjudicators.length}
+          </span>
+        </div>
+        <div className="los-glass-card p-3 sm:p-3.5 text-center">
+          <span className="text-[10px] uppercase font-bold text-[#8A7A6D]">CAs & DCAs</span>
+          <span className="block font-['Orbitron'] font-black text-lg sm:text-xl text-amber-400">
+            {caCount}
+          </span>
+        </div>
+        <div className="los-glass-card p-3 sm:p-3.5 text-center">
+          <span className="text-[10px] uppercase font-bold text-[#8A7A6D]">Independent</span>
+          <span className="block font-['Orbitron'] font-black text-lg sm:text-xl text-cyan-400">
+            {iaCount}
+          </span>
+        </div>
+        <div className="los-glass-card p-3 sm:p-3.5 text-center">
+          <span className="text-[10px] uppercase font-bold text-[#8A7A6D]">Accredited</span>
+          <span className="block font-['Orbitron'] font-black text-lg sm:text-xl text-emerald-400">
+            {accreditedCount}
+          </span>
+        </div>
       </div>
 
-      {/* ADJUDICATOR CARDS GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* SEARCH AND FILTER */}
+      <div className="los-glass-card p-3.5 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <div className="relative flex-1 min-w-0">
+          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#c9b8a7]" />
+          <input
+            type="text"
+            placeholder="Search adjudicator by name or institution..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full bg-[#120f0d] text-sm text-[#f5e4cb] pl-10 pr-4 py-2 rounded-xl border border-[#684B35] focus:outline-none focus:border-amber-400 placeholder-[#8A7A6D]"
+          />
+        </div>
+
+        <select
+          value={roleFilter}
+          onChange={(e) => setRoleFilter(e.target.value)}
+          className="bg-[#120f0d] text-xs font-semibold text-[#f5e4cb] border border-[#684B35] px-3 py-2 rounded-xl focus:outline-none focus:border-amber-400 cursor-pointer"
+        >
+          <option value="all">All Roles</option>
+          <option value="ca">Chief Adjudicators (CA)</option>
+          <option value="dca">Deputy CAs (DCA)</option>
+          <option value="ia">Independent Adjudicators</option>
+          <option value="accredited">Accredited Panel Judges</option>
+        </select>
+      </div>
+
+      {/* ADJUDICATOR CARDS PHOTO GALLERY GRID */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {filteredAdjudicators.map((adj) => (
           <div
             key={adj.id}
-            className="los-glass-card p-4 space-y-3 hover:border-amber-400 transition-all duration-300 flex flex-col justify-between group"
+            onClick={() => adj.imageUrl && setSelectedImage({ url: adj.imageUrl, name: adj.name })}
+            className="los-glass-card p-2.5 space-y-2 hover:border-amber-400/90 hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between group cursor-pointer shadow-lg"
           >
-            <div className="space-y-3">
-              
-              {/* ADJUDICATOR IMAGE */}
-              <div 
-                className="relative w-full rounded-xl overflow-hidden bg-[#0a0807] border border-[#684B35]/50 flex items-center justify-center min-h-[220px] cursor-pointer group/img"
-                onClick={() => adj.imageUrl && setSelectedImage({ url: adj.imageUrl, name: adj.name })}
-              >
-                {adj.imageUrl ? (
-                  <>
-                    <img
-                      src={adj.imageUrl}
-                      alt={adj.name}
-                      referrerPolicy="no-referrer"
-                      className="w-full h-auto max-h-[380px] object-contain transition-transform duration-300 group-hover/img:scale-[1.02]"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-2 text-white text-xs font-bold bg-gradient-to-t from-black/80 via-transparent to-transparent">
-                      <Maximize2 className="w-4 h-4 text-amber-300" />
-                      <span>View Full Image</span>
-                    </div>
-                  </>
-                ) : (
-                  <div className="p-8 text-center text-[#8A7A6D]">
-                    <User className="w-12 h-12 mx-auto mb-2 text-[#684B35]" />
-                    <span className="text-xs">No Photo Available</span>
+            {/* PHOTO CONTAINER */}
+            <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-[#070504] border border-[#684B35]/60 flex items-center justify-center">
+              {adj.imageUrl ? (
+                <>
+                  <img
+                    src={adj.imageUrl}
+                    alt={adj.name}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center gap-1.5 text-white text-xs font-bold bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                    <Maximize2 className="w-4 h-4 text-amber-300" />
+                    <span className="text-[11px]">Enlarge</span>
                   </div>
-                )}
-              </div>
+                </>
+              ) : (
+                <div className="p-4 text-center text-[#8A7A6D] flex flex-col items-center justify-center">
+                  <User className="w-10 h-10 mb-1 text-[#684B35]" />
+                  <span className="text-[10px]">No Photo</span>
+                </div>
+              )}
+            </div>
 
-              {/* NAME ONLY */}
-              <div className="pt-1 text-center">
-                <h3 className="font-bold text-base sm:text-lg text-[#f5e4cb] leading-snug">{adj.name}</h3>
-              </div>
+            {/* ADJUDICATOR NAME */}
+            <div className="text-center px-1 py-0.5">
+              <h3 className="font-bold text-xs sm:text-sm text-[#f5e4cb] leading-tight group-hover:text-amber-300 transition-colors line-clamp-1">
+                {adj.name}
+              </h3>
             </div>
           </div>
         ))}
@@ -130,4 +198,3 @@ export const AdjudicatorsView: React.FC<AdjudicatorsViewProps> = ({ adjudicators
     </div>
   );
 };
-

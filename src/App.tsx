@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavTab, Team, Speaker } from './types';
+import { NavTab, Team, Speaker, Adjudicator } from './types';
 import {
   INITIAL_TEAMS,
   INITIAL_SPEAKERS,
@@ -9,8 +9,10 @@ import { autoRankTeams, autoRankSpeakers } from './lib/rankingAlgorithm';
 import {
   fetchTeamsFromSupabase,
   fetchSpeakersFromSupabase,
+  fetchAdjudicatorsFromSupabase,
   saveTeamsToSupabase,
   saveSpeakersToSupabase,
+  saveAdjudicatorsToSupabase,
   initGlobalSupabaseConfig
 } from './lib/supabase';
 
@@ -30,7 +32,7 @@ export default function App() {
   // Shared Master Tournament State with Auto-Ranking Algorithm Applied
   const [teams, setTeams] = useState<Team[]>(() => autoRankTeams(INITIAL_TEAMS));
   const [speakers, setSpeakers] = useState<Speaker[]>(() => autoRankSpeakers(INITIAL_SPEAKERS));
-  const [adjudicators] = useState(INITIAL_ADJUDICATORS);
+  const [adjudicators, setAdjudicators] = useState<Adjudicator[]>(INITIAL_ADJUDICATORS);
 
   // Fetch initial points data from Supabase if connected
   useEffect(() => {
@@ -75,6 +77,16 @@ export default function App() {
             await saveSpeakersToSupabase(ranked, true);
           }
         }
+
+        const cloudAdjudicators = await fetchAdjudicatorsFromSupabase();
+        if (cloudAdjudicators && cloudAdjudicators.length > 0) {
+          setAdjudicators(cloudAdjudicators);
+        } else {
+          setAdjudicators(INITIAL_ADJUDICATORS);
+          if (config.isConnected) {
+            await saveAdjudicatorsToSupabase(INITIAL_ADJUDICATORS, true);
+          }
+        }
       } catch (err) {
         console.warn('Supabase initial fetch skipped:', err);
       }
@@ -103,6 +115,8 @@ export default function App() {
               setTeams={setTeams}
               speakers={speakers}
               setSpeakers={setSpeakers}
+              adjudicators={adjudicators}
+              setAdjudicators={setAdjudicators}
               isAdminLoggedIn={isAdminLoggedIn}
               setIsAdminLoggedIn={setIsAdminLoggedIn}
             />
