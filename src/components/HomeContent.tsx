@@ -248,7 +248,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
           <div className="bg-[#120f0d] p-5 rounded-xl border border-[#684B35] text-center space-y-2 hover:border-amber-400 transition-colors">
             <h4 className="font-bold text-amber-300 text-lg">Adiba Anjum</h4>
-            <p className="text-xs text-[#c9b8a7]">Executive Convener</p>
+            <p className="text-xs text-[#c9b8a7]">Head of Debate Development</p>
             <a
               href="https://www.facebook.com/share/14atHinuf2t/"
               target="_blank"
@@ -263,7 +263,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
 
           <div className="bg-[#120f0d] p-5 rounded-xl border border-[#684B35] text-center space-y-2 hover:border-amber-400 transition-colors">
             <h4 className="font-bold text-amber-300 text-lg">Kayes Adnan</h4>
-            <p className="text-xs text-[#c9b8a7]">Tabulation Lead</p>
+            <p className="text-xs text-[#c9b8a7]">Head of Event Management</p>
             <a
               href="https://www.facebook.com/share/17T8DxWAYW/"
               target="_blank"
@@ -278,7 +278,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
 
           <div className="bg-[#120f0d] p-5 rounded-xl border border-[#684B35] text-center space-y-2 hover:border-amber-400 transition-colors">
             <h4 className="font-bold text-amber-300 text-lg">Rownak Kulsum</h4>
-            <p className="text-xs text-[#c9b8a7]">Public Relations</p>
+            <p className="text-xs text-[#c9b8a7]">Head of Public Relations</p>
             <a
               href="https://www.facebook.com/share/1DuhEEhVVR/"
               target="_blank"
