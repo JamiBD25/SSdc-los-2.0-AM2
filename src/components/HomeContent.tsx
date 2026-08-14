@@ -92,7 +92,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
 
         </div>
 
-        {/* INDIVIDUAL DEBATER HONORS: SADMAN SARAR */}
+        {/* INDIVIDUAL DEBATER HONORS: SAADMAAN SARAR */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
           
           {/* DEBATER OF THE FINAL */}
@@ -113,7 +113,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
             <div className="p-2.5 rounded-lg bg-[#1a1410] border border-[#684B35]/60 flex items-center justify-between">
               <div>
                 <span className="font-extrabold text-base text-amber-200 block">
-                  Sadman Sarar
+                  Saadmaan Sarar
                 </span>
                 <span className="text-[11px] text-[#a89582] block">
                   GMHSDS (Govt Muslim High)
@@ -143,7 +143,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
             <div className="p-2.5 rounded-lg bg-[#1a1410] border border-[#684B35]/60 flex items-center justify-between">
               <div>
                 <span className="font-extrabold text-base text-yellow-200 block">
-                  Sadman Sarar
+                  Saadmaan Sarar
                 </span>
                 <span className="text-[11px] text-[#a89582] block">
                   GMHSDS (Govt Muslim High)

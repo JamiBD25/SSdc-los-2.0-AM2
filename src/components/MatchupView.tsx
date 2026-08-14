@@ -305,12 +305,12 @@ export const MatchupView: React.FC = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                       <div className="p-2 rounded-lg bg-[#14100d] border border-[#684B35]">
                         <span className="text-[10px] text-[#8A7A6D] block font-semibold">Debater of the Final:</span>
-                        <span className="font-bold text-amber-300">Sadman Sarar</span>
+                        <span className="font-bold text-amber-300">Saadmaan Sarar</span>
                         <span className="text-[10px] text-[#8A7A6D] ml-1">(GMHSDS)</span>
                       </div>
                       <div className="p-2 rounded-lg bg-[#14100d] border border-[#684B35]">
                         <span className="text-[10px] text-[#8A7A6D] block font-semibold">Debater of Tournament:</span>
-                        <span className="font-bold text-yellow-300">Sadman Sarar</span>
+                        <span className="font-bold text-yellow-300">Saadmaan Sarar</span>
                         <span className="text-[10px] text-[#8A7A6D] ml-1">(GMHSDS)</span>
                       </div>
                     </div>

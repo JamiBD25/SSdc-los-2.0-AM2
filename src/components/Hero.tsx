@@ -59,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
           <div className="flex flex-wrap items-center justify-center gap-2 mb-3">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-500/20 border border-yellow-400/60 text-[10px] sm:text-xs font-black text-yellow-300 tracking-wider uppercase shadow-sm">
               <Trophy className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />
-              <span>Champion: GMHSDS &bull; MVP: Sadman Sarar</span>
+              <span>Champion: GMHSDS &bull; MVP: Saadmaan Sarar</span>
             </div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B5E3C]/30 border border-[#8B5E3C] text-[10px] sm:text-xs font-bold text-amber-300 tracking-wider uppercase">
               <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
