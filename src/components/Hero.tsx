@@ -56,9 +56,15 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 mt-4 sm:mt-6 relative z-10 pb-6 w-full">
         <div className="los-glass-card p-4 sm:p-8 text-center border-t-2 border-[#A97142] max-w-full">
           
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full bg-[#8B5E3C]/30 border border-[#8B5E3C] text-[10px] sm:text-xs font-bold text-amber-300 mb-3 tracking-wider uppercase max-w-full flex-wrap justify-center text-center">
-            <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-            <span>Official Competition Platform &bull; AP ISC Format</span>
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-3">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-500/20 border border-yellow-400/60 text-[10px] sm:text-xs font-black text-yellow-300 tracking-wider uppercase shadow-sm">
+              <Trophy className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />
+              <span>Champion: GMHSDS &bull; MVP: Sadman Sarar</span>
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#8B5E3C]/30 border border-[#8B5E3C] text-[10px] sm:text-xs font-bold text-amber-300 tracking-wider uppercase">
+              <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>AP ISC Format</span>
+            </div>
           </div>
 
           <h1 className="font-['Orbitron'] text-xl sm:text-4xl md:text-5xl font-black text-[#f5e4cb] tracking-wide mb-2 uppercase drop-shadow-md break-words">

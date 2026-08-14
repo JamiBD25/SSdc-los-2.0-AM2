@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavTab } from '../types';
-import { BookOpen, ShieldCheck, HelpCircle, ChevronDown, ChevronUp, ExternalLink, Sparkles } from 'lucide-react';
+import { BookOpen, ShieldCheck, HelpCircle, ChevronDown, ChevronUp, ExternalLink, Sparkles, Trophy, Crown, Award, Medal, Swords, ArrowRight } from 'lucide-react';
 
 interface HomeContentProps {
   setActiveTab: (tab: NavTab) => void;
@@ -12,6 +12,165 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
   return (
     <div className="container max-w-5xl mx-auto py-6 sm:py-8 px-3 sm:px-6 space-y-6 sm:space-y-10 w-full max-w-full overflow-x-hidden">
       
+      {/* 🏆 TOURNAMENT CHAMPIONS & HONORS SHOWCASE */}
+      <div className="los-glass-card p-5 sm:p-8 space-y-6 border-2 border-yellow-500/80 bg-gradient-to-b from-[#1E1712] via-[#16120e] to-[#0f0c0a] shadow-2xl relative overflow-hidden">
+        
+        {/* Glow accent */}
+        <div className="absolute -top-12 -right-12 w-48 h-48 bg-amber-500/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        {/* Header Badge */}
+        <div className="text-center space-y-2">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-yellow-500/20 border border-yellow-400/60 text-yellow-300 text-xs font-black uppercase tracking-widest shadow-md">
+            <Trophy className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+            <span>Tournament Champions & Accolades</span>
+          </div>
+          <h2 className="font-['Orbitron'] text-2xl sm:text-3xl md:text-4xl font-black text-yellow-300 tracking-wide uppercase drop-shadow-md">
+            League of Spars Season 2
+          </h2>
+          <p className="text-xs sm:text-sm text-[#e2d0ba] max-w-xl mx-auto">
+            Honoring the official Grand Champion, Finalists, and Outstanding Debaters of the Season
+          </p>
+        </div>
+
+        {/* TEAM HONORS: CHAMPION & RUNNER-UP */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          {/* CHAMPION CARD */}
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2a1e15] to-[#1a130e] border-2 border-yellow-400 shadow-xl relative overflow-hidden group hover:border-yellow-300 transition-all">
+            <div className="flex items-start justify-between gap-3">
+              <div className="space-y-1">
+                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-yellow-400 text-black inline-flex items-center gap-1 shadow">
+                  <Crown className="w-3 h-3 text-black fill-black" />
+                  <span>Grand Champion</span>
+                </span>
+                <h3 className="font-['Orbitron'] font-black text-xl sm:text-2xl text-yellow-200 pt-1">
+                  GMHSDS
+                </h3>
+                <p className="text-xs text-[#d1bfad] font-medium">
+                  Govt Muslim High Debating Society
+                </p>
+              </div>
+              <div className="p-3 bg-yellow-400/20 rounded-2xl border border-yellow-400/50 text-yellow-300 shrink-0 shadow-inner">
+                <Trophy className="w-8 h-8 text-yellow-400 fill-yellow-400/40" />
+              </div>
+            </div>
+            <div className="mt-4 pt-3 border-t border-yellow-500/30 flex items-center justify-between text-xs">
+              <span className="text-[#a89582] font-semibold">Final Status:</span>
+              <span className="font-bold text-yellow-300 bg-yellow-950/60 px-2.5 py-0.5 rounded border border-yellow-600/40">
+                Champion & Title Winner
+              </span>
+            </div>
+          </div>
+
+          {/* RUNNER-UP CARD */}
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-[#1F1915] to-[#14100d] border border-amber-500/50 shadow-lg relative overflow-hidden group hover:border-amber-400 transition-all">
+            <div className="flex items-start justify-between gap-3">
+              <div className="space-y-1">
+                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-300 text-slate-950 inline-flex items-center gap-1 shadow">
+                  <Medal className="w-3 h-3 text-slate-950" />
+                  <span>Runner-Up</span>
+                </span>
+                <h3 className="font-['Orbitron'] font-black text-xl sm:text-2xl text-[#f5e4cb] pt-1">
+                  CCPC Q
+                </h3>
+                <p className="text-xs text-[#a89582] font-medium">
+                  Chittagong Cantonment Public College
+                </p>
+              </div>
+              <div className="p-3 bg-amber-900/30 rounded-2xl border border-amber-600/40 text-amber-300 shrink-0">
+                <Medal className="w-8 h-8 text-amber-300" />
+              </div>
+            </div>
+            <div className="mt-4 pt-3 border-t border-[#684B35]/40 flex items-center justify-between text-xs">
+              <span className="text-[#a89582] font-semibold">Final Status:</span>
+              <span className="font-bold text-amber-200 bg-amber-950/60 px-2.5 py-0.5 rounded border border-amber-700/40">
+                Grand Finalist
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* INDIVIDUAL DEBATER HONORS: SADMAN SARAR */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+          
+          {/* DEBATER OF THE FINAL */}
+          <div className="p-4 rounded-xl bg-[#120f0d] border border-amber-500/60 hover:border-amber-400 transition-all space-y-2.5">
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 shrink-0">
+                <Award className="w-5 h-5 text-amber-300" />
+              </div>
+              <div>
+                <span className="text-[10px] uppercase font-black tracking-wider text-amber-400 block">
+                  Individual Accolade
+                </span>
+                <h4 className="font-bold text-sm text-[#f5e4cb]">
+                  Debater of the Final
+                </h4>
+              </div>
+            </div>
+            <div className="p-2.5 rounded-lg bg-[#1a1410] border border-[#684B35]/60 flex items-center justify-between">
+              <div>
+                <span className="font-extrabold text-base text-amber-200 block">
+                  Sadman Sarar
+                </span>
+                <span className="text-[11px] text-[#a89582] block">
+                  GMHSDS (Govt Muslim High)
+                </span>
+              </div>
+              <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-950 text-amber-300 border border-amber-600/50">
+                Final MVP
+              </span>
+            </div>
+          </div>
+
+          {/* DEBATER OF THE TOURNAMENT */}
+          <div className="p-4 rounded-xl bg-[#120f0d] border border-yellow-500/60 hover:border-yellow-400 transition-all space-y-2.5">
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-lg bg-yellow-500/20 text-yellow-300 border border-yellow-500/40 shrink-0">
+                <Crown className="w-5 h-5 text-yellow-400 fill-yellow-400/30" />
+              </div>
+              <div>
+                <span className="text-[10px] uppercase font-black tracking-wider text-yellow-400 block">
+                  Premier Accolade
+                </span>
+                <h4 className="font-bold text-sm text-yellow-200">
+                  Debater of the Tournament
+                </h4>
+              </div>
+            </div>
+            <div className="p-2.5 rounded-lg bg-[#1a1410] border border-[#684B35]/60 flex items-center justify-between">
+              <div>
+                <span className="font-extrabold text-base text-yellow-200 block">
+                  Sadman Sarar
+                </span>
+                <span className="text-[11px] text-[#a89582] block">
+                  GMHSDS (Govt Muslim High)
+                </span>
+              </div>
+              <span className="px-2 py-0.5 rounded text-[10px] font-black bg-yellow-950 text-yellow-300 border border-yellow-600/50">
+                Tournament MVP
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* BUTTON TO VIEW MATCHUP */}
+        <div className="text-center pt-2">
+          <button
+            onClick={() => setActiveTab('matchup')}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#8B5E3C] hover:bg-[#A97142] text-white text-xs sm:text-sm font-bold shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <Swords className="w-4 h-4 text-amber-200" />
+            <span>View Knockout Matchups & Final Results</span>
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+
+      </div>
+
       {/* 🔷 ABOUT SSDC SECTION */}
       <div className="los-glass-card p-4 sm:p-8 space-y-4 border-l-4 border-[#8B5E3C] max-w-full">
         <div className="hl flex items-center justify-center gap-2 flex-wrap">
