@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavTab } from '../types';
-import { Database, Menu, X, ShieldCheck, Swords } from 'lucide-react';
+import { Database, Menu, X, ShieldCheck, Swords, Award } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: NavTab;
@@ -12,6 +12,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
   const navItems: { id: NavTab; label: string; icon?: React.ReactNode }[] = [
     { id: 'home', label: 'Home' },
+    { 
+      id: 'certificates', 
+      label: 'Certificates',
+      icon: <Award className="w-3.5 h-3.5 text-yellow-300" />
+    },
     { 
       id: 'matchup', 
       label: 'Matchup',

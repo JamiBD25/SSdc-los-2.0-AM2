@@ -157,15 +157,23 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
 
         </div>
 
-        {/* BUTTON TO VIEW MATCHUP */}
-        <div className="text-center pt-2">
+        {/* BUTTONS TO VIEW MATCHUP & GET CERTIFICATE */}
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <button
+            onClick={() => setActiveTab('certificates')}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-white text-xs sm:text-sm font-extrabold shadow-lg shadow-amber-900/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <Award className="w-4 h-4 text-yellow-200" />
+            <span>Search & Download Digital Certificates</span>
+            <ArrowRight className="w-4 h-4" />
+          </button>
+          
           <button
             onClick={() => setActiveTab('matchup')}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#8B5E3C] hover:bg-[#A97142] text-white text-xs sm:text-sm font-bold shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1A1410] hover:bg-[#332C24] border border-[#684B35] text-[#f5e4cb] text-xs sm:text-sm font-bold shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            <Swords className="w-4 h-4 text-amber-200" />
-            <span>View Knockout Matchups & Final Results</span>
-            <ArrowRight className="w-4 h-4" />
+            <Swords className="w-4 h-4 text-amber-300" />
+            <span>View Knockout Matchups</span>
           </button>
         </div>
 

@@ -1,10 +1,42 @@
 export type NavTab = 
   | 'home'
   | 'matchup'
+  | 'certificates'
   | 'teams'
   | 'speakers'
   | 'adjudicators'
   | 'tabulation';
+
+export interface CertificateCredential {
+  id: string;
+  publicId: string;
+  groupId: string;
+  status: string;
+  recipient: {
+    id?: string;
+    name: string;
+    email?: string;
+  };
+  issueDate: string;
+  publicUrl?: string;
+  walletUrl?: string;
+  previewUrl?: string;
+  teamName?: string;
+  institution?: string;
+  rank?: number;
+  accolade?: string;
+  qrCodeUrl?: string;
+}
+
+export interface CertifierGroupInfo {
+  id: string;
+  name: string;
+  learningEventUrl?: string;
+  designIds?: string[];
+  previewUrl?: string;
+  totalIssued?: number;
+  isConnected: boolean;
+}
 
 export interface Speaker {
   id: string;

@@ -159,6 +159,14 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
           {/* ACTION BUTTONS */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-3 sm:gap-4 w-full">
             <button
+              onClick={() => setActiveTab('certificates')}
+              className="w-full sm:w-auto px-5 py-3 sm:py-3.5 rounded-xl bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-white font-extrabold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-amber-900/40 hover:scale-[1.02]"
+            >
+              <Award className="w-4 h-4 text-yellow-200 shrink-0" />
+              <span>Digital Certificates</span>
+            </button>
+
+            <button
               onClick={() => setActiveTab('teams')}
               className="prep-btn w-full sm:w-auto"
             >
@@ -172,13 +180,6 @@ export const Hero: React.FC<HeroProps> = ({ setActiveTab }) => {
             >
               <Trophy className="w-4 h-4 text-amber-400 shrink-0" />
               <span>Speaker Rankings</span>
-            </button>
-
-            <button
-              onClick={() => setActiveTab('tabulation')}
-              className="w-full sm:w-auto px-5 py-3 sm:py-3.5 rounded-xl bg-[#1F1A17] hover:bg-[#332C24] text-amber-300 font-bold text-xs sm:text-sm border border-[#8B5E3C] transition-all flex items-center justify-center gap-2 shadow-lg hover:border-amber-400"
-            >
-              <span>Admin Tab</span>
             </button>
           </div>
 
