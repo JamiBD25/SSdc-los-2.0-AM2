@@ -13,11 +13,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const navItems: { id: NavTab; label: string; icon?: React.ReactNode }[] = [
     { id: 'home', label: 'Home' },
     { 
-      id: 'certificates', 
-      label: 'Certificates',
-      icon: <Award className="w-3.5 h-3.5 text-yellow-300" />
-    },
-    { 
       id: 'matchup', 
       label: 'Matchup',
       icon: <Swords className="w-3.5 h-3.5 text-amber-300" />
