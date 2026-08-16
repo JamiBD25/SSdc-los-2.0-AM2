@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Speaker } from '../types';
+import staticCertificatesData from '../data/certificates.json';
 import { 
   Award, 
   Search, 
@@ -80,71 +81,79 @@ export const CertificateView: React.FC<CertificateViewProps> = ({ speakers }) =>
     return 'Official Tournament Participant & Debater';
   };
 
-  // Load all 151 uploaded XLS credentials from server API
+  // Transform raw certificate list to combined records
+  const processCertificates = (certList: any[]) => {
+    // Build a normalized speaker lookup map
+    const speakerMap = new Map<string, Speaker>();
+    for (const s of speakers) {
+      const key = s.name.toLowerCase().replace(/[^a-z0-9]/g, '');
+      speakerMap.set(key, s);
+    }
+
+    // Map each cert with speaker stats and accolades
+    return certList.map((c: any) => {
+      const rawName = c.name || 'Debater';
+      const nameKey = rawName.toLowerCase().replace(/[^a-z0-9]/g, '');
+      
+      let matchedSpk = speakerMap.get(nameKey);
+      if (!matchedSpk) {
+        for (const [k, spk] of speakerMap.entries()) {
+          if (nameKey.length > 3 && (k.includes(nameKey) || nameKey.includes(k))) {
+            matchedSpk = spk;
+            break;
+          }
+        }
+      }
+
+      const teamName = matchedSpk?.teamName || 'SSDC Debating Team';
+      const institution = matchedSpk?.institution || 'SSDC League of Spars';
+      const rank = matchedSpk?.rank;
+      const accolade = getAccolade(rawName, teamName, rank);
+
+      return {
+        id: c.id,
+        publicId: c.publicId,
+        groupId: c.groupId,
+        status: c.status || 'issued',
+        name: rawName,
+        email: c.email,
+        issueDate: c.issueDate || '2026-08-16',
+        publicUrl: c.publicUrl || `https://credsverse.com/credentials/${c.publicId}`,
+        walletUrl: c.walletUrl || `https://credsverse.com/credentials/${c.publicId}`,
+        qrCodeUrl: c.qrCodeUrl || `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(`https://credsverse.com/credentials/${c.publicId}`)}`,
+        speaker: matchedSpk,
+        teamName,
+        institution,
+        rank,
+        accolade
+      };
+    });
+  };
+
+  // Load all 151 uploaded XLS credentials
   const loadAllCertificates = async () => {
+    // 1. Immediately initialize with static bundled data (instant on Vercel & offline)
+    const initialList = processCertificates(staticCertificatesData as any[]);
+    setAllCertRecords(initialList);
+    if (initialList.length > 0 && !selectedRecord) {
+      const defaultRec = initialList.find(r => r.name.toLowerCase().includes('saadmaan')) || initialList[0];
+      setSelectedRecord(defaultRec);
+    }
+
+    // 2. Also try live server API sync if available
     try {
       const allRes = await fetch('/api/certificates/all');
-
       if (allRes.ok) {
         const allData = await allRes.json();
         const certList = allData.certificates || [];
-
-        // Build a normalized speaker lookup map
-        const speakerMap = new Map<string, Speaker>();
-        for (const s of speakers) {
-          const key = s.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-          speakerMap.set(key, s);
-        }
-
-        // Map each cert with speaker stats and accolades
-        const combined: CertRecord[] = certList.map((c: any) => {
-          const rawName = c.name || 'Debater';
-          const nameKey = rawName.toLowerCase().replace(/[^a-z0-9]/g, '');
-          
-          let matchedSpk = speakerMap.get(nameKey);
-          if (!matchedSpk) {
-            for (const [k, spk] of speakerMap.entries()) {
-              if (nameKey.length > 3 && (k.includes(nameKey) || nameKey.includes(k))) {
-                matchedSpk = spk;
-                break;
-              }
-            }
-          }
-
-          const teamName = matchedSpk?.teamName || 'SSDC Debating Team';
-          const institution = matchedSpk?.institution || 'SSDC League of Spars';
-          const rank = matchedSpk?.rank;
-          const accolade = getAccolade(rawName, teamName, rank);
-
-          return {
-            id: c.id,
-            publicId: c.publicId,
-            groupId: c.groupId,
-            status: c.status || 'issued',
-            name: rawName,
-            email: c.email,
-            issueDate: c.issueDate || '2026-08-16',
-            publicUrl: c.publicUrl || `https://credsverse.com/credentials/${c.publicId}`,
-            walletUrl: c.walletUrl || `https://credsverse.com/credentials/${c.publicId}`,
-            qrCodeUrl: c.qrCodeUrl || `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(`https://credsverse.com/credentials/${c.publicId}`)}`,
-            speaker: matchedSpk,
-            teamName,
-            institution,
-            rank,
-            accolade
-          };
-        });
-
-        setAllCertRecords(combined);
-
-        // Select first record by default if none selected
-        if (combined.length > 0 && !selectedRecord) {
-          const defaultRec = combined.find(r => r.name.toLowerCase().includes('saadmaan')) || combined[0];
-          setSelectedRecord(defaultRec);
+        if (certList.length > 0) {
+          const liveCombined = processCertificates(certList);
+          setAllCertRecords(liveCombined);
         }
       }
     } catch (err) {
-      console.error('Error loading all certificates:', err);
+      // Static data already loaded and working flawlessly!
+      console.log('Using bundled static certificates cache for Vercel static build.');
     }
   };
 

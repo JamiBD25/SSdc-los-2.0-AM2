@@ -1,0 +1,3948 @@
+[
+  {
+    "id": "01m04qmcnw5p6g3499xz5dr3ty",
+    "publicId": "f1cd4064-0aac-4642-b3dc-dfeeda27b09d",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Saadmaan Sarar",
+    "email": "saadmaan@example.com",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f1cd4064-0aac-4642-b3dc-dfeeda27b09d",
+    "walletUrl": "https://credsverse.com/credentials/f1cd4064-0aac-4642-b3dc-dfeeda27b09d",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff1cd4064-0aac-4642-b3dc-dfeeda27b09d",
+    "raw": {
+      "id": "01m04qmcnw5p6g3499xz5dr3ty",
+      "publicId": "f1cd4064-0aac-4642-b3dc-dfeeda27b09d",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": {
+        "id": "01m04qmcnr559enqf24nj9e5v1",
+        "name": "Saadmaan Sarar",
+        "email": "saadmaan@example.com"
+      },
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Saadmaan Sarar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:29:58.466Z",
+      "updatedAt": "2026-08-16T07:30:02.945Z"
+    }
+  },
+  {
+    "id": "01m04qy87h4rvv44nktp8ts374",
+    "publicId": "26b86993-3047-4cae-b0e8-ce7bed4476dc",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Saadmaan Sarar",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/26b86993-3047-4cae-b0e8-ce7bed4476dc",
+    "walletUrl": "https://credsverse.com/credentials/26b86993-3047-4cae-b0e8-ce7bed4476dc",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F26b86993-3047-4cae-b0e8-ce7bed4476dc",
+    "raw": {
+      "id": "01m04qy87h4rvv44nktp8ts374",
+      "publicId": "26b86993-3047-4cae-b0e8-ce7bed4476dc",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Saadmaan Sarar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.587Z",
+      "updatedAt": "2026-08-16T07:35:22.967Z"
+    }
+  },
+  {
+    "id": "01m04qy882x4dk1xvz6jnsbeds",
+    "publicId": "03289c58-a5ab-449c-9130-8b34f66e4ffa",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shalbina Dil Afruz",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/03289c58-a5ab-449c-9130-8b34f66e4ffa",
+    "walletUrl": "https://credsverse.com/credentials/03289c58-a5ab-449c-9130-8b34f66e4ffa",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F03289c58-a5ab-449c-9130-8b34f66e4ffa",
+    "raw": {
+      "id": "01m04qy882x4dk1xvz6jnsbeds",
+      "publicId": "03289c58-a5ab-449c-9130-8b34f66e4ffa",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shalbina Dil Afruz"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.604Z",
+      "updatedAt": "2026-08-16T07:35:22.984Z"
+    }
+  },
+  {
+    "id": "01m04qy88ewq71wep89bep0vhq",
+    "publicId": "21cc4ebf-a3b1-4727-8804-957cc48e2002",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Hasin Mejbah Arian",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/21cc4ebf-a3b1-4727-8804-957cc48e2002",
+    "walletUrl": "https://credsverse.com/credentials/21cc4ebf-a3b1-4727-8804-957cc48e2002",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F21cc4ebf-a3b1-4727-8804-957cc48e2002",
+    "raw": {
+      "id": "01m04qy88ewq71wep89bep0vhq",
+      "publicId": "21cc4ebf-a3b1-4727-8804-957cc48e2002",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Hasin Mejbah Arian"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.615Z",
+      "updatedAt": "2026-08-16T07:35:22.994Z"
+    }
+  },
+  {
+    "id": "01m04qy88tf2gd952xs3taergb",
+    "publicId": "971e7854-3fd1-4b28-8325-8aa2f99796b3",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Maliha Hossain",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/971e7854-3fd1-4b28-8325-8aa2f99796b3",
+    "walletUrl": "https://credsverse.com/credentials/971e7854-3fd1-4b28-8325-8aa2f99796b3",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F971e7854-3fd1-4b28-8325-8aa2f99796b3",
+    "raw": {
+      "id": "01m04qy88tf2gd952xs3taergb",
+      "publicId": "971e7854-3fd1-4b28-8325-8aa2f99796b3",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Maliha Hossain"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.627Z",
+      "updatedAt": "2026-08-16T07:35:23.006Z"
+    }
+  },
+  {
+    "id": "01m04qy897wgr61y248ty9b67q",
+    "publicId": "49bbf6b6-705a-43c9-b269-f41753713764",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jeba tahsin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/49bbf6b6-705a-43c9-b269-f41753713764",
+    "walletUrl": "https://credsverse.com/credentials/49bbf6b6-705a-43c9-b269-f41753713764",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F49bbf6b6-705a-43c9-b269-f41753713764",
+    "raw": {
+      "id": "01m04qy897wgr61y248ty9b67q",
+      "publicId": "49bbf6b6-705a-43c9-b269-f41753713764",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jeba tahsin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.640Z",
+      "updatedAt": "2026-08-16T07:35:23.017Z"
+    }
+  },
+  {
+    "id": "01m04qy89pfg39tefgj76wzfm5",
+    "publicId": "779c9fd2-3701-4732-988c-6f1c3b26dd85",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Anusha Shehreen Islam",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/779c9fd2-3701-4732-988c-6f1c3b26dd85",
+    "walletUrl": "https://credsverse.com/credentials/779c9fd2-3701-4732-988c-6f1c3b26dd85",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F779c9fd2-3701-4732-988c-6f1c3b26dd85",
+    "raw": {
+      "id": "01m04qy89pfg39tefgj76wzfm5",
+      "publicId": "779c9fd2-3701-4732-988c-6f1c3b26dd85",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Anusha Shehreen Islam"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.656Z",
+      "updatedAt": "2026-08-16T07:35:23.027Z"
+    }
+  },
+  {
+    "id": "01m04qy8a51b0p8w566v1hcqtj",
+    "publicId": "a8430f81-c18d-4e9a-8a98-68a65fe9a772",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Wasima Rahman",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a8430f81-c18d-4e9a-8a98-68a65fe9a772",
+    "walletUrl": "https://credsverse.com/credentials/a8430f81-c18d-4e9a-8a98-68a65fe9a772",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa8430f81-c18d-4e9a-8a98-68a65fe9a772",
+    "raw": {
+      "id": "01m04qy8a51b0p8w566v1hcqtj",
+      "publicId": "a8430f81-c18d-4e9a-8a98-68a65fe9a772",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Wasima Rahman"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.670Z",
+      "updatedAt": "2026-08-16T07:35:23.037Z"
+    }
+  },
+  {
+    "id": "01m04qy8agsa2xj4yakwsvjxce",
+    "publicId": "b57a68ca-4714-48dc-8088-594e763782e0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Manha Mukarrama",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b57a68ca-4714-48dc-8088-594e763782e0",
+    "walletUrl": "https://credsverse.com/credentials/b57a68ca-4714-48dc-8088-594e763782e0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb57a68ca-4714-48dc-8088-594e763782e0",
+    "raw": {
+      "id": "01m04qy8agsa2xj4yakwsvjxce",
+      "publicId": "b57a68ca-4714-48dc-8088-594e763782e0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Manha Mukarrama"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.682Z",
+      "updatedAt": "2026-08-16T07:35:23.048Z"
+    }
+  },
+  {
+    "id": "01m04qy8ayesshrt8jcxnbpxq6",
+    "publicId": "88fb1eb6-19ef-48b6-bdd6-058629a4b982",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Wrigdha Paul Turnab",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/88fb1eb6-19ef-48b6-bdd6-058629a4b982",
+    "walletUrl": "https://credsverse.com/credentials/88fb1eb6-19ef-48b6-bdd6-058629a4b982",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F88fb1eb6-19ef-48b6-bdd6-058629a4b982",
+    "raw": {
+      "id": "01m04qy8ayesshrt8jcxnbpxq6",
+      "publicId": "88fb1eb6-19ef-48b6-bdd6-058629a4b982",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Wrigdha Paul Turnab"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.695Z",
+      "updatedAt": "2026-08-16T07:35:23.062Z"
+    }
+  },
+  {
+    "id": "01m04qy8bac9yy7r3dhy0xdtnr",
+    "publicId": "a69ddbfc-aa05-419e-99fe-f7afdc84a898",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Bidushi",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a69ddbfc-aa05-419e-99fe-f7afdc84a898",
+    "walletUrl": "https://credsverse.com/credentials/a69ddbfc-aa05-419e-99fe-f7afdc84a898",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa69ddbfc-aa05-419e-99fe-f7afdc84a898",
+    "raw": {
+      "id": "01m04qy8bac9yy7r3dhy0xdtnr",
+      "publicId": "a69ddbfc-aa05-419e-99fe-f7afdc84a898",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Bidushi"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:21.708Z",
+      "updatedAt": "2026-08-16T07:35:23.073Z"
+    }
+  },
+  {
+    "id": "01m04qyacxya2rmvav8xzafh4a",
+    "publicId": "419878f6-0eae-4ba4-aaba-fe75950525e2",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nuha Alam",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/419878f6-0eae-4ba4-aaba-fe75950525e2",
+    "walletUrl": "https://credsverse.com/credentials/419878f6-0eae-4ba4-aaba-fe75950525e2",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F419878f6-0eae-4ba4-aaba-fe75950525e2",
+    "raw": {
+      "id": "01m04qyacxya2rmvav8xzafh4a",
+      "publicId": "419878f6-0eae-4ba4-aaba-fe75950525e2",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nuha Alam"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.806Z",
+      "updatedAt": "2026-08-16T07:35:24.523Z"
+    }
+  },
+  {
+    "id": "01m04qyad9zqdq08m5334fp10v",
+    "publicId": "e4f62c95-d256-46b1-86af-f41752b66e27",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Humaira fairoj Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/e4f62c95-d256-46b1-86af-f41752b66e27",
+    "walletUrl": "https://credsverse.com/credentials/e4f62c95-d256-46b1-86af-f41752b66e27",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fe4f62c95-d256-46b1-86af-f41752b66e27",
+    "raw": {
+      "id": "01m04qyad9zqdq08m5334fp10v",
+      "publicId": "e4f62c95-d256-46b1-86af-f41752b66e27",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Humaira fairoj Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.818Z",
+      "updatedAt": "2026-08-16T07:35:24.535Z"
+    }
+  },
+  {
+    "id": "01m04qyadn43kw3vjm0t07m5s5",
+    "publicId": "1218c9aa-5626-4b06-8a2f-210479d003e3",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tahsin Nanziba",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/1218c9aa-5626-4b06-8a2f-210479d003e3",
+    "walletUrl": "https://credsverse.com/credentials/1218c9aa-5626-4b06-8a2f-210479d003e3",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F1218c9aa-5626-4b06-8a2f-210479d003e3",
+    "raw": {
+      "id": "01m04qyadn43kw3vjm0t07m5s5",
+      "publicId": "1218c9aa-5626-4b06-8a2f-210479d003e3",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tahsin Nanziba"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.839Z",
+      "updatedAt": "2026-08-16T07:35:24.547Z"
+    }
+  },
+  {
+    "id": "01m04qyaeaag61s83rd3hv9m9e",
+    "publicId": "0fcefada-eafc-42c2-8e51-87ee2e247042",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Samanta Barua",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/0fcefada-eafc-42c2-8e51-87ee2e247042",
+    "walletUrl": "https://credsverse.com/credentials/0fcefada-eafc-42c2-8e51-87ee2e247042",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F0fcefada-eafc-42c2-8e51-87ee2e247042",
+    "raw": {
+      "id": "01m04qyaeaag61s83rd3hv9m9e",
+      "publicId": "0fcefada-eafc-42c2-8e51-87ee2e247042",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Samanta Barua"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.852Z",
+      "updatedAt": "2026-08-16T07:35:24.558Z"
+    }
+  },
+  {
+    "id": "01m04qyaeq0gecpnwev6jxrt80",
+    "publicId": "4b9f6dda-57c9-4a7b-a684-6eaa40885837",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Sabbir Hossain",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/4b9f6dda-57c9-4a7b-a684-6eaa40885837",
+    "walletUrl": "https://credsverse.com/credentials/4b9f6dda-57c9-4a7b-a684-6eaa40885837",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F4b9f6dda-57c9-4a7b-a684-6eaa40885837",
+    "raw": {
+      "id": "01m04qyaeq0gecpnwev6jxrt80",
+      "publicId": "4b9f6dda-57c9-4a7b-a684-6eaa40885837",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Sabbir Hossain"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.865Z",
+      "updatedAt": "2026-08-16T07:35:24.573Z"
+    }
+  },
+  {
+    "id": "01m04qyaf4ggy8298xmy7j4gfp",
+    "publicId": "c7ced2ba-03c3-4f43-bd2b-89c9361a190a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mohammad Tahmidul Alam",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c7ced2ba-03c3-4f43-bd2b-89c9361a190a",
+    "walletUrl": "https://credsverse.com/credentials/c7ced2ba-03c3-4f43-bd2b-89c9361a190a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc7ced2ba-03c3-4f43-bd2b-89c9361a190a",
+    "raw": {
+      "id": "01m04qyaf4ggy8298xmy7j4gfp",
+      "publicId": "c7ced2ba-03c3-4f43-bd2b-89c9361a190a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mohammad Tahmidul Alam"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.877Z",
+      "updatedAt": "2026-08-16T07:35:24.589Z"
+    }
+  },
+  {
+    "id": "01m04qyafw330qxz45kx8d5s0s",
+    "publicId": "96821567-1207-45fe-bb38-d5488582018a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rehan Hossain",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/96821567-1207-45fe-bb38-d5488582018a",
+    "walletUrl": "https://credsverse.com/credentials/96821567-1207-45fe-bb38-d5488582018a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F96821567-1207-45fe-bb38-d5488582018a",
+    "raw": {
+      "id": "01m04qyafw330qxz45kx8d5s0s",
+      "publicId": "96821567-1207-45fe-bb38-d5488582018a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rehan Hossain"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.902Z",
+      "updatedAt": "2026-08-16T07:35:24.604Z"
+    }
+  },
+  {
+    "id": "01m04qyag8zhy0v53by5drkmwj",
+    "publicId": "f8ac1dbe-2598-48f6-8e15-a4e35ac06692",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tamim Hassan Sikder",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f8ac1dbe-2598-48f6-8e15-a4e35ac06692",
+    "walletUrl": "https://credsverse.com/credentials/f8ac1dbe-2598-48f6-8e15-a4e35ac06692",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff8ac1dbe-2598-48f6-8e15-a4e35ac06692",
+    "raw": {
+      "id": "01m04qyag8zhy0v53by5drkmwj",
+      "publicId": "f8ac1dbe-2598-48f6-8e15-a4e35ac06692",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tamim Hassan Sikder"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.913Z",
+      "updatedAt": "2026-08-16T07:35:24.616Z"
+    }
+  },
+  {
+    "id": "01m04qyagmkvh74hwrp8gt3ax7",
+    "publicId": "ad38755f-649e-4950-b79c-7f02d4c3af41",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rownak Kulsum",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/ad38755f-649e-4950-b79c-7f02d4c3af41",
+    "walletUrl": "https://credsverse.com/credentials/ad38755f-649e-4950-b79c-7f02d4c3af41",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fad38755f-649e-4950-b79c-7f02d4c3af41",
+    "raw": {
+      "id": "01m04qyagmkvh74hwrp8gt3ax7",
+      "publicId": "ad38755f-649e-4950-b79c-7f02d4c3af41",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rownak Kulsum"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.925Z",
+      "updatedAt": "2026-08-16T07:35:24.627Z"
+    }
+  },
+  {
+    "id": "01m04qyah5km181dfaa7re8xgt",
+    "publicId": "0515ca61-a728-463d-827b-6b694833c6fe",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Pritu Dhar",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/0515ca61-a728-463d-827b-6b694833c6fe",
+    "walletUrl": "https://credsverse.com/credentials/0515ca61-a728-463d-827b-6b694833c6fe",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F0515ca61-a728-463d-827b-6b694833c6fe",
+    "raw": {
+      "id": "01m04qyah5km181dfaa7re8xgt",
+      "publicId": "0515ca61-a728-463d-827b-6b694833c6fe",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Pritu Dhar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:23.942Z",
+      "updatedAt": "2026-08-16T07:35:24.653Z"
+    }
+  },
+  {
+    "id": "01m04qybxxhqmhhnxmsbmpbaqd",
+    "publicId": "f74cde43-a17e-4ea4-b35d-0f1c7541eed2",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Arisha Subah Siddique",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f74cde43-a17e-4ea4-b35d-0f1c7541eed2",
+    "walletUrl": "https://credsverse.com/credentials/f74cde43-a17e-4ea4-b35d-0f1c7541eed2",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff74cde43-a17e-4ea4-b35d-0f1c7541eed2",
+    "raw": {
+      "id": "01m04qybxxhqmhhnxmsbmpbaqd",
+      "publicId": "f74cde43-a17e-4ea4-b35d-0f1c7541eed2",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Arisha Subah Siddique"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.379Z",
+      "updatedAt": "2026-08-16T07:35:25.849Z"
+    }
+  },
+  {
+    "id": "01m04qybyqpeb4xz492qez01xd",
+    "publicId": "c83fca7e-baeb-48f2-9eef-94423c78a140",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tahsin Jahan Bhuiyan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c83fca7e-baeb-48f2-9eef-94423c78a140",
+    "walletUrl": "https://credsverse.com/credentials/c83fca7e-baeb-48f2-9eef-94423c78a140",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc83fca7e-baeb-48f2-9eef-94423c78a140",
+    "raw": {
+      "id": "01m04qybyqpeb4xz492qez01xd",
+      "publicId": "c83fca7e-baeb-48f2-9eef-94423c78a140",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tahsin Jahan Bhuiyan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.400Z",
+      "updatedAt": "2026-08-16T07:35:25.861Z"
+    }
+  },
+  {
+    "id": "01m04qybz8mtqt017sb4b8fzze",
+    "publicId": "6eeaa805-ed2a-4cc3-b605-346e018a9cac",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nadira Anjum",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/6eeaa805-ed2a-4cc3-b605-346e018a9cac",
+    "walletUrl": "https://credsverse.com/credentials/6eeaa805-ed2a-4cc3-b605-346e018a9cac",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F6eeaa805-ed2a-4cc3-b605-346e018a9cac",
+    "raw": {
+      "id": "01m04qybz8mtqt017sb4b8fzze",
+      "publicId": "6eeaa805-ed2a-4cc3-b605-346e018a9cac",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nadira Anjum"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.418Z",
+      "updatedAt": "2026-08-16T07:35:25.879Z"
+    }
+  },
+  {
+    "id": "01m04qybzpnactgbrpt6kya9ds",
+    "publicId": "7db41908-0c4e-4594-af89-8c2ba9f9d91c",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Prithwi Rajonna Purenota",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/7db41908-0c4e-4594-af89-8c2ba9f9d91c",
+    "walletUrl": "https://credsverse.com/credentials/7db41908-0c4e-4594-af89-8c2ba9f9d91c",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F7db41908-0c4e-4594-af89-8c2ba9f9d91c",
+    "raw": {
+      "id": "01m04qybzpnactgbrpt6kya9ds",
+      "publicId": "7db41908-0c4e-4594-af89-8c2ba9f9d91c",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Prithwi Rajonna Purenota"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.432Z",
+      "updatedAt": "2026-08-16T07:35:25.899Z"
+    }
+  },
+  {
+    "id": "01m04qyc06j5jds537nqbntrxj",
+    "publicId": "e0131b74-77da-4990-9106-a07d66832ad8",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Aslam Sadaf",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/e0131b74-77da-4990-9106-a07d66832ad8",
+    "walletUrl": "https://credsverse.com/credentials/e0131b74-77da-4990-9106-a07d66832ad8",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fe0131b74-77da-4990-9106-a07d66832ad8",
+    "raw": {
+      "id": "01m04qyc06j5jds537nqbntrxj",
+      "publicId": "e0131b74-77da-4990-9106-a07d66832ad8",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Aslam Sadaf"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.448Z",
+      "updatedAt": "2026-08-16T07:35:25.917Z"
+    }
+  },
+  {
+    "id": "01m04qyc0mgzeahz3xbebz1fjv",
+    "publicId": "b386c587-ae25-4c24-bb31-18a10fbecba7",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Simrah",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b386c587-ae25-4c24-bb31-18a10fbecba7",
+    "walletUrl": "https://credsverse.com/credentials/b386c587-ae25-4c24-bb31-18a10fbecba7",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb386c587-ae25-4c24-bb31-18a10fbecba7",
+    "raw": {
+      "id": "01m04qyc0mgzeahz3xbebz1fjv",
+      "publicId": "b386c587-ae25-4c24-bb31-18a10fbecba7",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Simrah"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.465Z",
+      "updatedAt": "2026-08-16T07:35:25.938Z"
+    }
+  },
+  {
+    "id": "01m04qyc1yjxax3wanx42jh044",
+    "publicId": "98e12297-ea84-42c7-91d7-749945bf6fcc",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Utshob Roy",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/98e12297-ea84-42c7-91d7-749945bf6fcc",
+    "walletUrl": "https://credsverse.com/credentials/98e12297-ea84-42c7-91d7-749945bf6fcc",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F98e12297-ea84-42c7-91d7-749945bf6fcc",
+    "raw": {
+      "id": "01m04qyc1yjxax3wanx42jh044",
+      "publicId": "98e12297-ea84-42c7-91d7-749945bf6fcc",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Utshob Roy"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.505Z",
+      "updatedAt": "2026-08-16T07:35:25.949Z"
+    }
+  },
+  {
+    "id": "01m04qyc2g5q52qkescrq9qs2c",
+    "publicId": "d2bfb0e5-c602-4945-a98b-5a7b0a4e3bb4",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jannathut Taieba",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/d2bfb0e5-c602-4945-a98b-5a7b0a4e3bb4",
+    "walletUrl": "https://credsverse.com/credentials/d2bfb0e5-c602-4945-a98b-5a7b0a4e3bb4",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fd2bfb0e5-c602-4945-a98b-5a7b0a4e3bb4",
+    "raw": {
+      "id": "01m04qyc2g5q52qkescrq9qs2c",
+      "publicId": "d2bfb0e5-c602-4945-a98b-5a7b0a4e3bb4",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jannathut Taieba"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.522Z",
+      "updatedAt": "2026-08-16T07:35:25.962Z"
+    }
+  },
+  {
+    "id": "01m04qyc35sfsb6jwdrbyng9ca",
+    "publicId": "fbdac72c-fe3b-467f-b131-bf3a3749827c",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jit Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/fbdac72c-fe3b-467f-b131-bf3a3749827c",
+    "walletUrl": "https://credsverse.com/credentials/fbdac72c-fe3b-467f-b131-bf3a3749827c",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ffbdac72c-fe3b-467f-b131-bf3a3749827c",
+    "raw": {
+      "id": "01m04qyc35sfsb6jwdrbyng9ca",
+      "publicId": "fbdac72c-fe3b-467f-b131-bf3a3749827c",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jit Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.542Z",
+      "updatedAt": "2026-08-16T07:35:25.975Z"
+    }
+  },
+  {
+    "id": "01m04qyc3h5k53e3hrbrjfxr1d",
+    "publicId": "b88201af-0acc-426f-bc5d-41e34bd6b024",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Samara",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b88201af-0acc-426f-bc5d-41e34bd6b024",
+    "walletUrl": "https://credsverse.com/credentials/b88201af-0acc-426f-bc5d-41e34bd6b024",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb88201af-0acc-426f-bc5d-41e34bd6b024",
+    "raw": {
+      "id": "01m04qyc3h5k53e3hrbrjfxr1d",
+      "publicId": "b88201af-0acc-426f-bc5d-41e34bd6b024",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Samara"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:25.555Z",
+      "updatedAt": "2026-08-16T07:35:25.988Z"
+    }
+  },
+  {
+    "id": "01m04qydsfgtxsnd34n76y1rs6",
+    "publicId": "00247a15-1384-48b0-a7ed-19ffe11e63b2",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Abeedah",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/00247a15-1384-48b0-a7ed-19ffe11e63b2",
+    "walletUrl": "https://credsverse.com/credentials/00247a15-1384-48b0-a7ed-19ffe11e63b2",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F00247a15-1384-48b0-a7ed-19ffe11e63b2",
+    "raw": {
+      "id": "01m04qydsfgtxsnd34n76y1rs6",
+      "publicId": "00247a15-1384-48b0-a7ed-19ffe11e63b2",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Abeedah"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.280Z",
+      "updatedAt": "2026-08-16T07:35:28.731Z"
+    }
+  },
+  {
+    "id": "01m04qydstxkd4pkk796sqy450",
+    "publicId": "02be3e56-1d12-443e-8e0d-a4bbece3db0d",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mohtasim Zarif",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/02be3e56-1d12-443e-8e0d-a4bbece3db0d",
+    "walletUrl": "https://credsverse.com/credentials/02be3e56-1d12-443e-8e0d-a4bbece3db0d",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F02be3e56-1d12-443e-8e0d-a4bbece3db0d",
+    "raw": {
+      "id": "01m04qydstxkd4pkk796sqy450",
+      "publicId": "02be3e56-1d12-443e-8e0d-a4bbece3db0d",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mohtasim Zarif"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.292Z",
+      "updatedAt": "2026-08-16T07:35:28.743Z"
+    }
+  },
+  {
+    "id": "01m04qydt51rqtfcdw3qxdyaha",
+    "publicId": "98920ed1-925c-4048-9200-10bd21cf00fa",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rufaida",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/98920ed1-925c-4048-9200-10bd21cf00fa",
+    "walletUrl": "https://credsverse.com/credentials/98920ed1-925c-4048-9200-10bd21cf00fa",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F98920ed1-925c-4048-9200-10bd21cf00fa",
+    "raw": {
+      "id": "01m04qydt51rqtfcdw3qxdyaha",
+      "publicId": "98920ed1-925c-4048-9200-10bd21cf00fa",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rufaida"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.303Z",
+      "updatedAt": "2026-08-16T07:35:28.757Z"
+    }
+  },
+  {
+    "id": "01m04qydtgc9884s5zja08bav0",
+    "publicId": "a02849f3-68c7-48db-a0d0-a61d9c3fa9e5",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Araf Mortuza",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a02849f3-68c7-48db-a0d0-a61d9c3fa9e5",
+    "walletUrl": "https://credsverse.com/credentials/a02849f3-68c7-48db-a0d0-a61d9c3fa9e5",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa02849f3-68c7-48db-a0d0-a61d9c3fa9e5",
+    "raw": {
+      "id": "01m04qydtgc9884s5zja08bav0",
+      "publicId": "a02849f3-68c7-48db-a0d0-a61d9c3fa9e5",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Araf Mortuza"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.313Z",
+      "updatedAt": "2026-08-16T07:35:28.768Z"
+    }
+  },
+  {
+    "id": "01m04qydtx4200930r75yw3nx4",
+    "publicId": "508dbf93-565b-4ff2-ad28-a46ed7a78705",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Arham Hanif",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/508dbf93-565b-4ff2-ad28-a46ed7a78705",
+    "walletUrl": "https://credsverse.com/credentials/508dbf93-565b-4ff2-ad28-a46ed7a78705",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F508dbf93-565b-4ff2-ad28-a46ed7a78705",
+    "raw": {
+      "id": "01m04qydtx4200930r75yw3nx4",
+      "publicId": "508dbf93-565b-4ff2-ad28-a46ed7a78705",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Arham Hanif"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.327Z",
+      "updatedAt": "2026-08-16T07:35:28.779Z"
+    }
+  },
+  {
+    "id": "01m04qydv89hbpkn8dxq53hdef",
+    "publicId": "d7105c59-5189-4d37-83f1-24613c00a9a3",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Takia Tafannum",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/d7105c59-5189-4d37-83f1-24613c00a9a3",
+    "walletUrl": "https://credsverse.com/credentials/d7105c59-5189-4d37-83f1-24613c00a9a3",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fd7105c59-5189-4d37-83f1-24613c00a9a3",
+    "raw": {
+      "id": "01m04qydv89hbpkn8dxq53hdef",
+      "publicId": "d7105c59-5189-4d37-83f1-24613c00a9a3",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Takia Tafannum"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.337Z",
+      "updatedAt": "2026-08-16T07:35:28.804Z"
+    }
+  },
+  {
+    "id": "01m04qydvjp44hsd92mzsx0rq9",
+    "publicId": "a51a2efc-1f94-4f10-95ac-0a6a113d8db5",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Md Shah Poran",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a51a2efc-1f94-4f10-95ac-0a6a113d8db5",
+    "walletUrl": "https://credsverse.com/credentials/a51a2efc-1f94-4f10-95ac-0a6a113d8db5",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa51a2efc-1f94-4f10-95ac-0a6a113d8db5",
+    "raw": {
+      "id": "01m04qydvjp44hsd92mzsx0rq9",
+      "publicId": "a51a2efc-1f94-4f10-95ac-0a6a113d8db5",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Md Shah Poran"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.347Z",
+      "updatedAt": "2026-08-16T07:35:28.819Z"
+    }
+  },
+  {
+    "id": "01m04qydvv4mav7h6sjw5z0xht",
+    "publicId": "bb622f97-8e09-4278-b027-cb912d82552b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ainun Zaria",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/bb622f97-8e09-4278-b027-cb912d82552b",
+    "walletUrl": "https://credsverse.com/credentials/bb622f97-8e09-4278-b027-cb912d82552b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fbb622f97-8e09-4278-b027-cb912d82552b",
+    "raw": {
+      "id": "01m04qydvv4mav7h6sjw5z0xht",
+      "publicId": "bb622f97-8e09-4278-b027-cb912d82552b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ainun Zaria"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.356Z",
+      "updatedAt": "2026-08-16T07:35:28.830Z"
+    }
+  },
+  {
+    "id": "01m04qydw5b0cmxmx71nv15cv5",
+    "publicId": "7511b412-3d76-45a7-a998-8ec6625be312",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Maisha Jabin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/7511b412-3d76-45a7-a998-8ec6625be312",
+    "walletUrl": "https://credsverse.com/credentials/7511b412-3d76-45a7-a998-8ec6625be312",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F7511b412-3d76-45a7-a998-8ec6625be312",
+    "raw": {
+      "id": "01m04qydw5b0cmxmx71nv15cv5",
+      "publicId": "7511b412-3d76-45a7-a998-8ec6625be312",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Maisha Jabin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.366Z",
+      "updatedAt": "2026-08-16T07:35:28.840Z"
+    }
+  },
+  {
+    "id": "01m04qydwgzr4hdxh970aywk17",
+    "publicId": "bfa5b1bd-936e-4e3b-9631-153c0c4ca989",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Anannya Sen",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/bfa5b1bd-936e-4e3b-9631-153c0c4ca989",
+    "walletUrl": "https://credsverse.com/credentials/bfa5b1bd-936e-4e3b-9631-153c0c4ca989",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fbfa5b1bd-936e-4e3b-9631-153c0c4ca989",
+    "raw": {
+      "id": "01m04qydwgzr4hdxh970aywk17",
+      "publicId": "bfa5b1bd-936e-4e3b-9631-153c0c4ca989",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Anannya Sen"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:27.377Z",
+      "updatedAt": "2026-08-16T07:35:28.850Z"
+    }
+  },
+  {
+    "id": "01m04qyfwaw8cfxbnjzf3fjge1",
+    "publicId": "4c3b964c-8db9-4c97-9c5b-95a4943436e1",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Md Tasnimul Chy Tawsif",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/4c3b964c-8db9-4c97-9c5b-95a4943436e1",
+    "walletUrl": "https://credsverse.com/credentials/4c3b964c-8db9-4c97-9c5b-95a4943436e1",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F4c3b964c-8db9-4c97-9c5b-95a4943436e1",
+    "raw": {
+      "id": "01m04qyfwaw8cfxbnjzf3fjge1",
+      "publicId": "4c3b964c-8db9-4c97-9c5b-95a4943436e1",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Md Tasnimul Chy Tawsif"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.420Z",
+      "updatedAt": "2026-08-16T07:40:24.051Z"
+    }
+  },
+  {
+    "id": "01m04qyfwm8bxpbjd1z4fcbs3c",
+    "publicId": "6c68437d-b412-428b-84af-772a7915a064",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ahnaf Azim",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/6c68437d-b412-428b-84af-772a7915a064",
+    "walletUrl": "https://credsverse.com/credentials/6c68437d-b412-428b-84af-772a7915a064",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F6c68437d-b412-428b-84af-772a7915a064",
+    "raw": {
+      "id": "01m04qyfwm8bxpbjd1z4fcbs3c",
+      "publicId": "6c68437d-b412-428b-84af-772a7915a064",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ahnaf Azim"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.429Z",
+      "updatedAt": "2026-08-16T07:35:30.264Z"
+    }
+  },
+  {
+    "id": "01m04qyfwz65xvmxretk901zvy",
+    "publicId": "b66bff3b-d9fe-4e66-9e37-309f90085bcb",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Omar Faruk Tamim",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b66bff3b-d9fe-4e66-9e37-309f90085bcb",
+    "walletUrl": "https://credsverse.com/credentials/b66bff3b-d9fe-4e66-9e37-309f90085bcb",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb66bff3b-d9fe-4e66-9e37-309f90085bcb",
+    "raw": {
+      "id": "01m04qyfwz65xvmxretk901zvy",
+      "publicId": "b66bff3b-d9fe-4e66-9e37-309f90085bcb",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Omar Faruk Tamim"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.441Z",
+      "updatedAt": "2026-08-16T07:35:30.275Z"
+    }
+  },
+  {
+    "id": "01m04qyfxav7mj7xydcb2ggfs3",
+    "publicId": "22722ba5-b84c-4522-a4c8-f4f564a010c0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tamim Faisal",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/22722ba5-b84c-4522-a4c8-f4f564a010c0",
+    "walletUrl": "https://credsverse.com/credentials/22722ba5-b84c-4522-a4c8-f4f564a010c0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F22722ba5-b84c-4522-a4c8-f4f564a010c0",
+    "raw": {
+      "id": "01m04qyfxav7mj7xydcb2ggfs3",
+      "publicId": "22722ba5-b84c-4522-a4c8-f4f564a010c0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tamim Faisal"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.452Z",
+      "updatedAt": "2026-08-16T07:35:30.287Z"
+    }
+  },
+  {
+    "id": "01m04qyfxn8gxwtwtznyv0rrrn",
+    "publicId": "cc602a17-0fe9-4ffa-a860-de30b3ace12f",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Hafsa Binte Ayub",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/cc602a17-0fe9-4ffa-a860-de30b3ace12f",
+    "walletUrl": "https://credsverse.com/credentials/cc602a17-0fe9-4ffa-a860-de30b3ace12f",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fcc602a17-0fe9-4ffa-a860-de30b3ace12f",
+    "raw": {
+      "id": "01m04qyfxn8gxwtwtznyv0rrrn",
+      "publicId": "cc602a17-0fe9-4ffa-a860-de30b3ace12f",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Hafsa Binte Ayub"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.462Z",
+      "updatedAt": "2026-08-16T07:35:30.301Z"
+    }
+  },
+  {
+    "id": "01m04qyfy0pdev20wmw3kf5gbt",
+    "publicId": "4a2fdd77-04de-449e-94d6-cb45f66814cd",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tamim Iqbal",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/4a2fdd77-04de-449e-94d6-cb45f66814cd",
+    "walletUrl": "https://credsverse.com/credentials/4a2fdd77-04de-449e-94d6-cb45f66814cd",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F4a2fdd77-04de-449e-94d6-cb45f66814cd",
+    "raw": {
+      "id": "01m04qyfy0pdev20wmw3kf5gbt",
+      "publicId": "4a2fdd77-04de-449e-94d6-cb45f66814cd",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tamim Iqbal"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.474Z",
+      "updatedAt": "2026-08-16T07:35:30.314Z"
+    }
+  },
+  {
+    "id": "01m04qyfyccy88m4n2cv8a53m7",
+    "publicId": "8dbea991-eba8-4133-bdc0-1ddb9003c4b3",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Sanjida Fairoj Nithu",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/8dbea991-eba8-4133-bdc0-1ddb9003c4b3",
+    "walletUrl": "https://credsverse.com/credentials/8dbea991-eba8-4133-bdc0-1ddb9003c4b3",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F8dbea991-eba8-4133-bdc0-1ddb9003c4b3",
+    "raw": {
+      "id": "01m04qyfyccy88m4n2cv8a53m7",
+      "publicId": "8dbea991-eba8-4133-bdc0-1ddb9003c4b3",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Sanjida Fairoj Nithu"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.486Z",
+      "updatedAt": "2026-08-16T07:35:30.326Z"
+    }
+  },
+  {
+    "id": "01m04qyfyw549y4j841af62dw3",
+    "publicId": "5c154b9e-655c-4eb7-8afc-8838778ebec0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tajwar Bin Taiyab",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/5c154b9e-655c-4eb7-8afc-8838778ebec0",
+    "walletUrl": "https://credsverse.com/credentials/5c154b9e-655c-4eb7-8afc-8838778ebec0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F5c154b9e-655c-4eb7-8afc-8838778ebec0",
+    "raw": {
+      "id": "01m04qyfyw549y4j841af62dw3",
+      "publicId": "5c154b9e-655c-4eb7-8afc-8838778ebec0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tajwar Bin Taiyab"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.501Z",
+      "updatedAt": "2026-08-16T07:35:30.337Z"
+    }
+  },
+  {
+    "id": "01m04qyfz819sd153r7bt38gdd",
+    "publicId": "bba16bde-9c50-41b4-a01f-3849b5cfe743",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mahiya Marzan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/bba16bde-9c50-41b4-a01f-3849b5cfe743",
+    "walletUrl": "https://credsverse.com/credentials/bba16bde-9c50-41b4-a01f-3849b5cfe743",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fbba16bde-9c50-41b4-a01f-3849b5cfe743",
+    "raw": {
+      "id": "01m04qyfz819sd153r7bt38gdd",
+      "publicId": "bba16bde-9c50-41b4-a01f-3849b5cfe743",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mahiya Marzan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.513Z",
+      "updatedAt": "2026-08-16T07:35:30.359Z"
+    }
+  },
+  {
+    "id": "01m04qyfzk8mcag9mpaefjq6tj",
+    "publicId": "b771d319-d8ad-4c69-8e5a-081413f73964",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "labib Hasan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b771d319-d8ad-4c69-8e5a-081413f73964",
+    "walletUrl": "https://credsverse.com/credentials/b771d319-d8ad-4c69-8e5a-081413f73964",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb771d319-d8ad-4c69-8e5a-081413f73964",
+    "raw": {
+      "id": "01m04qyfzk8mcag9mpaefjq6tj",
+      "publicId": "b771d319-d8ad-4c69-8e5a-081413f73964",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "labib Hasan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:29.524Z",
+      "updatedAt": "2026-08-16T07:35:30.371Z"
+    }
+  },
+  {
+    "id": "01m04qyhekab9vhyhyte9jd80y",
+    "publicId": "6a2675c3-4eda-4592-80d6-c9cb603b9b90",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jannatul Ferdous",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/6a2675c3-4eda-4592-80d6-c9cb603b9b90",
+    "walletUrl": "https://credsverse.com/credentials/6a2675c3-4eda-4592-80d6-c9cb603b9b90",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F6a2675c3-4eda-4592-80d6-c9cb603b9b90",
+    "raw": {
+      "id": "01m04qyhekab9vhyhyte9jd80y",
+      "publicId": "6a2675c3-4eda-4592-80d6-c9cb603b9b90",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jannatul Ferdous"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.028Z",
+      "updatedAt": "2026-08-16T07:35:31.963Z"
+    }
+  },
+  {
+    "id": "01m04qyhey56eahnyh8z7011xs",
+    "publicId": "7cdc3acb-8610-4f33-b13b-748f57ff0612",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Durjoy biswas",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/7cdc3acb-8610-4f33-b13b-748f57ff0612",
+    "walletUrl": "https://credsverse.com/credentials/7cdc3acb-8610-4f33-b13b-748f57ff0612",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F7cdc3acb-8610-4f33-b13b-748f57ff0612",
+    "raw": {
+      "id": "01m04qyhey56eahnyh8z7011xs",
+      "publicId": "7cdc3acb-8610-4f33-b13b-748f57ff0612",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Durjoy biswas"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.039Z",
+      "updatedAt": "2026-08-16T07:35:31.974Z"
+    }
+  },
+  {
+    "id": "01m04qyhf94e9qcbg47h00t166",
+    "publicId": "50257dd9-0900-4c7d-bd75-f956591c8939",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Anindita Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/50257dd9-0900-4c7d-bd75-f956591c8939",
+    "walletUrl": "https://credsverse.com/credentials/50257dd9-0900-4c7d-bd75-f956591c8939",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F50257dd9-0900-4c7d-bd75-f956591c8939",
+    "raw": {
+      "id": "01m04qyhf94e9qcbg47h00t166",
+      "publicId": "50257dd9-0900-4c7d-bd75-f956591c8939",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Anindita Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.050Z",
+      "updatedAt": "2026-08-16T07:35:31.987Z"
+    }
+  },
+  {
+    "id": "01m04qyhfk9cgk2h7mqdc9vcbq",
+    "publicId": "f7b5ae50-4a73-4261-a9d1-9c1406f28d90",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Md saimon alam adil",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f7b5ae50-4a73-4261-a9d1-9c1406f28d90",
+    "walletUrl": "https://credsverse.com/credentials/f7b5ae50-4a73-4261-a9d1-9c1406f28d90",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff7b5ae50-4a73-4261-a9d1-9c1406f28d90",
+    "raw": {
+      "id": "01m04qyhfk9cgk2h7mqdc9vcbq",
+      "publicId": "f7b5ae50-4a73-4261-a9d1-9c1406f28d90",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Md saimon alam adil"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.060Z",
+      "updatedAt": "2026-08-16T07:35:31.998Z"
+    }
+  },
+  {
+    "id": "01m04qyhfx06s0dp80vgpmg3y5",
+    "publicId": "f62c051a-e790-4eda-8e93-72a4f24dee03",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Prodipto Sarkar",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f62c051a-e790-4eda-8e93-72a4f24dee03",
+    "walletUrl": "https://credsverse.com/credentials/f62c051a-e790-4eda-8e93-72a4f24dee03",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff62c051a-e790-4eda-8e93-72a4f24dee03",
+    "raw": {
+      "id": "01m04qyhfx06s0dp80vgpmg3y5",
+      "publicId": "f62c051a-e790-4eda-8e93-72a4f24dee03",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Prodipto Sarkar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.070Z",
+      "updatedAt": "2026-08-16T07:35:32.012Z"
+    }
+  },
+  {
+    "id": "01m04qyhg8zda0b2cw1sc873pn",
+    "publicId": "4077c680-29e7-4dad-a2a3-4879e4d78451",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Fairoj Zahin Ahona",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/4077c680-29e7-4dad-a2a3-4879e4d78451",
+    "walletUrl": "https://credsverse.com/credentials/4077c680-29e7-4dad-a2a3-4879e4d78451",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F4077c680-29e7-4dad-a2a3-4879e4d78451",
+    "raw": {
+      "id": "01m04qyhg8zda0b2cw1sc873pn",
+      "publicId": "4077c680-29e7-4dad-a2a3-4879e4d78451",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Fairoj Zahin Ahona"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.081Z",
+      "updatedAt": "2026-08-16T07:35:32.023Z"
+    }
+  },
+  {
+    "id": "01m04qyhgkyny0wb7gs30b4gw1",
+    "publicId": "ea5ab448-4ee2-4e29-8a53-9818bbbefe9a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Raiyan Siddique Talha",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/ea5ab448-4ee2-4e29-8a53-9818bbbefe9a",
+    "walletUrl": "https://credsverse.com/credentials/ea5ab448-4ee2-4e29-8a53-9818bbbefe9a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fea5ab448-4ee2-4e29-8a53-9818bbbefe9a",
+    "raw": {
+      "id": "01m04qyhgkyny0wb7gs30b4gw1",
+      "publicId": "ea5ab448-4ee2-4e29-8a53-9818bbbefe9a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Raiyan Siddique Talha"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.093Z",
+      "updatedAt": "2026-08-16T07:35:32.034Z"
+    }
+  },
+  {
+    "id": "01m04qyhgzdkh5gqz7ege0knyz",
+    "publicId": "94c3e831-59aa-40ac-81a4-1ce34e4dfa75",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Radeya Jahra",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/94c3e831-59aa-40ac-81a4-1ce34e4dfa75",
+    "walletUrl": "https://credsverse.com/credentials/94c3e831-59aa-40ac-81a4-1ce34e4dfa75",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F94c3e831-59aa-40ac-81a4-1ce34e4dfa75",
+    "raw": {
+      "id": "01m04qyhgzdkh5gqz7ege0knyz",
+      "publicId": "94c3e831-59aa-40ac-81a4-1ce34e4dfa75",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Radeya Jahra"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.104Z",
+      "updatedAt": "2026-08-16T07:35:32.046Z"
+    }
+  },
+  {
+    "id": "01m04qyhhcqknpx9c095wdf7n4",
+    "publicId": "02a7b3d1-476b-47a8-8f7f-3ebbe663650e",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nirjhor",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/02a7b3d1-476b-47a8-8f7f-3ebbe663650e",
+    "walletUrl": "https://credsverse.com/credentials/02a7b3d1-476b-47a8-8f7f-3ebbe663650e",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F02a7b3d1-476b-47a8-8f7f-3ebbe663650e",
+    "raw": {
+      "id": "01m04qyhhcqknpx9c095wdf7n4",
+      "publicId": "02a7b3d1-476b-47a8-8f7f-3ebbe663650e",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nirjhor"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.117Z",
+      "updatedAt": "2026-08-16T07:35:32.057Z"
+    }
+  },
+  {
+    "id": "01m04qyhkb2sbcs00nhvc6v3j6",
+    "publicId": "0938bf56-703c-4bbf-8a82-e4f77df52f09",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Zahin Sharif Khan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/0938bf56-703c-4bbf-8a82-e4f77df52f09",
+    "walletUrl": "https://credsverse.com/credentials/0938bf56-703c-4bbf-8a82-e4f77df52f09",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F0938bf56-703c-4bbf-8a82-e4f77df52f09",
+    "raw": {
+      "id": "01m04qyhkb2sbcs00nhvc6v3j6",
+      "publicId": "0938bf56-703c-4bbf-8a82-e4f77df52f09",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Zahin Sharif Khan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:31.180Z",
+      "updatedAt": "2026-08-16T07:35:32.067Z"
+    }
+  },
+  {
+    "id": "01m04qyk7ab7fy1nb2ahcv9gqx",
+    "publicId": "fd5f0a38-dbdc-4f5f-93d0-6427a3920e80",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Arjya Dhar",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/fd5f0a38-dbdc-4f5f-93d0-6427a3920e80",
+    "walletUrl": "https://credsverse.com/credentials/fd5f0a38-dbdc-4f5f-93d0-6427a3920e80",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ffd5f0a38-dbdc-4f5f-93d0-6427a3920e80",
+    "raw": {
+      "id": "01m04qyk7ab7fy1nb2ahcv9gqx",
+      "publicId": "fd5f0a38-dbdc-4f5f-93d0-6427a3920e80",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Arjya Dhar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.843Z",
+      "updatedAt": "2026-08-16T07:35:33.667Z"
+    }
+  },
+  {
+    "id": "01m04qyk7pxchs2g06kvvsc9y5",
+    "publicId": "219fdfa2-8c57-4935-9a87-9c554dc317e0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Samantha Makareem",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/219fdfa2-8c57-4935-9a87-9c554dc317e0",
+    "walletUrl": "https://credsverse.com/credentials/219fdfa2-8c57-4935-9a87-9c554dc317e0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F219fdfa2-8c57-4935-9a87-9c554dc317e0",
+    "raw": {
+      "id": "01m04qyk7pxchs2g06kvvsc9y5",
+      "publicId": "219fdfa2-8c57-4935-9a87-9c554dc317e0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Samantha Makareem"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.855Z",
+      "updatedAt": "2026-08-16T07:35:33.678Z"
+    }
+  },
+  {
+    "id": "01m04qyk83th6mbvnhxpnp51kw",
+    "publicId": "259ddb45-1ebd-485f-81e4-3b9d5ad62d6d",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mahiur Rahman",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/259ddb45-1ebd-485f-81e4-3b9d5ad62d6d",
+    "walletUrl": "https://credsverse.com/credentials/259ddb45-1ebd-485f-81e4-3b9d5ad62d6d",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F259ddb45-1ebd-485f-81e4-3b9d5ad62d6d",
+    "raw": {
+      "id": "01m04qyk83th6mbvnhxpnp51kw",
+      "publicId": "259ddb45-1ebd-485f-81e4-3b9d5ad62d6d",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mahiur Rahman"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.869Z",
+      "updatedAt": "2026-08-16T07:35:33.688Z"
+    }
+  },
+  {
+    "id": "01m04qyk8enfdfpybn3pjafzsb",
+    "publicId": "6d0cb448-d250-4fff-a049-e05eb2e37134",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ashan Bari",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/6d0cb448-d250-4fff-a049-e05eb2e37134",
+    "walletUrl": "https://credsverse.com/credentials/6d0cb448-d250-4fff-a049-e05eb2e37134",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F6d0cb448-d250-4fff-a049-e05eb2e37134",
+    "raw": {
+      "id": "01m04qyk8enfdfpybn3pjafzsb",
+      "publicId": "6d0cb448-d250-4fff-a049-e05eb2e37134",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ashan Bari"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.880Z",
+      "updatedAt": "2026-08-16T07:35:33.699Z"
+    }
+  },
+  {
+    "id": "01m04qyk8tp664142ak98fb05g",
+    "publicId": "6d9117c2-6c41-40b7-a3f1-d255504a4e70",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Anupa ruliya",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/6d9117c2-6c41-40b7-a3f1-d255504a4e70",
+    "walletUrl": "https://credsverse.com/credentials/6d9117c2-6c41-40b7-a3f1-d255504a4e70",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F6d9117c2-6c41-40b7-a3f1-d255504a4e70",
+    "raw": {
+      "id": "01m04qyk8tp664142ak98fb05g",
+      "publicId": "6d9117c2-6c41-40b7-a3f1-d255504a4e70",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Anupa ruliya"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.891Z",
+      "updatedAt": "2026-08-16T07:35:33.709Z"
+    }
+  },
+  {
+    "id": "01m04qyk94dfazf9s9bkza4r2t",
+    "publicId": "12e6e4b3-690d-437e-b500-dcb3b22b2231",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Araf Rahman",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/12e6e4b3-690d-437e-b500-dcb3b22b2231",
+    "walletUrl": "https://credsverse.com/credentials/12e6e4b3-690d-437e-b500-dcb3b22b2231",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F12e6e4b3-690d-437e-b500-dcb3b22b2231",
+    "raw": {
+      "id": "01m04qyk94dfazf9s9bkza4r2t",
+      "publicId": "12e6e4b3-690d-437e-b500-dcb3b22b2231",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Araf Rahman"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.902Z",
+      "updatedAt": "2026-08-16T07:35:33.726Z"
+    }
+  },
+  {
+    "id": "01m04qyk9gvy0mbfq6r5cyk6kf",
+    "publicId": "1d19c44e-3ca1-479c-8e5d-6daa6b1e02df",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Alisha jashim",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/1d19c44e-3ca1-479c-8e5d-6daa6b1e02df",
+    "walletUrl": "https://credsverse.com/credentials/1d19c44e-3ca1-479c-8e5d-6daa6b1e02df",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F1d19c44e-3ca1-479c-8e5d-6daa6b1e02df",
+    "raw": {
+      "id": "01m04qyk9gvy0mbfq6r5cyk6kf",
+      "publicId": "1d19c44e-3ca1-479c-8e5d-6daa6b1e02df",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Alisha jashim"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.913Z",
+      "updatedAt": "2026-08-16T07:35:33.738Z"
+    }
+  },
+  {
+    "id": "01m04qyk9vbv62pzhk1z5qsg11",
+    "publicId": "3055f2cc-0db5-45fc-92c8-6536b885b0d5",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ahnaf Imteaz Tawsif",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/3055f2cc-0db5-45fc-92c8-6536b885b0d5",
+    "walletUrl": "https://credsverse.com/credentials/3055f2cc-0db5-45fc-92c8-6536b885b0d5",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F3055f2cc-0db5-45fc-92c8-6536b885b0d5",
+    "raw": {
+      "id": "01m04qyk9vbv62pzhk1z5qsg11",
+      "publicId": "3055f2cc-0db5-45fc-92c8-6536b885b0d5",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ahnaf Imteaz Tawsif"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.924Z",
+      "updatedAt": "2026-08-16T07:35:33.749Z"
+    }
+  },
+  {
+    "id": "01m04qyka5ktcxvtpaf2zm6z0g",
+    "publicId": "3b2d1496-2c88-4c7a-8377-d9d79fe6062e",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ziaul Hasib",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/3b2d1496-2c88-4c7a-8377-d9d79fe6062e",
+    "walletUrl": "https://credsverse.com/credentials/3b2d1496-2c88-4c7a-8377-d9d79fe6062e",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F3b2d1496-2c88-4c7a-8377-d9d79fe6062e",
+    "raw": {
+      "id": "01m04qyka5ktcxvtpaf2zm6z0g",
+      "publicId": "3b2d1496-2c88-4c7a-8377-d9d79fe6062e",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ziaul Hasib"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.934Z",
+      "updatedAt": "2026-08-16T07:35:33.768Z"
+    }
+  },
+  {
+    "id": "01m04qykafp5p83dsyzqgksq4f",
+    "publicId": "840163d7-d495-4f52-b225-c3f5dc976b65",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nour Mohammed Nayem",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/840163d7-d495-4f52-b225-c3f5dc976b65",
+    "walletUrl": "https://credsverse.com/credentials/840163d7-d495-4f52-b225-c3f5dc976b65",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F840163d7-d495-4f52-b225-c3f5dc976b65",
+    "raw": {
+      "id": "01m04qykafp5p83dsyzqgksq4f",
+      "publicId": "840163d7-d495-4f52-b225-c3f5dc976b65",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nour Mohammed Nayem"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:32.947Z",
+      "updatedAt": "2026-08-16T07:35:33.781Z"
+    }
+  },
+  {
+    "id": "01m04qymv3txb6zdjy4z5hmkht",
+    "publicId": "5fc1ccdc-f217-44a4-8ae5-8c50d158ae4c",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nusaiba islam Chy",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/5fc1ccdc-f217-44a4-8ae5-8c50d158ae4c",
+    "walletUrl": "https://credsverse.com/credentials/5fc1ccdc-f217-44a4-8ae5-8c50d158ae4c",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F5fc1ccdc-f217-44a4-8ae5-8c50d158ae4c",
+    "raw": {
+      "id": "01m04qymv3txb6zdjy4z5hmkht",
+      "publicId": "5fc1ccdc-f217-44a4-8ae5-8c50d158ae4c",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nusaiba islam Chy"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.501Z",
+      "updatedAt": "2026-08-16T07:35:36.002Z"
+    }
+  },
+  {
+    "id": "01m04qymvfh35x407jmnvadty6",
+    "publicId": "abaed181-3b28-423e-b250-9741ae5e71b7",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Arafa Islam Rafiah",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/abaed181-3b28-423e-b250-9741ae5e71b7",
+    "walletUrl": "https://credsverse.com/credentials/abaed181-3b28-423e-b250-9741ae5e71b7",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fabaed181-3b28-423e-b250-9741ae5e71b7",
+    "raw": {
+      "id": "01m04qymvfh35x407jmnvadty6",
+      "publicId": "abaed181-3b28-423e-b250-9741ae5e71b7",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Arafa Islam Rafiah"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.512Z",
+      "updatedAt": "2026-08-16T07:35:36.018Z"
+    }
+  },
+  {
+    "id": "01m04qymvtyz2a185bb3gcs5t4",
+    "publicId": "b491e3b6-38fd-4950-9085-bf7811e7bd7b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tamjida Sultana",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b491e3b6-38fd-4950-9085-bf7811e7bd7b",
+    "walletUrl": "https://credsverse.com/credentials/b491e3b6-38fd-4950-9085-bf7811e7bd7b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb491e3b6-38fd-4950-9085-bf7811e7bd7b",
+    "raw": {
+      "id": "01m04qymvtyz2a185bb3gcs5t4",
+      "publicId": "b491e3b6-38fd-4950-9085-bf7811e7bd7b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tamjida Sultana"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.524Z",
+      "updatedAt": "2026-08-16T07:35:36.035Z"
+    }
+  },
+  {
+    "id": "01m04qymw6b0tagsjwcn6gnwnv",
+    "publicId": "218c06bd-cb22-4f7e-9918-6420a1f5dff6",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Hujaifa jannat Alifa",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/218c06bd-cb22-4f7e-9918-6420a1f5dff6",
+    "walletUrl": "https://credsverse.com/credentials/218c06bd-cb22-4f7e-9918-6420a1f5dff6",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F218c06bd-cb22-4f7e-9918-6420a1f5dff6",
+    "raw": {
+      "id": "01m04qymw6b0tagsjwcn6gnwnv",
+      "publicId": "218c06bd-cb22-4f7e-9918-6420a1f5dff6",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Hujaifa jannat Alifa"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.535Z",
+      "updatedAt": "2026-08-16T07:35:36.048Z"
+    }
+  },
+  {
+    "id": "01m04qymwhwf58xs7qw6spbeev",
+    "publicId": "99ee6da5-205c-4e28-814a-1c88926c0495",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Fariha Tasnim",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/99ee6da5-205c-4e28-814a-1c88926c0495",
+    "walletUrl": "https://credsverse.com/credentials/99ee6da5-205c-4e28-814a-1c88926c0495",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F99ee6da5-205c-4e28-814a-1c88926c0495",
+    "raw": {
+      "id": "01m04qymwhwf58xs7qw6spbeev",
+      "publicId": "99ee6da5-205c-4e28-814a-1c88926c0495",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Fariha Tasnim"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.547Z",
+      "updatedAt": "2026-08-16T07:35:36.060Z"
+    }
+  },
+  {
+    "id": "01m04qymwx05sgraqzcf6mfj51",
+    "publicId": "c2f72137-741a-4ee1-a35d-107202f1bbb0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Arshi Humayra",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c2f72137-741a-4ee1-a35d-107202f1bbb0",
+    "walletUrl": "https://credsverse.com/credentials/c2f72137-741a-4ee1-a35d-107202f1bbb0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc2f72137-741a-4ee1-a35d-107202f1bbb0",
+    "raw": {
+      "id": "01m04qymwx05sgraqzcf6mfj51",
+      "publicId": "c2f72137-741a-4ee1-a35d-107202f1bbb0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Arshi Humayra"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.559Z",
+      "updatedAt": "2026-08-16T07:35:36.075Z"
+    }
+  },
+  {
+    "id": "01m04qymx8v6hazms9eea0hqkg",
+    "publicId": "e97c913e-b1ba-4d8a-9dbc-3549f56277c8",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Aliya Farzeen Arisha",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/e97c913e-b1ba-4d8a-9dbc-3549f56277c8",
+    "walletUrl": "https://credsverse.com/credentials/e97c913e-b1ba-4d8a-9dbc-3549f56277c8",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fe97c913e-b1ba-4d8a-9dbc-3549f56277c8",
+    "raw": {
+      "id": "01m04qymx8v6hazms9eea0hqkg",
+      "publicId": "e97c913e-b1ba-4d8a-9dbc-3549f56277c8",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Aliya Farzeen Arisha"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.570Z",
+      "updatedAt": "2026-08-16T07:35:36.090Z"
+    }
+  },
+  {
+    "id": "01m04qymxr81yzmzzkmbz5e0kv",
+    "publicId": "9e958062-d06c-42b0-ad23-06cf753a8cab",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Maimuna binte Azad",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/9e958062-d06c-42b0-ad23-06cf753a8cab",
+    "walletUrl": "https://credsverse.com/credentials/9e958062-d06c-42b0-ad23-06cf753a8cab",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F9e958062-d06c-42b0-ad23-06cf753a8cab",
+    "raw": {
+      "id": "01m04qymxr81yzmzzkmbz5e0kv",
+      "publicId": "9e958062-d06c-42b0-ad23-06cf753a8cab",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Maimuna binte Azad"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.586Z",
+      "updatedAt": "2026-08-16T07:35:36.105Z"
+    }
+  },
+  {
+    "id": "01m04qymy63y2wc9zjy6wbmawv",
+    "publicId": "263cb088-b07f-44b5-b90c-6573048184b6",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tohfatul Kobra",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/263cb088-b07f-44b5-b90c-6573048184b6",
+    "walletUrl": "https://credsverse.com/credentials/263cb088-b07f-44b5-b90c-6573048184b6",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F263cb088-b07f-44b5-b90c-6573048184b6",
+    "raw": {
+      "id": "01m04qymy63y2wc9zjy6wbmawv",
+      "publicId": "263cb088-b07f-44b5-b90c-6573048184b6",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tohfatul Kobra"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.599Z",
+      "updatedAt": "2026-08-16T07:35:36.117Z"
+    }
+  },
+  {
+    "id": "01m04qymyp01h9w1mjt8kxd6s8",
+    "publicId": "91ec4f1b-15fd-44d8-a7eb-c3f602c46475",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ohana",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/91ec4f1b-15fd-44d8-a7eb-c3f602c46475",
+    "walletUrl": "https://credsverse.com/credentials/91ec4f1b-15fd-44d8-a7eb-c3f602c46475",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F91ec4f1b-15fd-44d8-a7eb-c3f602c46475",
+    "raw": {
+      "id": "01m04qymyp01h9w1mjt8kxd6s8",
+      "publicId": "91ec4f1b-15fd-44d8-a7eb-c3f602c46475",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ohana"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:34.615Z",
+      "updatedAt": "2026-08-16T07:35:36.133Z"
+    }
+  },
+  {
+    "id": "01m04qypnwnb2nvtvvacxw27cp",
+    "publicId": "1a6df964-ea66-43c3-8cde-e5e8ac28fa26",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Sara",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/1a6df964-ea66-43c3-8cde-e5e8ac28fa26",
+    "walletUrl": "https://credsverse.com/credentials/1a6df964-ea66-43c3-8cde-e5e8ac28fa26",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F1a6df964-ea66-43c3-8cde-e5e8ac28fa26",
+    "raw": {
+      "id": "01m04qypnwnb2nvtvvacxw27cp",
+      "publicId": "1a6df964-ea66-43c3-8cde-e5e8ac28fa26",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Sara"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.382Z",
+      "updatedAt": "2026-08-16T07:35:37.174Z"
+    }
+  },
+  {
+    "id": "01m04qypp8y0nj65sbdwaj4v6x",
+    "publicId": "2efd842f-7236-4630-a0c8-5e3d1c0e1ed0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Meheraz Azfar Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/2efd842f-7236-4630-a0c8-5e3d1c0e1ed0",
+    "walletUrl": "https://credsverse.com/credentials/2efd842f-7236-4630-a0c8-5e3d1c0e1ed0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F2efd842f-7236-4630-a0c8-5e3d1c0e1ed0",
+    "raw": {
+      "id": "01m04qypp8y0nj65sbdwaj4v6x",
+      "publicId": "2efd842f-7236-4630-a0c8-5e3d1c0e1ed0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Meheraz Azfar Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.393Z",
+      "updatedAt": "2026-08-16T07:35:37.188Z"
+    }
+  },
+  {
+    "id": "01m04qyppmysezqq882exp8x2m",
+    "publicId": "e3037c61-f222-4104-955f-74b685c6e52a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rasheda Begum Rupa",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/e3037c61-f222-4104-955f-74b685c6e52a",
+    "walletUrl": "https://credsverse.com/credentials/e3037c61-f222-4104-955f-74b685c6e52a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fe3037c61-f222-4104-955f-74b685c6e52a",
+    "raw": {
+      "id": "01m04qyppmysezqq882exp8x2m",
+      "publicId": "e3037c61-f222-4104-955f-74b685c6e52a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rasheda Begum Rupa"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.406Z",
+      "updatedAt": "2026-08-16T07:35:37.199Z"
+    }
+  },
+  {
+    "id": "01m04qyppz2ymn2cxyhykwp8ka",
+    "publicId": "38fdd608-c808-42af-ac5b-353464d627d3",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tasdique Al Wahid Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/38fdd608-c808-42af-ac5b-353464d627d3",
+    "walletUrl": "https://credsverse.com/credentials/38fdd608-c808-42af-ac5b-353464d627d3",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F38fdd608-c808-42af-ac5b-353464d627d3",
+    "raw": {
+      "id": "01m04qyppz2ymn2cxyhykwp8ka",
+      "publicId": "38fdd608-c808-42af-ac5b-353464d627d3",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tasdique Al Wahid Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.417Z",
+      "updatedAt": "2026-08-16T07:35:37.211Z"
+    }
+  },
+  {
+    "id": "01m04qypqb6fgf795vk4p7hbsp",
+    "publicId": "bae98974-b870-495b-a3ff-dc68abc34847",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Faria Mahin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/bae98974-b870-495b-a3ff-dc68abc34847",
+    "walletUrl": "https://credsverse.com/credentials/bae98974-b870-495b-a3ff-dc68abc34847",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fbae98974-b870-495b-a3ff-dc68abc34847",
+    "raw": {
+      "id": "01m04qypqb6fgf795vk4p7hbsp",
+      "publicId": "bae98974-b870-495b-a3ff-dc68abc34847",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Faria Mahin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.429Z",
+      "updatedAt": "2026-08-16T07:35:37.226Z"
+    }
+  },
+  {
+    "id": "01m04qypqqjc81bbnncpthhgn3",
+    "publicId": "fa7c94ad-fd87-41fa-9ea7-fa6fb83c0550",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rahima Kawser Maya Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/fa7c94ad-fd87-41fa-9ea7-fa6fb83c0550",
+    "walletUrl": "https://credsverse.com/credentials/fa7c94ad-fd87-41fa-9ea7-fa6fb83c0550",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ffa7c94ad-fd87-41fa-9ea7-fa6fb83c0550",
+    "raw": {
+      "id": "01m04qypqqjc81bbnncpthhgn3",
+      "publicId": "fa7c94ad-fd87-41fa-9ea7-fa6fb83c0550",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rahima Kawser Maya Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.440Z",
+      "updatedAt": "2026-08-16T07:35:37.237Z"
+    }
+  },
+  {
+    "id": "01m04qypr43hxhtkb8s1z7ztea",
+    "publicId": "cc4b0a2c-86dc-4e90-b3fc-9512cbd8d06b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tasimol Irin Khan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/cc4b0a2c-86dc-4e90-b3fc-9512cbd8d06b",
+    "walletUrl": "https://credsverse.com/credentials/cc4b0a2c-86dc-4e90-b3fc-9512cbd8d06b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fcc4b0a2c-86dc-4e90-b3fc-9512cbd8d06b",
+    "raw": {
+      "id": "01m04qypr43hxhtkb8s1z7ztea",
+      "publicId": "cc4b0a2c-86dc-4e90-b3fc-9512cbd8d06b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tasimol Irin Khan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.454Z",
+      "updatedAt": "2026-08-16T07:35:37.248Z"
+    }
+  },
+  {
+    "id": "01m04qyprge5dqppqg5vrwfe4w",
+    "publicId": "696a7c0e-9c29-460a-8a25-83b823b026cb",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Abdullah Al Zeenan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/696a7c0e-9c29-460a-8a25-83b823b026cb",
+    "walletUrl": "https://credsverse.com/credentials/696a7c0e-9c29-460a-8a25-83b823b026cb",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F696a7c0e-9c29-460a-8a25-83b823b026cb",
+    "raw": {
+      "id": "01m04qyprge5dqppqg5vrwfe4w",
+      "publicId": "696a7c0e-9c29-460a-8a25-83b823b026cb",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Abdullah Al Zeenan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.466Z",
+      "updatedAt": "2026-08-16T07:35:37.264Z"
+    }
+  },
+  {
+    "id": "01m04qyprw2wrvq2v9kp0aretz",
+    "publicId": "aa74b058-0cd5-4675-89cb-f5ca45e00a9c",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Noor Mohammad",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/aa74b058-0cd5-4675-89cb-f5ca45e00a9c",
+    "walletUrl": "https://credsverse.com/credentials/aa74b058-0cd5-4675-89cb-f5ca45e00a9c",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Faa74b058-0cd5-4675-89cb-f5ca45e00a9c",
+    "raw": {
+      "id": "01m04qyprw2wrvq2v9kp0aretz",
+      "publicId": "aa74b058-0cd5-4675-89cb-f5ca45e00a9c",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Noor Mohammad"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.477Z",
+      "updatedAt": "2026-08-16T07:35:37.275Z"
+    }
+  },
+  {
+    "id": "01m04qyps6ks8xtd5cr5772fq3",
+    "publicId": "a34501f8-ee1a-44a1-8d58-1008042fb265",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Homyra Fairuz",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a34501f8-ee1a-44a1-8d58-1008042fb265",
+    "walletUrl": "https://credsverse.com/credentials/a34501f8-ee1a-44a1-8d58-1008042fb265",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa34501f8-ee1a-44a1-8d58-1008042fb265",
+    "raw": {
+      "id": "01m04qyps6ks8xtd5cr5772fq3",
+      "publicId": "a34501f8-ee1a-44a1-8d58-1008042fb265",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Homyra Fairuz"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:36.487Z",
+      "updatedAt": "2026-08-16T07:35:37.286Z"
+    }
+  },
+  {
+    "id": "01m04qyr3qhvtztd3gchcy1nrr",
+    "publicId": "c1868b38-9bf4-44da-87e8-fafdd0798421",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Oindrela das Gupta",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c1868b38-9bf4-44da-87e8-fafdd0798421",
+    "walletUrl": "https://credsverse.com/credentials/c1868b38-9bf4-44da-87e8-fafdd0798421",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc1868b38-9bf4-44da-87e8-fafdd0798421",
+    "raw": {
+      "id": "01m04qyr3qhvtztd3gchcy1nrr",
+      "publicId": "c1868b38-9bf4-44da-87e8-fafdd0798421",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Oindrela das Gupta"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.848Z",
+      "updatedAt": "2026-08-16T07:35:38.212Z"
+    }
+  },
+  {
+    "id": "01m04qyr46nhaq381k1kf689kp",
+    "publicId": "dad2fe0e-7166-4677-8dd3-44f8c0eed9ca",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Md Ayaz Muhtasim",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/dad2fe0e-7166-4677-8dd3-44f8c0eed9ca",
+    "walletUrl": "https://credsverse.com/credentials/dad2fe0e-7166-4677-8dd3-44f8c0eed9ca",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fdad2fe0e-7166-4677-8dd3-44f8c0eed9ca",
+    "raw": {
+      "id": "01m04qyr46nhaq381k1kf689kp",
+      "publicId": "dad2fe0e-7166-4677-8dd3-44f8c0eed9ca",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Md Ayaz Muhtasim"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.863Z",
+      "updatedAt": "2026-08-16T07:35:38.229Z"
+    }
+  },
+  {
+    "id": "01m04qyr4kdk44kh2rgfh86wja",
+    "publicId": "bb790b91-0909-4d83-99cd-4268859b7cb9",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shimanto",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/bb790b91-0909-4d83-99cd-4268859b7cb9",
+    "walletUrl": "https://credsverse.com/credentials/bb790b91-0909-4d83-99cd-4268859b7cb9",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fbb790b91-0909-4d83-99cd-4268859b7cb9",
+    "raw": {
+      "id": "01m04qyr4kdk44kh2rgfh86wja",
+      "publicId": "bb790b91-0909-4d83-99cd-4268859b7cb9",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shimanto"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.876Z",
+      "updatedAt": "2026-08-16T07:35:38.241Z"
+    }
+  },
+  {
+    "id": "01m04qyr549b31q84cd4z7g3bn",
+    "publicId": "93615e30-3023-4030-a56c-a797f1cec06b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jabir",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/93615e30-3023-4030-a56c-a797f1cec06b",
+    "walletUrl": "https://credsverse.com/credentials/93615e30-3023-4030-a56c-a797f1cec06b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F93615e30-3023-4030-a56c-a797f1cec06b",
+    "raw": {
+      "id": "01m04qyr549b31q84cd4z7g3bn",
+      "publicId": "93615e30-3023-4030-a56c-a797f1cec06b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jabir"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.894Z",
+      "updatedAt": "2026-08-16T07:35:38.252Z"
+    }
+  },
+  {
+    "id": "01m04qyr5mqkev5kfd7p8sms9j",
+    "publicId": "c85ee2af-c48d-4a77-9a1e-67038ca86867",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nabil Rahman",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c85ee2af-c48d-4a77-9a1e-67038ca86867",
+    "walletUrl": "https://credsverse.com/credentials/c85ee2af-c48d-4a77-9a1e-67038ca86867",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc85ee2af-c48d-4a77-9a1e-67038ca86867",
+    "raw": {
+      "id": "01m04qyr5mqkev5kfd7p8sms9j",
+      "publicId": "c85ee2af-c48d-4a77-9a1e-67038ca86867",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nabil Rahman"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.910Z",
+      "updatedAt": "2026-08-16T07:35:38.263Z"
+    }
+  },
+  {
+    "id": "01m04qyr5zqd30c2t2r185d7fj",
+    "publicId": "3b51cf42-acdf-4ce6-bc0d-44f7fe3620c2",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Umaima Mobin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/3b51cf42-acdf-4ce6-bc0d-44f7fe3620c2",
+    "walletUrl": "https://credsverse.com/credentials/3b51cf42-acdf-4ce6-bc0d-44f7fe3620c2",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F3b51cf42-acdf-4ce6-bc0d-44f7fe3620c2",
+    "raw": {
+      "id": "01m04qyr5zqd30c2t2r185d7fj",
+      "publicId": "3b51cf42-acdf-4ce6-bc0d-44f7fe3620c2",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Umaima Mobin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.920Z",
+      "updatedAt": "2026-08-16T07:35:38.274Z"
+    }
+  },
+  {
+    "id": "01m04qyr6dpkpqhj3ybfw5rpg2",
+    "publicId": "83371ba4-d488-48eb-8e02-109e2b3d13d6",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rabita Tabassum",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/83371ba4-d488-48eb-8e02-109e2b3d13d6",
+    "walletUrl": "https://credsverse.com/credentials/83371ba4-d488-48eb-8e02-109e2b3d13d6",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F83371ba4-d488-48eb-8e02-109e2b3d13d6",
+    "raw": {
+      "id": "01m04qyr6dpkpqhj3ybfw5rpg2",
+      "publicId": "83371ba4-d488-48eb-8e02-109e2b3d13d6",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rabita Tabassum"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.934Z",
+      "updatedAt": "2026-08-16T07:35:38.285Z"
+    }
+  },
+  {
+    "id": "01m04qyr6ry77v0128gf25fdf0",
+    "publicId": "9c87a818-e432-4e5d-a55c-e055463396a8",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Miskatun Noor Payel",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/9c87a818-e432-4e5d-a55c-e055463396a8",
+    "walletUrl": "https://credsverse.com/credentials/9c87a818-e432-4e5d-a55c-e055463396a8",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F9c87a818-e432-4e5d-a55c-e055463396a8",
+    "raw": {
+      "id": "01m04qyr6ry77v0128gf25fdf0",
+      "publicId": "9c87a818-e432-4e5d-a55c-e055463396a8",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Miskatun Noor Payel"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.945Z",
+      "updatedAt": "2026-08-16T07:35:38.295Z"
+    }
+  },
+  {
+    "id": "01m04qyr79qxgqar3fpbtzj35x",
+    "publicId": "e9b0113e-581a-46d0-b115-8df5012e2713",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shohrah Rakshan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/e9b0113e-581a-46d0-b115-8df5012e2713",
+    "walletUrl": "https://credsverse.com/credentials/e9b0113e-581a-46d0-b115-8df5012e2713",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fe9b0113e-581a-46d0-b115-8df5012e2713",
+    "raw": {
+      "id": "01m04qyr79qxgqar3fpbtzj35x",
+      "publicId": "e9b0113e-581a-46d0-b115-8df5012e2713",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shohrah Rakshan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.962Z",
+      "updatedAt": "2026-08-16T07:35:38.306Z"
+    }
+  },
+  {
+    "id": "01m04qyr7ne7j6nnzsg31pydw6",
+    "publicId": "a5ff4208-bbf9-4319-99fa-4456cb2282ae",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Iftekhar Ahmad Sifat",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a5ff4208-bbf9-4319-99fa-4456cb2282ae",
+    "walletUrl": "https://credsverse.com/credentials/a5ff4208-bbf9-4319-99fa-4456cb2282ae",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa5ff4208-bbf9-4319-99fa-4456cb2282ae",
+    "raw": {
+      "id": "01m04qyr7ne7j6nnzsg31pydw6",
+      "publicId": "a5ff4208-bbf9-4319-99fa-4456cb2282ae",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Iftekhar Ahmad Sifat"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:37.974Z",
+      "updatedAt": "2026-08-16T07:35:38.316Z"
+    }
+  },
+  {
+    "id": "01m04qyt25wbs0aj5v2q41rfgv",
+    "publicId": "d97adbc2-6ae0-4ade-b08e-e04efc73d392",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ayshawrja Chakraborty Purna",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/d97adbc2-6ae0-4ade-b08e-e04efc73d392",
+    "walletUrl": "https://credsverse.com/credentials/d97adbc2-6ae0-4ade-b08e-e04efc73d392",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fd97adbc2-6ae0-4ade-b08e-e04efc73d392",
+    "raw": {
+      "id": "01m04qyt25wbs0aj5v2q41rfgv",
+      "publicId": "d97adbc2-6ae0-4ade-b08e-e04efc73d392",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ayshawrja Chakraborty Purna"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.847Z",
+      "updatedAt": "2026-08-16T07:35:40.745Z"
+    }
+  },
+  {
+    "id": "01m04qyt2xvywxhmpw5br6pch0",
+    "publicId": "c4762fa9-41f1-4e84-b098-93fa7db2c03e",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rajkumari",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c4762fa9-41f1-4e84-b098-93fa7db2c03e",
+    "walletUrl": "https://credsverse.com/credentials/c4762fa9-41f1-4e84-b098-93fa7db2c03e",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc4762fa9-41f1-4e84-b098-93fa7db2c03e",
+    "raw": {
+      "id": "01m04qyt2xvywxhmpw5br6pch0",
+      "publicId": "c4762fa9-41f1-4e84-b098-93fa7db2c03e",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rajkumari"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.871Z",
+      "updatedAt": "2026-08-16T07:35:40.755Z"
+    }
+  },
+  {
+    "id": "01m04qyt395n1sjt63nny0wdq3",
+    "publicId": "446dedfe-88ff-4ec7-8861-ca097633dba4",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jikra",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/446dedfe-88ff-4ec7-8861-ca097633dba4",
+    "walletUrl": "https://credsverse.com/credentials/446dedfe-88ff-4ec7-8861-ca097633dba4",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F446dedfe-88ff-4ec7-8861-ca097633dba4",
+    "raw": {
+      "id": "01m04qyt395n1sjt63nny0wdq3",
+      "publicId": "446dedfe-88ff-4ec7-8861-ca097633dba4",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jikra"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.883Z",
+      "updatedAt": "2026-08-16T07:35:40.765Z"
+    }
+  },
+  {
+    "id": "01m04qyt3rm3p9q0t4cgn5zj1r",
+    "publicId": "9dcac9c6-720c-40a1-8703-afeaa523cf22",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Maleha",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/9dcac9c6-720c-40a1-8703-afeaa523cf22",
+    "walletUrl": "https://credsverse.com/credentials/9dcac9c6-720c-40a1-8703-afeaa523cf22",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F9dcac9c6-720c-40a1-8703-afeaa523cf22",
+    "raw": {
+      "id": "01m04qyt3rm3p9q0t4cgn5zj1r",
+      "publicId": "9dcac9c6-720c-40a1-8703-afeaa523cf22",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Maleha"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.898Z",
+      "updatedAt": "2026-08-16T07:35:40.775Z"
+    }
+  },
+  {
+    "id": "01m04qyt48e2enz1c97n3t4zpa",
+    "publicId": "44214ff8-6627-44ca-bb32-797d62bf2e66",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Amrita Sen",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/44214ff8-6627-44ca-bb32-797d62bf2e66",
+    "walletUrl": "https://credsverse.com/credentials/44214ff8-6627-44ca-bb32-797d62bf2e66",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F44214ff8-6627-44ca-bb32-797d62bf2e66",
+    "raw": {
+      "id": "01m04qyt48e2enz1c97n3t4zpa",
+      "publicId": "44214ff8-6627-44ca-bb32-797d62bf2e66",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Amrita Sen"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.913Z",
+      "updatedAt": "2026-08-16T07:35:40.786Z"
+    }
+  },
+  {
+    "id": "01m04qyt4wvtvghdyzc1ef0ma2",
+    "publicId": "a17097d1-b5bf-42e8-b069-43950d2e4c4b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Anusmrita Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/a17097d1-b5bf-42e8-b069-43950d2e4c4b",
+    "walletUrl": "https://credsverse.com/credentials/a17097d1-b5bf-42e8-b069-43950d2e4c4b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fa17097d1-b5bf-42e8-b069-43950d2e4c4b",
+    "raw": {
+      "id": "01m04qyt4wvtvghdyzc1ef0ma2",
+      "publicId": "a17097d1-b5bf-42e8-b069-43950d2e4c4b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Anusmrita Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.934Z",
+      "updatedAt": "2026-08-16T07:35:40.796Z"
+    }
+  },
+  {
+    "id": "01m04qyt58npnbaewjdeqa2hay",
+    "publicId": "81113b1e-90c5-43d1-9e1c-4aa369392db5",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Anindo Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/81113b1e-90c5-43d1-9e1c-4aa369392db5",
+    "walletUrl": "https://credsverse.com/credentials/81113b1e-90c5-43d1-9e1c-4aa369392db5",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F81113b1e-90c5-43d1-9e1c-4aa369392db5",
+    "raw": {
+      "id": "01m04qyt58npnbaewjdeqa2hay",
+      "publicId": "81113b1e-90c5-43d1-9e1c-4aa369392db5",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Anindo Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.945Z",
+      "updatedAt": "2026-08-16T07:35:40.806Z"
+    }
+  },
+  {
+    "id": "01m04qyt5sdpafngqpq139mm5m",
+    "publicId": "87544b4a-1ae2-4aa9-a335-feaa71e68476",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Purnota Jahan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/87544b4a-1ae2-4aa9-a335-feaa71e68476",
+    "walletUrl": "https://credsverse.com/credentials/87544b4a-1ae2-4aa9-a335-feaa71e68476",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F87544b4a-1ae2-4aa9-a335-feaa71e68476",
+    "raw": {
+      "id": "01m04qyt5sdpafngqpq139mm5m",
+      "publicId": "87544b4a-1ae2-4aa9-a335-feaa71e68476",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Purnota Jahan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.963Z",
+      "updatedAt": "2026-08-16T07:35:40.817Z"
+    }
+  },
+  {
+    "id": "01m04qyt68zk652vzyft4nd6ct",
+    "publicId": "c4d988f1-8f5b-4c33-8b3d-0cdde68a132e",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tasnia Kamal Radiba",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c4d988f1-8f5b-4c33-8b3d-0cdde68a132e",
+    "walletUrl": "https://credsverse.com/credentials/c4d988f1-8f5b-4c33-8b3d-0cdde68a132e",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc4d988f1-8f5b-4c33-8b3d-0cdde68a132e",
+    "raw": {
+      "id": "01m04qyt68zk652vzyft4nd6ct",
+      "publicId": "c4d988f1-8f5b-4c33-8b3d-0cdde68a132e",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tasnia Kamal Radiba"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.977Z",
+      "updatedAt": "2026-08-16T07:35:40.827Z"
+    }
+  },
+  {
+    "id": "01m04qyt6k09sjxz8d41r80ffy",
+    "publicId": "f3f7c117-2f1b-4bf7-9b47-d3d99e2cd12b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rujhan Al Shabeeb",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f3f7c117-2f1b-4bf7-9b47-d3d99e2cd12b",
+    "walletUrl": "https://credsverse.com/credentials/f3f7c117-2f1b-4bf7-9b47-d3d99e2cd12b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff3f7c117-2f1b-4bf7-9b47-d3d99e2cd12b",
+    "raw": {
+      "id": "01m04qyt6k09sjxz8d41r80ffy",
+      "publicId": "f3f7c117-2f1b-4bf7-9b47-d3d99e2cd12b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rujhan Al Shabeeb"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:39.988Z",
+      "updatedAt": "2026-08-16T07:35:40.837Z"
+    }
+  },
+  {
+    "id": "01m04qyvjh8e39bjnvbfeakf27",
+    "publicId": "2ce193d9-63b2-42f0-9373-3680a72353b3",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ahmed Shaihan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/2ce193d9-63b2-42f0-9373-3680a72353b3",
+    "walletUrl": "https://credsverse.com/credentials/2ce193d9-63b2-42f0-9373-3680a72353b3",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F2ce193d9-63b2-42f0-9373-3680a72353b3",
+    "raw": {
+      "id": "01m04qyvjh8e39bjnvbfeakf27",
+      "publicId": "2ce193d9-63b2-42f0-9373-3680a72353b3",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ahmed Shaihan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.395Z",
+      "updatedAt": "2026-08-16T07:35:42.872Z"
+    }
+  },
+  {
+    "id": "01m04qyvjwb0k8ycm5d6vy7yn2",
+    "publicId": "31cc421f-d8a2-4ec9-9b1a-e80b19996913",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Asadullah Saad",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/31cc421f-d8a2-4ec9-9b1a-e80b19996913",
+    "walletUrl": "https://credsverse.com/credentials/31cc421f-d8a2-4ec9-9b1a-e80b19996913",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F31cc421f-d8a2-4ec9-9b1a-e80b19996913",
+    "raw": {
+      "id": "01m04qyvjwb0k8ycm5d6vy7yn2",
+      "publicId": "31cc421f-d8a2-4ec9-9b1a-e80b19996913",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Asadullah Saad"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.406Z",
+      "updatedAt": "2026-08-16T07:35:42.890Z"
+    }
+  },
+  {
+    "id": "01m04qyvk7cvgdzfpsr6yetyrf",
+    "publicId": "f1915ed2-028c-4b89-8916-b724f78e37fd",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Abida Sultana Arnima",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f1915ed2-028c-4b89-8916-b724f78e37fd",
+    "walletUrl": "https://credsverse.com/credentials/f1915ed2-028c-4b89-8916-b724f78e37fd",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff1915ed2-028c-4b89-8916-b724f78e37fd",
+    "raw": {
+      "id": "01m04qyvk7cvgdzfpsr6yetyrf",
+      "publicId": "f1915ed2-028c-4b89-8916-b724f78e37fd",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Abida Sultana Arnima"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.416Z",
+      "updatedAt": "2026-08-16T07:35:42.902Z"
+    }
+  },
+  {
+    "id": "01m04qyvkmq5vs1pscekqq76sd",
+    "publicId": "f0fe45c0-0361-4348-985f-4b5302cbda24",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Azaan Sarwar",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f0fe45c0-0361-4348-985f-4b5302cbda24",
+    "walletUrl": "https://credsverse.com/credentials/f0fe45c0-0361-4348-985f-4b5302cbda24",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff0fe45c0-0361-4348-985f-4b5302cbda24",
+    "raw": {
+      "id": "01m04qyvkmq5vs1pscekqq76sd",
+      "publicId": "f0fe45c0-0361-4348-985f-4b5302cbda24",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Azaan Sarwar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.429Z",
+      "updatedAt": "2026-08-16T07:35:42.915Z"
+    }
+  },
+  {
+    "id": "01m04qyvm3vxv9ats8k9dxdhb2",
+    "publicId": "b3c3f60b-319f-4d4f-94da-8c3850b59603",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Wali Islam Khan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/b3c3f60b-319f-4d4f-94da-8c3850b59603",
+    "walletUrl": "https://credsverse.com/credentials/b3c3f60b-319f-4d4f-94da-8c3850b59603",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fb3c3f60b-319f-4d4f-94da-8c3850b59603",
+    "raw": {
+      "id": "01m04qyvm3vxv9ats8k9dxdhb2",
+      "publicId": "b3c3f60b-319f-4d4f-94da-8c3850b59603",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Wali Islam Khan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.444Z",
+      "updatedAt": "2026-08-16T07:35:42.934Z"
+    }
+  },
+  {
+    "id": "01m04qyvmdw67ampvg91e5jk5a",
+    "publicId": "4cce406d-9959-454a-b135-6db12c9330d0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tamhid Noor",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/4cce406d-9959-454a-b135-6db12c9330d0",
+    "walletUrl": "https://credsverse.com/credentials/4cce406d-9959-454a-b135-6db12c9330d0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F4cce406d-9959-454a-b135-6db12c9330d0",
+    "raw": {
+      "id": "01m04qyvmdw67ampvg91e5jk5a",
+      "publicId": "4cce406d-9959-454a-b135-6db12c9330d0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tamhid Noor"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.455Z",
+      "updatedAt": "2026-08-16T07:35:42.945Z"
+    }
+  },
+  {
+    "id": "01m04qyvmv6hrjpbndsfqnwn6s",
+    "publicId": "87e19ce1-fdd7-475d-a4e1-040af64377d8",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Aritra Das Gupta",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/87e19ce1-fdd7-475d-a4e1-040af64377d8",
+    "walletUrl": "https://credsverse.com/credentials/87e19ce1-fdd7-475d-a4e1-040af64377d8",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F87e19ce1-fdd7-475d-a4e1-040af64377d8",
+    "raw": {
+      "id": "01m04qyvmv6hrjpbndsfqnwn6s",
+      "publicId": "87e19ce1-fdd7-475d-a4e1-040af64377d8",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Aritra Das Gupta"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.468Z",
+      "updatedAt": "2026-08-16T07:35:42.957Z"
+    }
+  },
+  {
+    "id": "01m04qyvn6pds5k9r6ve51q846",
+    "publicId": "fdbf2463-fa7b-4697-b420-fc38a7be68d8",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rudranil Chakraborty",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/fdbf2463-fa7b-4697-b420-fc38a7be68d8",
+    "walletUrl": "https://credsverse.com/credentials/fdbf2463-fa7b-4697-b420-fc38a7be68d8",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ffdbf2463-fa7b-4697-b420-fc38a7be68d8",
+    "raw": {
+      "id": "01m04qyvn6pds5k9r6ve51q846",
+      "publicId": "fdbf2463-fa7b-4697-b420-fc38a7be68d8",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rudranil Chakraborty"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.479Z",
+      "updatedAt": "2026-08-16T07:35:42.968Z"
+    }
+  },
+  {
+    "id": "01m04qyvnqfqnnezw0sgv1np2s",
+    "publicId": "55b77799-9765-41c7-b34d-4d97fcf023cb",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Abid",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/55b77799-9765-41c7-b34d-4d97fcf023cb",
+    "walletUrl": "https://credsverse.com/credentials/55b77799-9765-41c7-b34d-4d97fcf023cb",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F55b77799-9765-41c7-b34d-4d97fcf023cb",
+    "raw": {
+      "id": "01m04qyvnqfqnnezw0sgv1np2s",
+      "publicId": "55b77799-9765-41c7-b34d-4d97fcf023cb",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Abid"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.497Z",
+      "updatedAt": "2026-08-16T07:35:42.979Z"
+    }
+  },
+  {
+    "id": "01m04qyvp3sxpgs7mrvzf5sdbk",
+    "publicId": "8c262cf5-fdde-452c-a84d-0077159b223d",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rabid",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/8c262cf5-fdde-452c-a84d-0077159b223d",
+    "walletUrl": "https://credsverse.com/credentials/8c262cf5-fdde-452c-a84d-0077159b223d",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F8c262cf5-fdde-452c-a84d-0077159b223d",
+    "raw": {
+      "id": "01m04qyvp3sxpgs7mrvzf5sdbk",
+      "publicId": "8c262cf5-fdde-452c-a84d-0077159b223d",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rabid"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:41.509Z",
+      "updatedAt": "2026-08-16T07:35:42.994Z"
+    }
+  },
+  {
+    "id": "01m04qyxv47n4shsjhh5nwawqg",
+    "publicId": "935f69a7-1163-4c75-95c6-f7beacb43acd",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mahin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/935f69a7-1163-4c75-95c6-f7beacb43acd",
+    "walletUrl": "https://credsverse.com/credentials/935f69a7-1163-4c75-95c6-f7beacb43acd",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F935f69a7-1163-4c75-95c6-f7beacb43acd",
+    "raw": {
+      "id": "01m04qyxv47n4shsjhh5nwawqg",
+      "publicId": "935f69a7-1163-4c75-95c6-f7beacb43acd",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mahin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.717Z",
+      "updatedAt": "2026-08-16T07:35:44.652Z"
+    }
+  },
+  {
+    "id": "01m04qyxvj1t7rs7571vjdypm6",
+    "publicId": "d481ae1f-3e97-4318-8da7-49fc7b96ce1c",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Washiqur",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/d481ae1f-3e97-4318-8da7-49fc7b96ce1c",
+    "walletUrl": "https://credsverse.com/credentials/d481ae1f-3e97-4318-8da7-49fc7b96ce1c",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fd481ae1f-3e97-4318-8da7-49fc7b96ce1c",
+    "raw": {
+      "id": "01m04qyxvj1t7rs7571vjdypm6",
+      "publicId": "d481ae1f-3e97-4318-8da7-49fc7b96ce1c",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Washiqur"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.731Z",
+      "updatedAt": "2026-08-16T07:35:44.663Z"
+    }
+  },
+  {
+    "id": "01m04qyxvxz8j41t3k6q5syhm8",
+    "publicId": "e1f96303-704f-43a0-9b11-eb1bf0b1d81f",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Saafir Al Islam",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/e1f96303-704f-43a0-9b11-eb1bf0b1d81f",
+    "walletUrl": "https://credsverse.com/credentials/e1f96303-704f-43a0-9b11-eb1bf0b1d81f",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fe1f96303-704f-43a0-9b11-eb1bf0b1d81f",
+    "raw": {
+      "id": "01m04qyxvxz8j41t3k6q5syhm8",
+      "publicId": "e1f96303-704f-43a0-9b11-eb1bf0b1d81f",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Saafir Al Islam"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.743Z",
+      "updatedAt": "2026-08-16T07:35:44.675Z"
+    }
+  },
+  {
+    "id": "01m04qyxw81qvxg1swmqaj0wp6",
+    "publicId": "f5d87f05-a89a-4ec6-8d10-2ba60ba33b42",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mohammad Alam Pran",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/f5d87f05-a89a-4ec6-8d10-2ba60ba33b42",
+    "walletUrl": "https://credsverse.com/credentials/f5d87f05-a89a-4ec6-8d10-2ba60ba33b42",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Ff5d87f05-a89a-4ec6-8d10-2ba60ba33b42",
+    "raw": {
+      "id": "01m04qyxw81qvxg1swmqaj0wp6",
+      "publicId": "f5d87f05-a89a-4ec6-8d10-2ba60ba33b42",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mohammad Alam Pran"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.754Z",
+      "updatedAt": "2026-08-16T07:35:44.686Z"
+    }
+  },
+  {
+    "id": "01m04qyxwknszfce5wvnbdzv9p",
+    "publicId": "1abb8a3a-6f63-4cd1-a88a-e7ac5682206a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Jishan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/1abb8a3a-6f63-4cd1-a88a-e7ac5682206a",
+    "walletUrl": "https://credsverse.com/credentials/1abb8a3a-6f63-4cd1-a88a-e7ac5682206a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F1abb8a3a-6f63-4cd1-a88a-e7ac5682206a",
+    "raw": {
+      "id": "01m04qyxwknszfce5wvnbdzv9p",
+      "publicId": "1abb8a3a-6f63-4cd1-a88a-e7ac5682206a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Jishan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.765Z",
+      "updatedAt": "2026-08-16T07:35:44.696Z"
+    }
+  },
+  {
+    "id": "01m04qyxwx4vcgcgfggv9w4gzr",
+    "publicId": "42f0ec57-df58-4e24-b60e-053fe254da97",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Al Amin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/42f0ec57-df58-4e24-b60e-053fe254da97",
+    "walletUrl": "https://credsverse.com/credentials/42f0ec57-df58-4e24-b60e-053fe254da97",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F42f0ec57-df58-4e24-b60e-053fe254da97",
+    "raw": {
+      "id": "01m04qyxwx4vcgcgfggv9w4gzr",
+      "publicId": "42f0ec57-df58-4e24-b60e-053fe254da97",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Al Amin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.775Z",
+      "updatedAt": "2026-08-16T07:35:44.708Z"
+    }
+  },
+  {
+    "id": "01m04qyxxbqdk3472bxg85pkgc",
+    "publicId": "84a0b6b0-f912-4914-b0fa-227f49e922a7",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mohammad Al-Jayed Uddin Trisan",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/84a0b6b0-f912-4914-b0fa-227f49e922a7",
+    "walletUrl": "https://credsverse.com/credentials/84a0b6b0-f912-4914-b0fa-227f49e922a7",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F84a0b6b0-f912-4914-b0fa-227f49e922a7",
+    "raw": {
+      "id": "01m04qyxxbqdk3472bxg85pkgc",
+      "publicId": "84a0b6b0-f912-4914-b0fa-227f49e922a7",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mohammad Al-Jayed Uddin Trisan"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.788Z",
+      "updatedAt": "2026-08-16T07:35:44.719Z"
+    }
+  },
+  {
+    "id": "01m04qyxyn4svkxzdfqve3qt4f",
+    "publicId": "7fd22751-c229-44dc-9aa4-85d4f8261809",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Monoarul Islam",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/7fd22751-c229-44dc-9aa4-85d4f8261809",
+    "walletUrl": "https://credsverse.com/credentials/7fd22751-c229-44dc-9aa4-85d4f8261809",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F7fd22751-c229-44dc-9aa4-85d4f8261809",
+    "raw": {
+      "id": "01m04qyxyn4svkxzdfqve3qt4f",
+      "publicId": "7fd22751-c229-44dc-9aa4-85d4f8261809",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Monoarul Islam"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.839Z",
+      "updatedAt": "2026-08-16T07:35:44.730Z"
+    }
+  },
+  {
+    "id": "01m04qyxzpxzempdsxkybn308t",
+    "publicId": "8646406d-5a22-45cb-88fe-099d3a5b979a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ahbab Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/8646406d-5a22-45cb-88fe-099d3a5b979a",
+    "walletUrl": "https://credsverse.com/credentials/8646406d-5a22-45cb-88fe-099d3a5b979a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F8646406d-5a22-45cb-88fe-099d3a5b979a",
+    "raw": {
+      "id": "01m04qyxzpxzempdsxkybn308t",
+      "publicId": "8646406d-5a22-45cb-88fe-099d3a5b979a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ahbab Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.864Z",
+      "updatedAt": "2026-08-16T07:35:44.740Z"
+    }
+  },
+  {
+    "id": "01m04qyy1gs2w1tvj9qk7hk3gp",
+    "publicId": "621c8967-2652-43eb-8c70-f8ecb8e006a5",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Nazifa Malaika Namrin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/621c8967-2652-43eb-8c70-f8ecb8e006a5",
+    "walletUrl": "https://credsverse.com/credentials/621c8967-2652-43eb-8c70-f8ecb8e006a5",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F621c8967-2652-43eb-8c70-f8ecb8e006a5",
+    "raw": {
+      "id": "01m04qyy1gs2w1tvj9qk7hk3gp",
+      "publicId": "621c8967-2652-43eb-8c70-f8ecb8e006a5",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Nazifa Malaika Namrin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:43.921Z",
+      "updatedAt": "2026-08-16T07:35:44.750Z"
+    }
+  },
+  {
+    "id": "01m04qyzj0mjcxr4c56h48j936",
+    "publicId": "c35adefb-a19e-4f36-a085-46c2cbe968e0",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shuvro",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c35adefb-a19e-4f36-a085-46c2cbe968e0",
+    "walletUrl": "https://credsverse.com/credentials/c35adefb-a19e-4f36-a085-46c2cbe968e0",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc35adefb-a19e-4f36-a085-46c2cbe968e0",
+    "raw": {
+      "id": "01m04qyzj0mjcxr4c56h48j936",
+      "publicId": "c35adefb-a19e-4f36-a085-46c2cbe968e0",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shuvro"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.473Z",
+      "updatedAt": "2026-08-16T07:35:46.320Z"
+    }
+  },
+  {
+    "id": "01m04qyzjeg3hmqa2hpt76j4vh",
+    "publicId": "653822fd-56ad-406b-be2b-d0a3e1fac696",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shahajada Mohammad Anas",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/653822fd-56ad-406b-be2b-d0a3e1fac696",
+    "walletUrl": "https://credsverse.com/credentials/653822fd-56ad-406b-be2b-d0a3e1fac696",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F653822fd-56ad-406b-be2b-d0a3e1fac696",
+    "raw": {
+      "id": "01m04qyzjeg3hmqa2hpt76j4vh",
+      "publicId": "653822fd-56ad-406b-be2b-d0a3e1fac696",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shahajada Mohammad Anas"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.488Z",
+      "updatedAt": "2026-08-16T07:35:46.333Z"
+    }
+  },
+  {
+    "id": "01m04qyzjwrtk1jpj1ypgae5ts",
+    "publicId": "1009822f-b9f8-42cc-8833-41e993d50733",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Abdullah Al Ahnaf",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/1009822f-b9f8-42cc-8833-41e993d50733",
+    "walletUrl": "https://credsverse.com/credentials/1009822f-b9f8-42cc-8833-41e993d50733",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F1009822f-b9f8-42cc-8833-41e993d50733",
+    "raw": {
+      "id": "01m04qyzjwrtk1jpj1ypgae5ts",
+      "publicId": "1009822f-b9f8-42cc-8833-41e993d50733",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Abdullah Al Ahnaf"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.502Z",
+      "updatedAt": "2026-08-16T07:35:46.351Z"
+    }
+  },
+  {
+    "id": "01m04qyzkayxg4nwjvqwy01szd",
+    "publicId": "969f9773-792f-4ee0-b0fa-4ebf949bf3af",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Fawzia Binte Abdullah",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/969f9773-792f-4ee0-b0fa-4ebf949bf3af",
+    "walletUrl": "https://credsverse.com/credentials/969f9773-792f-4ee0-b0fa-4ebf949bf3af",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F969f9773-792f-4ee0-b0fa-4ebf949bf3af",
+    "raw": {
+      "id": "01m04qyzkayxg4nwjvqwy01szd",
+      "publicId": "969f9773-792f-4ee0-b0fa-4ebf949bf3af",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Fawzia Binte Abdullah"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.515Z",
+      "updatedAt": "2026-08-16T07:35:46.362Z"
+    }
+  },
+  {
+    "id": "01m04qyzknen0hc9rq180b6h9c",
+    "publicId": "4c23a06f-ec14-4d8a-bbbd-7431e0bfa705",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "safiul karim",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/4c23a06f-ec14-4d8a-bbbd-7431e0bfa705",
+    "walletUrl": "https://credsverse.com/credentials/4c23a06f-ec14-4d8a-bbbd-7431e0bfa705",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F4c23a06f-ec14-4d8a-bbbd-7431e0bfa705",
+    "raw": {
+      "id": "01m04qyzknen0hc9rq180b6h9c",
+      "publicId": "4c23a06f-ec14-4d8a-bbbd-7431e0bfa705",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "safiul karim"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.527Z",
+      "updatedAt": "2026-08-16T07:35:46.372Z"
+    }
+  },
+  {
+    "id": "01m04qyzm1e291fxz9t2wwvqdy",
+    "publicId": "c7aee7a1-306a-4f6d-afb4-9d3302796375",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Syed Sajid rahman",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/c7aee7a1-306a-4f6d-afb4-9d3302796375",
+    "walletUrl": "https://credsverse.com/credentials/c7aee7a1-306a-4f6d-afb4-9d3302796375",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fc7aee7a1-306a-4f6d-afb4-9d3302796375",
+    "raw": {
+      "id": "01m04qyzm1e291fxz9t2wwvqdy",
+      "publicId": "c7aee7a1-306a-4f6d-afb4-9d3302796375",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Syed Sajid rahman"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.538Z",
+      "updatedAt": "2026-08-16T07:35:46.383Z"
+    }
+  },
+  {
+    "id": "01m04qyzmvw8qyg8n8y7cw6x6d",
+    "publicId": "5b704aaa-ddb0-4e3e-92a0-2ceaddf6aa08",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Antara Al Azmee Fabiha",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/5b704aaa-ddb0-4e3e-92a0-2ceaddf6aa08",
+    "walletUrl": "https://credsverse.com/credentials/5b704aaa-ddb0-4e3e-92a0-2ceaddf6aa08",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F5b704aaa-ddb0-4e3e-92a0-2ceaddf6aa08",
+    "raw": {
+      "id": "01m04qyzmvw8qyg8n8y7cw6x6d",
+      "publicId": "5b704aaa-ddb0-4e3e-92a0-2ceaddf6aa08",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Antara Al Azmee Fabiha"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.564Z",
+      "updatedAt": "2026-08-16T07:35:46.394Z"
+    }
+  },
+  {
+    "id": "01m04qyzn7fd2b93xvn827ja6x",
+    "publicId": "77fb14bf-cce9-474e-9d8f-aeb264d3fd5a",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Ibrar Mahmud",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/77fb14bf-cce9-474e-9d8f-aeb264d3fd5a",
+    "walletUrl": "https://credsverse.com/credentials/77fb14bf-cce9-474e-9d8f-aeb264d3fd5a",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F77fb14bf-cce9-474e-9d8f-aeb264d3fd5a",
+    "raw": {
+      "id": "01m04qyzn7fd2b93xvn827ja6x",
+      "publicId": "77fb14bf-cce9-474e-9d8f-aeb264d3fd5a",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Ibrar Mahmud"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.577Z",
+      "updatedAt": "2026-08-16T07:35:46.405Z"
+    }
+  },
+  {
+    "id": "01m04qyznk1s4rmwpjew1y9ffb",
+    "publicId": "af62f57c-ff55-4690-96fc-00eb20f22fd9",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mahir Uddin",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/af62f57c-ff55-4690-96fc-00eb20f22fd9",
+    "walletUrl": "https://credsverse.com/credentials/af62f57c-ff55-4690-96fc-00eb20f22fd9",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Faf62f57c-ff55-4690-96fc-00eb20f22fd9",
+    "raw": {
+      "id": "01m04qyznk1s4rmwpjew1y9ffb",
+      "publicId": "af62f57c-ff55-4690-96fc-00eb20f22fd9",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mahir Uddin"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.588Z",
+      "updatedAt": "2026-08-16T07:35:46.415Z"
+    }
+  },
+  {
+    "id": "01m04qyznxbwvmvqgrrs0ecy16",
+    "publicId": "8c6d9cb8-1814-4c87-be11-c8c67a4a613b",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Abo Bakar",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/8c6d9cb8-1814-4c87-be11-c8c67a4a613b",
+    "walletUrl": "https://credsverse.com/credentials/8c6d9cb8-1814-4c87-be11-c8c67a4a613b",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F8c6d9cb8-1814-4c87-be11-c8c67a4a613b",
+    "raw": {
+      "id": "01m04qyznxbwvmvqgrrs0ecy16",
+      "publicId": "8c6d9cb8-1814-4c87-be11-c8c67a4a613b",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Abo Bakar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:45.599Z",
+      "updatedAt": "2026-08-16T07:35:46.426Z"
+    }
+  },
+  {
+    "id": "01m04qz10wvn7m185tjyce0cqx",
+    "publicId": "2243a157-cac1-4a75-8bf4-c4b9e48ba6c4",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shreeporna Dutta",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/2243a157-cac1-4a75-8bf4-c4b9e48ba6c4",
+    "walletUrl": "https://credsverse.com/credentials/2243a157-cac1-4a75-8bf4-c4b9e48ba6c4",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F2243a157-cac1-4a75-8bf4-c4b9e48ba6c4",
+    "raw": {
+      "id": "01m04qz10wvn7m185tjyce0cqx",
+      "publicId": "2243a157-cac1-4a75-8bf4-c4b9e48ba6c4",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shreeporna Dutta"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:46.974Z",
+      "updatedAt": "2026-08-16T07:35:48.970Z"
+    }
+  },
+  {
+    "id": "01m04qz1165k8970f5xn8kb5z1",
+    "publicId": "ac9f2326-fe0c-4152-b853-74c818167e7f",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Saiontee Shil",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/ac9f2326-fe0c-4152-b853-74c818167e7f",
+    "walletUrl": "https://credsverse.com/credentials/ac9f2326-fe0c-4152-b853-74c818167e7f",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fac9f2326-fe0c-4152-b853-74c818167e7f",
+    "raw": {
+      "id": "01m04qz1165k8970f5xn8kb5z1",
+      "publicId": "ac9f2326-fe0c-4152-b853-74c818167e7f",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Saiontee Shil"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:46.984Z",
+      "updatedAt": "2026-08-16T07:35:48.981Z"
+    }
+  },
+  {
+    "id": "01m04qz11j79g20eh62h2dthhe",
+    "publicId": "132cc021-1ec2-4e95-b7f9-ab5e8f2a9b02",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Tanvir Hossain",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/132cc021-1ec2-4e95-b7f9-ab5e8f2a9b02",
+    "walletUrl": "https://credsverse.com/credentials/132cc021-1ec2-4e95-b7f9-ab5e8f2a9b02",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F132cc021-1ec2-4e95-b7f9-ab5e8f2a9b02",
+    "raw": {
+      "id": "01m04qz11j79g20eh62h2dthhe",
+      "publicId": "132cc021-1ec2-4e95-b7f9-ab5e8f2a9b02",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Tanvir Hossain"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:46.996Z",
+      "updatedAt": "2026-08-16T07:35:48.992Z"
+    }
+  },
+  {
+    "id": "01m04qz11yt6t7j072y7t794sa",
+    "publicId": "292b6222-2015-40d3-b5ac-b203814e239c",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Arman Chowdhury",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/292b6222-2015-40d3-b5ac-b203814e239c",
+    "walletUrl": "https://credsverse.com/credentials/292b6222-2015-40d3-b5ac-b203814e239c",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F292b6222-2015-40d3-b5ac-b203814e239c",
+    "raw": {
+      "id": "01m04qz11yt6t7j072y7t794sa",
+      "publicId": "292b6222-2015-40d3-b5ac-b203814e239c",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Arman Chowdhury"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:47.007Z",
+      "updatedAt": "2026-08-16T07:35:49.003Z"
+    }
+  },
+  {
+    "id": "01m04qz12cxbttc5sjmcnas8ck",
+    "publicId": "2b4ada74-4d8e-489d-a57f-05448d61d950",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Mitu Rani Debi",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/2b4ada74-4d8e-489d-a57f-05448d61d950",
+    "walletUrl": "https://credsverse.com/credentials/2b4ada74-4d8e-489d-a57f-05448d61d950",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F2b4ada74-4d8e-489d-a57f-05448d61d950",
+    "raw": {
+      "id": "01m04qz12cxbttc5sjmcnas8ck",
+      "publicId": "2b4ada74-4d8e-489d-a57f-05448d61d950",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Mitu Rani Debi"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:47.022Z",
+      "updatedAt": "2026-08-16T07:35:49.018Z"
+    }
+  },
+  {
+    "id": "01m04qz12rhbeskp85avd31ydx",
+    "publicId": "54d2797b-95d8-4eb2-a364-1a352f16e1fa",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Md. Tahmid Sami",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/54d2797b-95d8-4eb2-a364-1a352f16e1fa",
+    "walletUrl": "https://credsverse.com/credentials/54d2797b-95d8-4eb2-a364-1a352f16e1fa",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F54d2797b-95d8-4eb2-a364-1a352f16e1fa",
+    "raw": {
+      "id": "01m04qz12rhbeskp85avd31ydx",
+      "publicId": "54d2797b-95d8-4eb2-a364-1a352f16e1fa",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Md. Tahmid Sami"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:47.034Z",
+      "updatedAt": "2026-08-16T07:35:49.029Z"
+    }
+  },
+  {
+    "id": "01m04qz133jw483ypc4b0s46hf",
+    "publicId": "7f3c2956-f74e-4b7c-8acd-d2d97a996905",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Rahatul Zannat",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/7f3c2956-f74e-4b7c-8acd-d2d97a996905",
+    "walletUrl": "https://credsverse.com/credentials/7f3c2956-f74e-4b7c-8acd-d2d97a996905",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F7f3c2956-f74e-4b7c-8acd-d2d97a996905",
+    "raw": {
+      "id": "01m04qz133jw483ypc4b0s46hf",
+      "publicId": "7f3c2956-f74e-4b7c-8acd-d2d97a996905",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": null,
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Rahatul Zannat"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:35:47.044Z",
+      "updatedAt": "2026-08-16T07:35:49.041Z"
+    }
+  },
+  {
+    "id": "01m04r3m3t7y0rmn9jf39a680y",
+    "publicId": "dce422b6-85b4-479d-ac91-1f562a952733",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Saadmaan Sarar",
+    "email": "saadmaansarar@los2.ssdc.org",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/dce422b6-85b4-479d-ac91-1f562a952733",
+    "walletUrl": "https://credsverse.com/credentials/dce422b6-85b4-479d-ac91-1f562a952733",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fdce422b6-85b4-479d-ac91-1f562a952733",
+    "raw": {
+      "id": "01m04r3m3t7y0rmn9jf39a680y",
+      "publicId": "dce422b6-85b4-479d-ac91-1f562a952733",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": {
+        "id": "01m04r3m3p97yggne5paansfpt",
+        "name": "Saadmaan Sarar",
+        "email": "saadmaansarar@los2.ssdc.org"
+      },
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Saadmaan Sarar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:38:17.596Z",
+      "updatedAt": "2026-08-16T07:38:18.278Z"
+    }
+  },
+  {
+    "id": "01m04r3nt18qpwd4098ezkb9ye",
+    "publicId": "ac34683b-a6b4-46f7-b529-a0e0ce8cbb85",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Saadmaan Sarar",
+    "email": "saadmaansarar@los2.ssdc.org",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/ac34683b-a6b4-46f7-b529-a0e0ce8cbb85",
+    "walletUrl": "https://credsverse.com/credentials/ac34683b-a6b4-46f7-b529-a0e0ce8cbb85",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2Fac34683b-a6b4-46f7-b529-a0e0ce8cbb85",
+    "raw": {
+      "id": "01m04r3nt18qpwd4098ezkb9ye",
+      "publicId": "ac34683b-a6b4-46f7-b529-a0e0ce8cbb85",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": {
+        "id": "01m04r3m3p97yggne5paansfpt",
+        "name": "Saadmaan Sarar",
+        "email": "saadmaansarar@los2.ssdc.org"
+      },
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Saadmaan Sarar"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:38:19.386Z",
+      "updatedAt": "2026-08-16T07:38:20.349Z"
+    }
+  },
+  {
+    "id": "01m04r3xn51r11v2nxc8vwxypz",
+    "publicId": "8ae02a3d-8dd8-492c-96dc-875457eee655",
+    "groupId": "01m04pspxcz0cra1bannacs837",
+    "status": "issued",
+    "name": "Shalbina Dil Afruz",
+    "email": "shalbinadilafruz@los2.ssdc.org",
+    "issueDate": "2026-08-16",
+    "publicUrl": "https://credsverse.com/credentials/8ae02a3d-8dd8-492c-96dc-875457eee655",
+    "walletUrl": "https://credsverse.com/credentials/8ae02a3d-8dd8-492c-96dc-875457eee655",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fcredsverse.com%2Fcredentials%2F8ae02a3d-8dd8-492c-96dc-875457eee655",
+    "raw": {
+      "id": "01m04r3xn51r11v2nxc8vwxypz",
+      "publicId": "8ae02a3d-8dd8-492c-96dc-875457eee655",
+      "groupId": "01m04pspxcz0cra1bannacs837",
+      "status": "issued",
+      "recipient": {
+        "id": "01m04r3xkx5jh12aa86ywx2nrh",
+        "name": "Shalbina Dil Afruz",
+        "email": "shalbinadilafruz@los2.ssdc.org"
+      },
+      "issueDate": "2026-08-16",
+      "expiryDate": null,
+      "attributes": {
+        "recipient.name": "Shalbina Dil Afruz"
+      },
+      "customAttributes": {},
+      "createdAt": "2026-08-16T07:38:27.367Z",
+      "updatedAt": "2026-08-16T07:38:28.092Z"
+    }
+  }
+]
