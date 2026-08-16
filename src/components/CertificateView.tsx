@@ -59,7 +59,7 @@ export const CertificateView: React.FC<CertificateViewProps> = ({ speakers }) =>
 
     if (t.includes('GMHSDS')) {
       if (n.includes('saadmaan')) {
-        return 'Grand Champion & Debater of the Tournament (MVP)';
+        return 'Grand Champion & Debater of the Tournament';
       }
       return 'Grand Champion (Winning Team)';
     }
@@ -281,7 +281,6 @@ export const CertificateView: React.FC<CertificateViewProps> = ({ speakers }) =>
             {filteredRecords.map((record) => {
               const isSelected = selectedRecord?.publicId === record.publicId;
               const isChampion = record.teamName.toUpperCase().includes('GMHSDS');
-              const isMVP = record.name.toLowerCase().includes('saadmaan');
 
               return (
                 <button
@@ -299,12 +298,7 @@ export const CertificateView: React.FC<CertificateViewProps> = ({ speakers }) =>
                       <span className={`text-xs sm:text-sm font-bold truncate ${isSelected ? 'text-amber-200' : 'text-[#f5e4cb] group-hover:text-amber-100'}`}>
                         {record.name}
                       </span>
-                      {isMVP && (
-                        <span className="shrink-0 text-[9px] px-1.5 py-0.2 rounded bg-yellow-500/20 text-yellow-300 font-extrabold border border-yellow-500/40">
-                          MVP
-                        </span>
-                      )}
-                      {isChampion && !isMVP && (
+                      {isChampion && (
                         <span className="shrink-0 text-[9px] px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 font-extrabold border border-amber-500/40">
                           Champ
                         </span>

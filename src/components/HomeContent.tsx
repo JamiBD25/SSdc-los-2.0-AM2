@@ -120,7 +120,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
                 </span>
               </div>
               <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-950 text-amber-300 border border-amber-600/50">
-                Final MVP
+                Grand Champion
               </span>
             </div>
           </div>
@@ -150,7 +150,7 @@ export const HomeContent: React.FC<HomeContentProps> = ({ setActiveTab }) => {
                 </span>
               </div>
               <span className="px-2 py-0.5 rounded text-[10px] font-black bg-yellow-950 text-yellow-300 border border-yellow-600/50">
-                Tournament MVP
+                Top Debater
               </span>
             </div>
           </div>
